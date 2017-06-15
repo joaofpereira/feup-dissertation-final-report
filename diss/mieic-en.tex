@@ -17,6 +17,16 @@
 
 \documentclass[11pt,a4paper,twoside,openright]{report}
 
+%% My packages
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{caption}
+\usepackage{fancyvrb}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage[intoc]{nomencl}
+
 %% For iso-8859-1 (latin1), comment next line and uncomment the second line
 \usepackage[utf8]{inputenc}
 %\usepackage[latin1]{inputenc}
@@ -24,8 +34,8 @@
 %% English version
 
 %% MIEIC options
-\usepackage[mieic]{feupteses}
-%\usepackage[mieic,juri]{feupteses}
+%\usepackage[mieic]{feupteses}
+\usepackage[mieic,juri]{feupteses}
 %\usepackage[mieic,final]{feupteses}
 %\usepackage[mieic,final,onpaper]{feupteses}
 
@@ -74,6 +84,10 @@
 %% Path to the figures directory
 %% TIP: use folder ``figures'' to keep all your figures
 \graphicspath{{figures/}}
+
+\makenomenclature
+\renewcommand{\nomentryend}{.}
+\renewcommand{\nomlabel}[1]{\hfil\textbf{#1}}
 
 %%----------------------------------------
 %% TIP: if you want to define more macros, use an external file to keep them
@@ -143,14 +157,19 @@
 \StartBody
 
 %% TIP: use a separate file for each chapter
-\include{introduction} 
-\include{stateoftheart}
-\include{problemsolution}
-\include{conclusions}
+\include{chapter1} 
+\include{chapter2}
+\include{chapter3}
+\include{chapter4}
+\include{chapter5}
 
 %%----------------------------------------
 %% Final materials
 %%----------------------------------------
+
+%% Glossary / Nomenclature
+\include{nomenclature}
+\printnomenclature[4.5cm]
 
 %% Bibliography
 %% Comment the next command if BibTeX file not used

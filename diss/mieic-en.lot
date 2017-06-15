@@ -1,6 +1,13 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Text Mining Issues by A. Stavrianou \cite {kn:Stavrianou2007}\relax }}{10}{table.caption.8}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Text Mining Issues by A. Stavrianou \cite {kn:Stavrianou2007}\relax }}{10}{table.caption.10}
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Datasets entities statistics\relax }}{28}{table.caption.17}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Datasets composition\relax }}{31}{table.caption.18}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Example of the topics classification\relax }}{33}{table.caption.20}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Final results of the LDA topics aggregation\relax }}{34}{table.caption.21}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Travel terms used to build the training set\relax }}{37}{table.caption.23}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Classifiers Experiences\relax }}{39}{table.caption.24}
 \addvspace {10\p@ }

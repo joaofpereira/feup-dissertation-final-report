@@ -1,9 +1,18 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The workflow of the classifiers ensembles by da Silva et al. \cite {kn:daSilva2014}\relax }}{20}{figure.caption.9}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Traffic in tweets per hour relating to Michael Jackson\IeC {\textquoteright }s death by J. Sankaranarayanan \cite {kn:Sankaranarayanan2009}\relax }}{9}{figure.caption.9}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The workflow of the classifiers ensembles by da Silva et al. \cite {kn:daSilva2014}\relax }}{20}{figure.caption.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces CRISP-DM workflow.\relax }}{26}{figure.caption.10}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Framework design.\relax }}{27}{figure.caption.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Dissertation working plan.\relax }}{33}{figure.caption.12}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Search Bounding-boxes for the data collection\relax }}{28}{figure.caption.14}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Five numerical solutions}}{29}{figure.caption.15}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Two numerical solutions}}{30}{figure.caption.16}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Correspondent pipeline of the topic modelling experiment\relax }}{32}{figure.caption.19}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Day-of-the-week activity per each topic in both cities, Rio de Janeiro and S\IeC {\~a}o Paulo\relax }}{35}{figure.caption.22}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces ROC Curve of SVM, LR and RF experiences\relax }}{39}{figure.caption.25}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Positive Predicted Tweets per Day of Week\relax }}{40}{figure.caption.26}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Rio de Janeiro Heatmap to the positive tweets\relax }}{40}{figure.caption.27}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces S\IeC {\~a}o Paulo Heatmap to the positive tweets\relax }}{41}{figure.caption.28}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Dissertation working plan.\relax }}{45}{figure.caption.29}
