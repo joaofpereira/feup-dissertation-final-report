@@ -1,12 +1,24 @@
 \chapter{Framework} \label{chap:framework}
 
-\section*{}
+\minitoc \mtcskip \noindent
+
+In this chapter it is described the details and specificities of the framework proposed in this dissertation. First, we enunciate the necessary requirements to fulfill and achieve the mentioned development. Moreover, it is present the design of the framework, as well as its inner structure. The modules that constitutes such architecture are described afterwards as so the required methodologies and algorithms incorporated in each of its tasks. Finally but not least, we enunciate the different data visualizations available on the framework.
 
 \section{Requirements}\label{sec:requirements}
+
+The development of frameworks to the domain of \textit{smart cities} and intelligent transportation systems using human-generated content (e.g. text messages) is a laborious and time-consuming process. The source of the data to fed such system is one of the biggest challenges in this kind of developments, ranging from social media, smart phones and urban sensors. In this dissertation we tackle the problem of exploring social media data since this kind of data have, recently, been seen as a new opportunity and source to mine valuable information to the cities services and corresponding responsible entities~\cite{kn:Musto2015}.
+
+Social media data are mostly represented by text messages being necessary the application of Natural Language Processing (NLP) methodologies in order to extract information from its content. Such methodologies are usually complex and composed by several different steps (e.g. some related to the syntax of the sentences while others are related to the semantics of its content) before the achievement of the desired results. Social Media streams are no exception, indeed, the analysis of such texts is even more complex since messages are usually short and present lots of informal characteristics.
+
+A framework for the domain of social media content requires, in the first place, a data collection module. Depending on the social network, the data collection module can have different heuristics with respect to the data retrieving. Here, the choice of such heuristics is important and needs to be made according the final users expectations, or at least, according the framework final use case. Towards the application of NLP techniques, a module in charge of preprocessing tasks is required. The main purpose of this module establishes in the performance and robustness of the results obtained by the previously mentioned techniques. NLP techniques can provide different types of information, however in this dissertation the focus is on the classification of travel-related tweets, characterization of the topic associated with a tweet and also travel-mode extraction. Each technique is represented as an independent module whose belongs to the boundary of text analytics. The framework needs to be capable of processing information regarding the creation date of a tweet, the \textit{metadata} and the geographic distribution associated to it.
 
 \section{Architecture Overview}\label{sec:architecture}
 
 \section{Data Collection}\label{sec:data_collection}
+
+%In the particular case of Twitter, there are three diffewhich enables different type of dat
+
+%mac2016effects
 
 \section{Data Pre-processing}\label{sec:data_preprocessing}
 

@@ -26,6 +26,7 @@
 \usepackage{subcaption}
 \usepackage{url}
 \usepackage[intoc]{nomencl}
+\usepackage{array}
 
 %% For iso-8859-1 (latin1), comment next line and uncomment the second line
 \usepackage[utf8]{inputenc}
@@ -35,7 +36,7 @@
 
 %% MIEIC options
 %\usepackage[mieic]{feupteses}
-\usepackage[mieic,juri]{feupteses}
+\usepackage[mieic,juri,backrefs]{feupteses}
 %\usepackage[mieic,final]{feupteses}
 %\usepackage[mieic,final,onpaper]{feupteses}
 
@@ -94,6 +95,19 @@
 \include{mymacros}
 %%----------------------------------------
 
+%%
+%% Hyperlinks
+%%
+
+% MiniTOC
+\usepackage[tight]{minitoc}
+
+\dominitoc
+\renewcommand{\mtctitle}{}
+\renewcommand{\kernafterminitoc}{\vspace{0.3cm}}
+\renewcommand{\mtcoffset}{-0.3cm}
+%\setcounter{minitocdepth}{1}
+
 %%========================================
 %% Start of document
 %%========================================
@@ -112,7 +126,8 @@
 %\copyrightnotice{Name of the Author, 2008}
 
 \supervisor{Supervisor}{Rosaldo José Fernandes Rossetti}
-\supervisor{Supervisor}{Pedro dos Santos Saleiro da Cruz}
+\supervisor{Co-supervisor}{Pedro dos Santos Saleiro da Cruz}
+
 
 %% Uncomment next line if necessary
 %\supervisor{Second Supervisor}{Name of the Supervisor}
@@ -178,7 +193,7 @@
 
 %% comment next 2 commands if numbered appendices are not used
 \appendix
-%\include{appendix1}
+\include{appendix1}
 
 %% Index
 %% Uncomment next command if index is required

@@ -4,47 +4,54 @@
 \contentsline {section}{\numberline {1.2}Problem Statement and Goals}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}Structure of this Dissertation}{3}{section.1.3}
 \contentsline {chapter}{\numberline {2}Background and Literature Review}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Smart Cities and Intelligent Transportation Systems}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Social Media Analytics}{7}{section.2.2}
+\contentsline {section}{\numberline {2.1}Smart Cities and Intelligent Transportation Systems}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Social Media Analytics}{8}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Twitter}{8}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Text Mining}{9}{section.2.3}
+\contentsline {section}{\numberline {2.3}Text Mining}{10}{section.2.3}
 \contentsline {section}{\numberline {2.4}Information Extraction}{12}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Name Entity Recognition and Name Entity Disambiguation}{12}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Content Filtering}{14}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Topic Modeling}{16}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Sentiment Analysis}{17}{section.2.5}
+\contentsline {subsection}{\numberline {2.4.2}Content Filtering}{15}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Topic Modeling}{17}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Sentiment Analysis}{18}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Lexicon-based vs Machine-learning based}{18}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Aspect-based Sentiment Analysis}{22}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Aspect-based Sentiment Analysis}{23}{subsection.2.5.2}
 \contentsline {section}{\numberline {2.6}Conclusion}{24}{section.2.6}
-\contentsline {chapter}{\numberline {3}Framework}{25}{chapter.3}
-\contentsline {section}{\numberline {3.1}Requirements}{25}{section.3.1}
-\contentsline {section}{\numberline {3.2}Architecture Overview}{25}{section.3.2}
-\contentsline {section}{\numberline {3.3}Data Collection}{25}{section.3.3}
-\contentsline {section}{\numberline {3.4}Data Pre-processing}{25}{section.3.4}
-\contentsline {section}{\numberline {3.5}Text Analytics}{25}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Word Embeddings}{25}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Latent Dirichlet Allocation (LDA)}{26}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Visualization}{26}{section.3.6}
-\contentsline {chapter}{\numberline {4}Experiments}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{27}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Geographic Distributions}{27}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Temporal Frequencies}{28}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Metadata Composition}{28}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Topic Modelling}{28}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Data Selection}{31}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Data Preparation}{31}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Features Selection}{32}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}LDA Model Parametrization}{32}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Results and Analysis}{32}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Final Remarks}{35}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}Travel-related Classification}{36}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Data Preparation}{36}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Features Selection}{36}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Training and Test Datasets}{37}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Estimators and Evaluation Metrics}{37}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Results and Analysis}{38}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Final Remarks}{41}{subsection.4.3.6}
-\contentsline {section}{\numberline {4.4}Travel-mode Extraction}{41}{section.4.4}
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{43}{chapter.5}
-\contentsline {section}{\numberline {5.1}Expected Contributions}{44}{section.5.1}
-\contentsline {section}{\numberline {5.2}Task Planning and Scheduling}{44}{section.5.2}
+\contentsline {chapter}{\numberline {3}Framework}{27}{chapter.3}
+\contentsline {section}{\numberline {3.1}Requirements}{27}{section.3.1}
+\contentsline {section}{\numberline {3.2}Architecture Overview}{28}{section.3.2}
+\contentsline {section}{\numberline {3.3}Data Collection}{28}{section.3.3}
+\contentsline {section}{\numberline {3.4}Data Pre-processing}{28}{section.3.4}
+\contentsline {section}{\numberline {3.5}Text Analytics}{28}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Word Embeddings}{28}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Latent Dirichlet Allocation (LDA)}{29}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Visualization}{29}{section.3.6}
+\contentsline {chapter}{\numberline {4}Experiments}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{32}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Geographic Distributions}{32}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Temporal Frequencies}{38}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Content Composition}{40}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Final Remarks}{43}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Topic Modelling}{44}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Data Selection}{44}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Data Preparation}{45}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Features Selection}{45}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}LDA Model Parametrization}{46}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Results and Analysis}{46}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Final Remarks}{48}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}Travel-related Classification}{49}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Data Preparation}{50}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Features Selection}{50}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Training and Test Datasets}{50}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Estimators and Evaluation Metrics}{51}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Results and Analysis}{52}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Final Remarks}{54}{subsection.4.3.6}
+\contentsline {section}{\numberline {4.4}Summary}{54}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{57}{chapter.5}
+\contentsline {section}{\numberline {5.1}Expected Contributions}{58}{section.5.1}
+\contentsline {section}{\numberline {5.2}Task Planning and Scheduling}{58}{section.5.2}
+\contentsline {chapter}{References}{61}{section*.35}
+\contentsline {chapter}{\numberline {A}Loren Ipsum}{69}{appendix.A}
+\contentsline {section}{\numberline {A.1}O que \IeC {\'e} o \emph {Loren Ipsum}?}{69}{section.A.1}
+\contentsline {section}{\numberline {A.2}De onde Vem o Loren?}{69}{section.A.2}
+\contentsline {section}{\numberline {A.3}Porque se usa o Loren?}{70}{section.A.3}
+\contentsline {section}{\numberline {A.4}Onde se Podem Encontrar Exemplos?}{70}{section.A.4}
