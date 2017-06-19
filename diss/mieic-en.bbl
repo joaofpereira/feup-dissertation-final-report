@@ -299,6 +299,17 @@ Walaa Medhat, Ahmed Hassan, and Hoda Korashy.
 \newblock {Sentiment analysis algorithms and applications: A survey}.
 \newblock {\em Ain Shams Engineering Journal}, 5(4):1093--1113, 2014.
 
+\bibitem[MKWP{\etalchar{+}}16]{mac2016effects}
+Sunghwan Mac~Kim, Stephen Wan, C{\'e}cile Paris, Brian Jin, and Bella Robinson.
+\newblock The effects of data collection methods in twitter.
+\newblock {\em NLP+ CSS 2016}, page~86, 2016.
+
+\bibitem[MPLC13]{morstatter2013sample}
+Fred Morstatter, J{\"u}rgen Pfeffer, Huan Liu, and Kathleen~M Carley.
+\newblock Is the sample good enough? comparing data from twitter's streaming
+  api with twitter's firehose.
+\newblock {\em arXiv preprint arXiv:1306.5204}, 2013.
+
 \bibitem[MPP{\etalchar{+}}13]{muchnik2013origins}
 Lev Muchnik, Sen Pei, Lucas~C Parra, Saulo~DS Reis, Jos{\'e}~S Andrade~Jr,
   Shlomo Havlin, and Hern{\'a}n~A Makse.
@@ -327,6 +338,11 @@ Edgar Meij, Wouter Weerkamp, and Maarten de~Rijke.
 Tomas Mikolov, Wen-tau Yih, and Geoffrey Zweig.
 \newblock Linguistic regularities in continuous space word representations.
 \newblock In {\em Hlt-naacl}, volume~13, 2013.
+
+\bibitem[OKA10]{o2010tweetmotif}
+Brendan O'Connor, Michel Krieger, and David Ahn.
+\newblock Tweetmotif: Exploratory search and topic summarization for twitter.
+\newblock In {\em ICWSM}, pages 384--385, 2010.
 
 \bibitem[PdRS12]{kn:peetz2012}
 Maria-Hendrike Peetz, Maarten de~Rijke, and Anne Schuth.

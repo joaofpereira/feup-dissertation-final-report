@@ -7,18 +7,18 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Framework}{27}{chapter.3}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Experiments}{31}{chapter.4}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Collecting Bounding-boxes Coordinates (South-West and North-East)\relax }}{33}{table.caption.12}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Twitter Default Bounding-boxes Coordinates (South-West and North-East)\relax }}{34}{table.caption.13}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Datasets composition after verification of the tweets inside the corresponding bounding-box\relax }}{34}{table.caption.14}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Volume of tweets for each type of geo-location\relax }}{35}{table.caption.15}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Percentage of Metadata composing the datasets\relax }}{44}{table.caption.22}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Datasets composition\relax }}{44}{table.caption.23}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Example of the topics classification\relax }}{46}{table.caption.25}
-\contentsline {table}{\numberline {4.8}{\ignorespaces Final results of the LDA topics aggregation\relax }}{48}{table.caption.26}
-\contentsline {table}{\numberline {4.9}{\ignorespaces Travel terms used to build the training set\relax }}{51}{table.caption.28}
-\contentsline {table}{\numberline {4.10}{\ignorespaces Classifiers Experiences\relax }}{52}{table.caption.29}
+\contentsline {xchapter}{Experiments}{33}{chapter.4}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Collecting Bounding-boxes Coordinates (South-West and North-East)\relax }}{35}{table.caption.12}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Twitter Default Bounding-boxes Coordinates (South-West and North-East)\relax }}{36}{table.caption.13}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Datasets composition after verification of the tweets inside the corresponding bounding-box\relax }}{36}{table.caption.14}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Volume of tweets for each type of geo-location\relax }}{37}{table.caption.15}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Percentage of Metadata composing the datasets\relax }}{46}{table.caption.22}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Datasets composition\relax }}{46}{table.caption.23}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Example of the topics classification\relax }}{48}{table.caption.25}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Final results of the LDA topics aggregation\relax }}{50}{table.caption.26}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Travel terms used to build the training set\relax }}{53}{table.caption.28}
+\contentsline {table}{\numberline {4.10}{\ignorespaces Classifiers Experiences\relax }}{54}{table.caption.29}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusions and Future Work}{57}{chapter.5}
+\contentsline {xchapter}{Conclusions and Future Work}{59}{chapter.5}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Loren Ipsum}{69}{appendix.A}
+\contentsline {xchapter}{Loren Ipsum}{71}{appendix.A}

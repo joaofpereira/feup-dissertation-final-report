@@ -8,22 +8,22 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Framework}{27}{chapter.3}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Experiments}{31}{chapter.4}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Search Bounding-boxes for the data collection\relax }}{32}{figure.caption.11}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Three numerical solutions}}{36}{figure.caption.16}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Three numerical solutions}}{37}{figure.caption.17}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Two numerical solutions}}{38}{figure.caption.18}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Five numerical solutions}}{39}{figure.caption.19}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Five numerical solutions}}{41}{figure.caption.20}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Five numerical solutions}}{43}{figure.caption.21}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Correspondent pipeline of the topic modelling experiment\relax }}{46}{figure.caption.24}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Day-of-the-week activity per each topic in both cities, Rio de Janeiro and S\IeC {\~a}o Paulo\relax }}{49}{figure.caption.27}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces ROC Curve of SVM, LR and RF experiences\relax }}{53}{figure.caption.30}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Positive Predicted Tweets per Day of Week\relax }}{53}{figure.caption.31}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Rio de Janeiro Heatmap to the positive tweets\relax }}{54}{figure.caption.32}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces S\IeC {\~a}o Paulo Heatmap to the positive tweets\relax }}{55}{figure.caption.33}
+\contentsline {xchapter}{Experiments}{33}{chapter.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Search Bounding-boxes for the data collection\relax }}{34}{figure.caption.11}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Three numerical solutions}}{38}{figure.caption.16}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Three numerical solutions}}{39}{figure.caption.17}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Two numerical solutions}}{40}{figure.caption.18}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Five numerical solutions}}{41}{figure.caption.19}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Five numerical solutions}}{43}{figure.caption.20}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Five numerical solutions}}{45}{figure.caption.21}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Correspondent pipeline of the topic modelling experiment\relax }}{48}{figure.caption.24}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Day-of-the-week activity per each topic in both cities, Rio de Janeiro and S\IeC {\~a}o Paulo\relax }}{51}{figure.caption.27}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces ROC Curve of SVM, LR and RF experiences\relax }}{55}{figure.caption.30}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Positive Predicted Tweets per Day of Week\relax }}{55}{figure.caption.31}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Rio de Janeiro Heatmap to the positive tweets\relax }}{56}{figure.caption.32}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces S\IeC {\~a}o Paulo Heatmap to the positive tweets\relax }}{57}{figure.caption.33}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusions and Future Work}{57}{chapter.5}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Dissertation working plan.\relax }}{59}{figure.caption.34}
+\contentsline {xchapter}{Conclusions and Future Work}{59}{chapter.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Dissertation working plan.\relax }}{61}{figure.caption.34}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Loren Ipsum}{69}{appendix.A}
+\contentsline {xchapter}{Loren Ipsum}{71}{appendix.A}
