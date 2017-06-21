@@ -8,17 +8,22 @@
 \contentsline {xchapter}{Framework}{27}{chapter.3}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Experiments}{35}{chapter.4}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Collecting Bounding-boxes Coordinates (South-West and North-East)\relax }}{37}{table.caption.13}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Collecting Bounding-boxes Coordinates (South-West and North-East)\relax }}{36}{table.caption.13}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Twitter Default Bounding-boxes Coordinates (South-West and North-East)\relax }}{38}{table.caption.14}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Datasets composition after verification of the tweets inside the corresponding bounding-box\relax }}{38}{table.caption.15}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Datasets composition after verification of the tweets inside the corresponding bounding-box\relax }}{39}{table.caption.15}
 \contentsline {table}{\numberline {4.4}{\ignorespaces Volume of tweets for each type of geo-location\relax }}{39}{table.caption.16}
 \contentsline {table}{\numberline {4.5}{\ignorespaces Percentage of Metadata composing the datasets\relax }}{48}{table.caption.23}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Datasets composition\relax }}{48}{table.caption.24}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Example of the topics classification\relax }}{50}{table.caption.26}
-\contentsline {table}{\numberline {4.8}{\ignorespaces Final results of the LDA topics aggregation\relax }}{52}{table.caption.27}
-\contentsline {table}{\numberline {4.9}{\ignorespaces Travel terms used to build the training set\relax }}{55}{table.caption.29}
-\contentsline {table}{\numberline {4.10}{\ignorespaces Classifiers Experiences\relax }}{56}{table.caption.30}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Datasets composition\relax }}{49}{table.caption.24}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Example of the topics classification\relax }}{52}{table.caption.26}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Final results of the LDA topics aggregation\relax }}{53}{table.caption.27}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Rio de Janeiro and S\IeC {\~a}o Paulo datasets composition for the travel-related classification\relax }}{55}{table.caption.29}
+\contentsline {table}{\numberline {4.10}{\ignorespaces Travel terms used to build the training set\relax }}{56}{table.caption.30}
+\contentsline {table}{\numberline {4.11}{\ignorespaces Classifiers Experiences\relax }}{58}{table.caption.31}
+\contentsline {table}{\numberline {4.12}{\ignorespaces Preliminary Results\relax }}{62}{table.caption.36}
+\contentsline {table}{\numberline {4.13}{\ignorespaces Datasets Composition\relax }}{63}{table.caption.37}
+\contentsline {table}{\numberline {4.14}{\ignorespaces \emph {Leave one group out} experiments results for SVM, LR and RF classifiers\relax }}{63}{table.caption.38}
+\contentsline {table}{\numberline {4.15}{\ignorespaces Sample of tweet messages correctly classified\relax }}{64}{table.caption.40}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusions and Future Work}{61}{chapter.5}
+\contentsline {xchapter}{Conclusions and Future Work}{67}{chapter.5}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Loren Ipsum}{73}{appendix.A}
+\contentsline {xchapter}{Loren Ipsum}{79}{appendix.A}

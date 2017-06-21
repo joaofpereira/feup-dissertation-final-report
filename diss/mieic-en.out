@@ -41,20 +41,29 @@
 \BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 LDA Model Parametrization}{section.4.2}% 41
 \BOOKMARK [2][-]{subsection.4.2.5}{4.2.5 Results and Analysis}{section.4.2}% 42
 \BOOKMARK [2][-]{subsection.4.2.6}{4.2.6 Final Remarks}{section.4.2}% 43
-\BOOKMARK [1][-]{section.4.3}{4.3 Travel-related Classification}{chapter.4}% 44
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Data Preparation}{section.4.3}% 45
-\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Features Selection}{section.4.3}% 46
-\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Training and Test Datasets}{section.4.3}% 47
-\BOOKMARK [2][-]{subsection.4.3.4}{4.3.4 Estimators and Evaluation Metrics}{section.4.3}% 48
-\BOOKMARK [2][-]{subsection.4.3.5}{4.3.5 Results and Analysis}{section.4.3}% 49
-\BOOKMARK [2][-]{subsection.4.3.6}{4.3.6 Final Remarks}{section.4.3}% 50
-\BOOKMARK [1][-]{section.4.4}{4.4 Summary}{chapter.4}% 51
-\BOOKMARK [0][-]{chapter.5}{5 Conclusions and Future Work}{}% 52
-\BOOKMARK [1][-]{section.5.1}{5.1 Expected Contributions}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.2}{5.2 Task Planning and Scheduling}{chapter.5}% 54
-\BOOKMARK [0][-]{section*.36}{References}{}% 55
-\BOOKMARK [0][-]{appendix.A}{A Loren Ipsum}{}% 56
-\BOOKMARK [1][-]{section.A.1}{A.1 O que \351 o Loren Ipsum?}{appendix.A}% 57
-\BOOKMARK [1][-]{section.A.2}{A.2 De onde Vem o Loren?}{appendix.A}% 58
-\BOOKMARK [1][-]{section.A.3}{A.3 Porque se usa o Loren?}{appendix.A}% 59
-\BOOKMARK [1][-]{section.A.4}{A.4 Onde se Podem Encontrar Exemplos?}{appendix.A}% 60
+\BOOKMARK [1][-]{section.4.3}{4.3 Portuguese Travel-related Classification}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Data Selection}{section.4.3}% 45
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Data Preparation}{section.4.3}% 46
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Features Selection}{section.4.3}% 47
+\BOOKMARK [2][-]{subsection.4.3.4}{4.3.4 Training and Test Datasets}{section.4.3}% 48
+\BOOKMARK [2][-]{subsection.4.3.5}{4.3.5 Estimators and Evaluation Metrics}{section.4.3}% 49
+\BOOKMARK [2][-]{subsection.4.3.6}{4.3.6 Results and Analysis}{section.4.3}% 50
+\BOOKMARK [2][-]{subsection.4.3.7}{4.3.7 Final Remarks}{section.4.3}% 51
+\BOOKMARK [1][-]{section.4.4}{4.4 English Travel-related Classification}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Data Collection and Preparation}{section.4.4}% 53
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Features Selection}{section.4.4}% 54
+\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Training and Test Datasets}{section.4.4}% 55
+\BOOKMARK [2][-]{subsection.4.4.4}{4.4.4 Classification}{section.4.4}% 56
+\BOOKMARK [2][-]{subsection.4.4.5}{4.4.5 Preliminary Results}{section.4.4}% 57
+\BOOKMARK [2][-]{subsection.4.4.6}{4.4.6 Leave-one-group-out}{section.4.4}% 58
+\BOOKMARK [2][-]{subsection.4.4.7}{4.4.7 Final Remarks}{section.4.4}% 59
+\BOOKMARK [1][-]{section.4.5}{4.5 Summary}{chapter.4}% 60
+\BOOKMARK [0][-]{chapter.5}{5 Conclusions and Future Work}{}% 61
+\BOOKMARK [1][-]{section.5.1}{5.1 Expected Contributions}{chapter.5}% 62
+\BOOKMARK [1][-]{section.5.2}{5.2 Task Planning and Scheduling}{chapter.5}% 63
+\BOOKMARK [0][-]{section*.43}{References}{}% 64
+\BOOKMARK [0][-]{appendix.A}{A Loren Ipsum}{}% 65
+\BOOKMARK [1][-]{section.A.1}{A.1 O que \351 o Loren Ipsum?}{appendix.A}% 66
+\BOOKMARK [1][-]{section.A.2}{A.2 De onde Vem o Loren?}{appendix.A}% 67
+\BOOKMARK [1][-]{section.A.3}{A.3 Porque se usa o Loren?}{appendix.A}% 68
+\BOOKMARK [1][-]{section.A.4}{A.4 Onde se Podem Encontrar Exemplos?}{appendix.A}% 69

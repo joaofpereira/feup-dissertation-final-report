@@ -1,20 +1,29 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Exploratory Data Analysis}{\reset@font\mtcSfont 36}{section.4.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.1}Geographic Distributions}{\reset@font\mtcSSfont 36}{subsection.4.1.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.2}Temporal Frequencies}{\reset@font\mtcSSfont 42}{subsection.4.1.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.3}Content Composition}{\reset@font\mtcSSfont 44}{subsection.4.1.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.4}Final Remarks}{\reset@font\mtcSSfont 47}{subsection.4.1.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.2}Temporal Frequencies}{\reset@font\mtcSSfont 40}{subsection.4.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.3}Content Composition}{\reset@font\mtcSSfont 46}{subsection.4.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.1.4}Final Remarks}{\reset@font\mtcSSfont 48}{subsection.4.1.4}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Topic Modelling}{\reset@font\mtcSfont 48}{section.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Data Selection}{\reset@font\mtcSSfont 48}{subsection.4.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Data Selection}{\reset@font\mtcSSfont 49}{subsection.4.2.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Data Preparation}{\reset@font\mtcSSfont 49}{subsection.4.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.3}Features Selection}{\reset@font\mtcSSfont 49}{subsection.4.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.3}Features Selection}{\reset@font\mtcSSfont 50}{subsection.4.2.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.4}LDA Model Parametrization}{\reset@font\mtcSSfont 50}{subsection.4.2.4}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.5}Results and Analysis}{\reset@font\mtcSSfont 50}{subsection.4.2.5}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.6}Final Remarks}{\reset@font\mtcSSfont 52}{subsection.4.2.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Travel-related Classification}{\reset@font\mtcSfont 53}{section.4.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.1}Data Preparation}{\reset@font\mtcSSfont 54}{subsection.4.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.2}Features Selection}{\reset@font\mtcSSfont 54}{subsection.4.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.3}Training and Test Datasets}{\reset@font\mtcSSfont 54}{subsection.4.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.4}Estimators and Evaluation Metrics}{\reset@font\mtcSSfont 55}{subsection.4.3.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.5}Results and Analysis}{\reset@font\mtcSSfont 56}{subsection.4.3.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.6}Final Remarks}{\reset@font\mtcSSfont 58}{subsection.4.3.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Summary}{\reset@font\mtcSfont 58}{section.4.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Portuguese Travel-related Classification}{\reset@font\mtcSfont 54}{section.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.1}Data Selection}{\reset@font\mtcSSfont 54}{subsection.4.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.2}Data Preparation}{\reset@font\mtcSSfont 55}{subsection.4.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.3}Features Selection}{\reset@font\mtcSSfont 55}{subsection.4.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.4}Training and Test Datasets}{\reset@font\mtcSSfont 56}{subsection.4.3.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.5}Estimators and Evaluation Metrics}{\reset@font\mtcSSfont 56}{subsection.4.3.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.6}Results and Analysis}{\reset@font\mtcSSfont 57}{subsection.4.3.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.7}Final Remarks}{\reset@font\mtcSSfont 60}{subsection.4.3.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}English Travel-related Classification}{\reset@font\mtcSfont 60}{section.4.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.1}Data Collection and Preparation}{\reset@font\mtcSSfont 61}{subsection.4.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.2}Features Selection}{\reset@font\mtcSSfont 61}{subsection.4.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.3}Training and Test Datasets}{\reset@font\mtcSSfont 61}{subsection.4.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.4}Classification}{\reset@font\mtcSSfont 62}{subsection.4.4.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.5}Preliminary Results}{\reset@font\mtcSSfont 62}{subsection.4.4.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.6}\emph {Leave-one-group-out}}{\reset@font\mtcSSfont 62}{subsection.4.4.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.7}Final Remarks}{\reset@font\mtcSSfont 64}{subsection.4.4.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Summary}{\reset@font\mtcSfont 64}{section.4.5}}
