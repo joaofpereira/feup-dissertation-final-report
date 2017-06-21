@@ -22,38 +22,36 @@
 \contentsline {section}{\numberline {3.3}Data Collection}{28}{section.3.3}
 \contentsline {section}{\numberline {3.4}Data Preprocessing}{29}{section.3.4}
 \contentsline {section}{\numberline {3.5}Text Analytics}{30}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Word Embeddings}{31}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Latent Dirichlet Allocation (LDA)}{31}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Aggregations}{32}{section.3.6}
-\contentsline {section}{\numberline {3.7}Visualization}{32}{section.3.7}
-\contentsline {section}{\numberline {3.8}Summary}{32}{section.3.8}
-\contentsline {chapter}{\numberline {4}Experiments}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{34}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Geographic Distributions}{34}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Temporal Frequencies}{40}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Content Composition}{42}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Final Remarks}{45}{subsection.4.1.4}
-\contentsline {section}{\numberline {4.2}Topic Modelling}{46}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Data Selection}{46}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Data Preparation}{47}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Features Selection}{47}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}LDA Model Parametrization}{48}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Results and Analysis}{48}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Final Remarks}{50}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}Travel-related Classification}{51}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Data Preparation}{52}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Features Selection}{52}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Training and Test Datasets}{52}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Estimators and Evaluation Metrics}{53}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Results and Analysis}{54}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Final Remarks}{56}{subsection.4.3.6}
-\contentsline {section}{\numberline {4.4}Summary}{56}{section.4.4}
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{59}{chapter.5}
-\contentsline {section}{\numberline {5.1}Expected Contributions}{60}{section.5.1}
-\contentsline {section}{\numberline {5.2}Task Planning and Scheduling}{60}{section.5.2}
-\contentsline {chapter}{References}{63}{section*.35}
-\contentsline {chapter}{\numberline {A}Loren Ipsum}{71}{appendix.A}
-\contentsline {section}{\numberline {A.1}O que \IeC {\'e} o \emph {Loren Ipsum}?}{71}{section.A.1}
-\contentsline {section}{\numberline {A.2}De onde Vem o Loren?}{71}{section.A.2}
-\contentsline {section}{\numberline {A.3}Porque se usa o Loren?}{72}{section.A.3}
-\contentsline {section}{\numberline {A.4}Onde se Podem Encontrar Exemplos?}{72}{section.A.4}
+\contentsline {section}{\numberline {3.6}Data Storage and Aggregation}{33}{section.3.6}
+\contentsline {section}{\numberline {3.7}Visualization}{33}{section.3.7}
+\contentsline {section}{\numberline {3.8}Summary}{34}{section.3.8}
+\contentsline {chapter}{\numberline {4}Experiments}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Exploratory Data Analysis}{36}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Geographic Distributions}{36}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Temporal Frequencies}{42}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Content Composition}{44}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Final Remarks}{47}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.2}Topic Modelling}{48}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Data Selection}{48}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Data Preparation}{49}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Features Selection}{49}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}LDA Model Parametrization}{50}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Results and Analysis}{50}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Final Remarks}{52}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}Travel-related Classification}{53}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Data Preparation}{54}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Features Selection}{54}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Training and Test Datasets}{54}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Estimators and Evaluation Metrics}{55}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Results and Analysis}{56}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Final Remarks}{58}{subsection.4.3.6}
+\contentsline {section}{\numberline {4.4}Summary}{58}{section.4.4}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{61}{chapter.5}
+\contentsline {section}{\numberline {5.1}Expected Contributions}{62}{section.5.1}
+\contentsline {section}{\numberline {5.2}Task Planning and Scheduling}{62}{section.5.2}
+\contentsline {chapter}{References}{65}{section*.36}
+\contentsline {chapter}{\numberline {A}Loren Ipsum}{73}{appendix.A}
+\contentsline {section}{\numberline {A.1}O que \IeC {\'e} o \emph {Loren Ipsum}?}{73}{section.A.1}
+\contentsline {section}{\numberline {A.2}De onde Vem o Loren?}{73}{section.A.2}
+\contentsline {section}{\numberline {A.3}Porque se usa o Loren?}{74}{section.A.3}
+\contentsline {section}{\numberline {A.4}Onde se Podem Encontrar Exemplos?}{74}{section.A.4}

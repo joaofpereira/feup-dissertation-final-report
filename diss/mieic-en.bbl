@@ -400,6 +400,12 @@ Lev Ratinov and Dan Roth.
 \newblock Design challenges and misconceptions in named entity recognition.
 \newblock pages 147--155, 2009.
 
+\bibitem[RS10]{rehurek2010software}
+Radim Rehurek and Petr Sojka.
+\newblock Software framework for topic modelling with large corpora.
+\newblock In {\em In Proceedings of the LREC 2010 Workshop on New Challenges
+  for NLP Frameworks}. Citeseer, 2010.
+
 \bibitem[SAN07]{kn:Stavrianou2007}
 Anna Stavrianou, Periklis Andritsos, and Nicolas Nicoloyannis.
 \newblock Overview and semantic issues of text mining.

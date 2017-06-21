@@ -57,45 +57,45 @@ Warning--empty journal in kn:villena2012
 Warning--empty journal in kn:Yarowsky1995
 Warning--empty journal in kn:Yerva2010
 Warning--empty journal in kn:Zhao2011
-You've used 90 entries,
+You've used 91 entries,
             2543 wiz_defined-function locations,
-            1128 strings with 23610 characters,
-and the built_in function-call counts, 41524 in all, are:
-= -- 4170
-> -- 2339
+            1132 strings with 23793 characters,
+and the built_in function-call counts, 41891 in all, are:
+= -- 4207
+> -- 2358
 < -- 42
-+ -- 845
-- -- 838
-* -- 3126
-:= -- 6829
-add.period$ -- 271
-call.type$ -- 90
-change.case$ -- 658
-chr.to.int$ -- 90
-cite$ -- 132
-duplicate$ -- 1525
-empty$ -- 2609
-format.name$ -- 920
-if$ -- 8370
++ -- 851
+- -- 844
+* -- 3147
+:= -- 6890
+add.period$ -- 275
+call.type$ -- 91
+change.case$ -- 664
+chr.to.int$ -- 91
+cite$ -- 133
+duplicate$ -- 1542
+empty$ -- 2640
+format.name$ -- 927
+if$ -- 8449
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 91
-newline$ -- 454
-num.names$ -- 270
-pop$ -- 612
+missing$ -- 92
+newline$ -- 459
+num.names$ -- 273
+pop$ -- 621
 preamble$ -- 1
-purify$ -- 754
+purify$ -- 761
 quote$ -- 0
-skip$ -- 1412
+skip$ -- 1423
 stack$ -- 0
-substring$ -- 2327
-swap$ -- 325
+substring$ -- 2334
+swap$ -- 327
 text.length$ -- 42
 text.prefix$ -- 11
 top$ -- 0
-type$ -- 704
+type$ -- 712
 warning$ -- 42
-while$ -- 409
-width$ -- 93
-write$ -- 1122
+while$ -- 412
+width$ -- 94
+write$ -- 1135
 (There were 43 warnings)

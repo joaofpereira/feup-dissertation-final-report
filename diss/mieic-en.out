@@ -25,38 +25,36 @@
 \BOOKMARK [1][-]{section.3.3}{3.3 Data Collection}{chapter.3}% 25
 \BOOKMARK [1][-]{section.3.4}{3.4 Data Preprocessing}{chapter.3}% 26
 \BOOKMARK [1][-]{section.3.5}{3.5 Text Analytics}{chapter.3}% 27
-\BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 Word Embeddings}{section.3.5}% 28
-\BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 Latent Dirichlet Allocation \(LDA\)}{section.3.5}% 29
-\BOOKMARK [1][-]{section.3.6}{3.6 Aggregations}{chapter.3}% 30
-\BOOKMARK [1][-]{section.3.7}{3.7 Visualization}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.8}{3.8 Summary}{chapter.3}% 32
-\BOOKMARK [0][-]{chapter.4}{4 Experiments}{}% 33
-\BOOKMARK [1][-]{section.4.1}{4.1 Exploratory Data Analysis}{chapter.4}% 34
-\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Geographic Distributions}{section.4.1}% 35
-\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Temporal Frequencies}{section.4.1}% 36
-\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Content Composition}{section.4.1}% 37
-\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Final Remarks}{section.4.1}% 38
-\BOOKMARK [1][-]{section.4.2}{4.2 Topic Modelling}{chapter.4}% 39
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Data Selection}{section.4.2}% 40
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Data Preparation}{section.4.2}% 41
-\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Features Selection}{section.4.2}% 42
-\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 LDA Model Parametrization}{section.4.2}% 43
-\BOOKMARK [2][-]{subsection.4.2.5}{4.2.5 Results and Analysis}{section.4.2}% 44
-\BOOKMARK [2][-]{subsection.4.2.6}{4.2.6 Final Remarks}{section.4.2}% 45
-\BOOKMARK [1][-]{section.4.3}{4.3 Travel-related Classification}{chapter.4}% 46
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Data Preparation}{section.4.3}% 47
-\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Features Selection}{section.4.3}% 48
-\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Training and Test Datasets}{section.4.3}% 49
-\BOOKMARK [2][-]{subsection.4.3.4}{4.3.4 Estimators and Evaluation Metrics}{section.4.3}% 50
-\BOOKMARK [2][-]{subsection.4.3.5}{4.3.5 Results and Analysis}{section.4.3}% 51
-\BOOKMARK [2][-]{subsection.4.3.6}{4.3.6 Final Remarks}{section.4.3}% 52
-\BOOKMARK [1][-]{section.4.4}{4.4 Summary}{chapter.4}% 53
-\BOOKMARK [0][-]{chapter.5}{5 Conclusions and Future Work}{}% 54
-\BOOKMARK [1][-]{section.5.1}{5.1 Expected Contributions}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.2}{5.2 Task Planning and Scheduling}{chapter.5}% 56
-\BOOKMARK [0][-]{section*.35}{References}{}% 57
-\BOOKMARK [0][-]{appendix.A}{A Loren Ipsum}{}% 58
-\BOOKMARK [1][-]{section.A.1}{A.1 O que \351 o Loren Ipsum?}{appendix.A}% 59
-\BOOKMARK [1][-]{section.A.2}{A.2 De onde Vem o Loren?}{appendix.A}% 60
-\BOOKMARK [1][-]{section.A.3}{A.3 Porque se usa o Loren?}{appendix.A}% 61
-\BOOKMARK [1][-]{section.A.4}{A.4 Onde se Podem Encontrar Exemplos?}{appendix.A}% 62
+\BOOKMARK [1][-]{section.3.6}{3.6 Data Storage and Aggregation}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.7}{3.7 Visualization}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.8}{3.8 Summary}{chapter.3}% 30
+\BOOKMARK [0][-]{chapter.4}{4 Experiments}{}% 31
+\BOOKMARK [1][-]{section.4.1}{4.1 Exploratory Data Analysis}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Geographic Distributions}{section.4.1}% 33
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Temporal Frequencies}{section.4.1}% 34
+\BOOKMARK [2][-]{subsection.4.1.3}{4.1.3 Content Composition}{section.4.1}% 35
+\BOOKMARK [2][-]{subsection.4.1.4}{4.1.4 Final Remarks}{section.4.1}% 36
+\BOOKMARK [1][-]{section.4.2}{4.2 Topic Modelling}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Data Selection}{section.4.2}% 38
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Data Preparation}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Features Selection}{section.4.2}% 40
+\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 LDA Model Parametrization}{section.4.2}% 41
+\BOOKMARK [2][-]{subsection.4.2.5}{4.2.5 Results and Analysis}{section.4.2}% 42
+\BOOKMARK [2][-]{subsection.4.2.6}{4.2.6 Final Remarks}{section.4.2}% 43
+\BOOKMARK [1][-]{section.4.3}{4.3 Travel-related Classification}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Data Preparation}{section.4.3}% 45
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Features Selection}{section.4.3}% 46
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Training and Test Datasets}{section.4.3}% 47
+\BOOKMARK [2][-]{subsection.4.3.4}{4.3.4 Estimators and Evaluation Metrics}{section.4.3}% 48
+\BOOKMARK [2][-]{subsection.4.3.5}{4.3.5 Results and Analysis}{section.4.3}% 49
+\BOOKMARK [2][-]{subsection.4.3.6}{4.3.6 Final Remarks}{section.4.3}% 50
+\BOOKMARK [1][-]{section.4.4}{4.4 Summary}{chapter.4}% 51
+\BOOKMARK [0][-]{chapter.5}{5 Conclusions and Future Work}{}% 52
+\BOOKMARK [1][-]{section.5.1}{5.1 Expected Contributions}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.2}{5.2 Task Planning and Scheduling}{chapter.5}% 54
+\BOOKMARK [0][-]{section*.36}{References}{}% 55
+\BOOKMARK [0][-]{appendix.A}{A Loren Ipsum}{}% 56
+\BOOKMARK [1][-]{section.A.1}{A.1 O que \351 o Loren Ipsum?}{appendix.A}% 57
+\BOOKMARK [1][-]{section.A.2}{A.2 De onde Vem o Loren?}{appendix.A}% 58
+\BOOKMARK [1][-]{section.A.3}{A.3 Porque se usa o Loren?}{appendix.A}% 59
+\BOOKMARK [1][-]{section.A.4}{A.4 Onde se Podem Encontrar Exemplos?}{appendix.A}% 60
