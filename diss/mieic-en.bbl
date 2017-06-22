@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{VRLSM{\etalchar{+}}12}
+\begin{thebibliography}{GTGMK{\etalchar{+}}14}
 
 \bibitem[AAB{\etalchar{+}}13]{kn:Anastasi2013}
 G.~Anastasi, M.~Antonelli, A.~Bechini, S.~Brienza, E.~D'Andrea, D.~De
@@ -23,6 +23,13 @@ Margarita Angelidou.
 Charu~C Aggarwal and ChengXiang Zhai.
 \newblock {\em Mining text data}.
 \newblock Springer Science \& Business Media, 2012.
+
+\bibitem[BAG{\etalchar{+}}12]{batty2012smart}
+Michael Batty, Kay~W Axhausen, Fosca Giannotti, Alexei Pozdnoukhov, Armando
+  Bazzani, Monica Wachowicz, Georgios Ouzounis, and Yuval Portugali.
+\newblock Smart cities of the future.
+\newblock {\em The European Physical Journal Special Topics}, 214(1):481--518,
+  2012.
 
 \bibitem[BCJ{\etalchar{+}}12]{kn:Banerjee2012}
 Nilanjan Banerjee, Dipanjan Chakraborty, Anupam Joshi, Sumit Mittal, Angshu
@@ -71,6 +78,11 @@ Andrea Caragliu and Chiara~F. {Del Bo}.
   Planning for the Future}.
 \newblock {\em Social Science Computer Review}, 34(6):1--16, 2015.
 
+\bibitem[Chi08]{chi2008social}
+Ed~H Chi.
+\newblock The social web: Research and opportunities.
+\newblock {\em IEEE Computer}, 41(9):88--91, 2008.
+
 \bibitem[CL15]{kn:Chun2015}
 Byung-tae Chun and Seong-hoon Lee.
 \newblock {Review on ITS in Smart City}.
@@ -81,6 +93,14 @@ Angel~X Chang, Valentin~I Spitkovsky, Christopher~D Manning, and Eneko Agirre.
 \newblock A comparison of named-entity disambiguation and word sense
   disambiguation.
 \newblock 2016.
+
+\bibitem[CSR10]{carvalho2010real}
+Sara Carvalho, Lu{\'\i}s Sarmento, and Rosaldo J.~F. Rossetti.
+\newblock Real-time sensing of traffic information in twitter messages.
+\newblock In {\em 4th Workshop on Artificial Transportation Systems and
+  Simulation (ATSS), 2010 13th International IEEE Conference on Intelligent
+  Transportation Systems (ITSC 2010), Funchal, Portugal, 19-22 Sept. 2010},
+  pages 1--4, 2010.
 
 \bibitem[CVSO10]{kn:Cumbreras2010}
 Miguel {\'A}ngel~Garc{\'i}a Cumbreras, Manuel~Garc{\'i}a Vega,
@@ -141,6 +161,12 @@ M.~Ghiassi, J.~Skinner, and D.~Zimbra.
 Oshini Goonetilleke, Timos Sellis, Xiuzhen Zhang, and Saket Sathe.
 \newblock {Twitter analytics}.
 \newblock {\em ACM SIGKDD Explorations Newsletter}, 16(1):11--20, 2014.
+
+\bibitem[GTGMK{\etalchar{+}}14]{gal2014potential}
+Ayelet Gal-Tzur, Susan~M Grant-Muller, Tsvi Kuflik, Einat Minkov, Silvio
+  Nocera, and Itay Shoor.
+\newblock The potential of social media in delivering transport policy goals.
+\newblock {\em Transport Policy}, 32:115--123, 2014.
 
 \bibitem[GWS13]{kn:Gindl2013}
 Stefan Gindl, Albert Weichselbraun, and Arno Scharl.
@@ -224,6 +250,20 @@ Rianne Kaptein.
 Patrick~Gage Kelley and Justin Cranshaw.
 \newblock Conducting research on twitter: A call for guidelines and metrics.
 \newblock 2013.
+
+\bibitem[KH10]{kaplan2010users}
+Andreas~M Kaplan and Michael Haenlein.
+\newblock Users of the world, unite! the challenges and opportunities of social
+  media.
+\newblock {\em Business horizons}, 53(1):59--68, 2010.
+
+\bibitem[KMN{\etalchar{+}}17]{kuflik2017automating}
+Tsvi Kuflik, Einat Minkov, Silvio Nocera, Susan Grant-Muller, Ayelet Gal-Tzur,
+  and Itay Shoor.
+\newblock Automating a framework to extract and analyse transport related
+  social media content: The potential and the challenges.
+\newblock {\em Transportation Research Part C: Emerging Technologies},
+  77:275--291, 2017.
 
 \bibitem[Kom09]{kn:Komninos2009}
 Nicos Komninos.

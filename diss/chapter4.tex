@@ -106,7 +106,7 @@ The final volume of tweets located inside and outside the cities correspondent b
 
 \begin{table}[htbp]
 	\centering
-	\caption{Datasets composition after verification of the tweets inside the corresponding bounding-box}
+	\caption[Datasets composition according bounding-box analysis]{Datasets composition after verification of the tweets inside the corresponding bounding-box}
 	\label{tab:geographic_counts_bb}
 	\resizebox{\textwidth}{!}{\begin{tabular}{l|c|cl|cl|cl|cl|cl}
 			\hline
@@ -188,7 +188,7 @@ The final counts of the analysis for each identified type of geo-location are pr
 		\label{subfig:riodejaneiro_points}
 	\end{subfigure}
 	
-	\caption[Three numerical solutions]{São Paulo (a, c, e) and Rio de Janeiro (b, d, f) Geographical Distributions: (a, b) Bounding-boxes of places (c, d) Specific places (e, f) Geo-tagged tweets}
+	\caption[Exploratory analysis in Brazilian cities]{São Paulo (a, c, e) and Rio de Janeiro (b, d, f) Geographical Distributions: (a, b) Bounding-boxes of places (c, d) Specific places (e, f) Geo-tagged tweets}
 	\label{fig:rio_sp_geographical_distribution}
 \end{figure}
 
@@ -262,7 +262,7 @@ The final counts of the analysis for each identified type of geo-location are pr
 		\label{subfig:melbourne_points}
 	\end{subfigure}
 	
-	\caption[Three numerical solutions]{New York City (a, d, g), London (b, e, h) Geographical Distributions: (a, b) Bounding-boxes of places (c, d) Specific places (e, f) Geo-tagged tweets}
+	\caption[Exploratory analysis in English-speaking cities]{New York City (a, d, g), London (b, e, h) Geographical Distributions: (a, b) Bounding-boxes of places (c, d) Specific places (e, f) Geo-tagged tweets}
 	\label{fig:nyc_london_melbourne_geographical_distribution}
 \end{figure}
 
@@ -284,7 +284,7 @@ Another interesting analysis in our datasets concerns the temporal distribution 
 		\label{subfig:english_cities_whole_months}
 	\end{subfigure}
 	
-	\caption[Two numerical solutions]{(a) Rio de Janeiro and São Paulo - Portuguese Cities (b) New York City, London and Melbourne - English Cities}
+	\caption[Daily volume of tweets]{Daily volume of tweets (a) Rio de Janeiro and São Paulo - Portuguese Cities (b) New York City, London and Melbourne - English Cities}
 	\label{fig:daily_distribution}
 \end{figure}
 
@@ -331,7 +331,7 @@ During and after remarkable events, citizens are impelled to share their feeling
         \label{subfig:melbourne_box_plot_day_of_week}
     \end{subfigure}
     
-\caption[Five numerical solutions]{Days-of-the-week box-plots for the volume of tweets (a) Rio de Janeiro (b) São Paulo (c) New York City (d) London (e) Melbourne}
+\caption[Days-of-the-week box-plots for the volume of tweets]{Days-of-the-week box-plots for the volume of tweets (a) Rio de Janeiro (b) São Paulo (c) New York City (d) London (e) Melbourne}
 \label{fig:box_plots_day_of_week}
 \end{figure}
 
@@ -378,7 +378,7 @@ In order to understand the most active days and hours in Twitter, for all cities
 		\label{subfig:melbourne_box_plot_hour_of_day}
 	\end{subfigure}
 	
-	\caption[Five numerical solutions]{Hours-of-the-day box-plots for the volume of tweets (a) Rio de Janeiro (b) São Paulo (c) New York City (d) London (e) Melbourne}
+	\caption[Hour-of-the-day box-plots for the volume of tweets]{Hour-of-the-day box-plots for the volume of tweets (a) Rio de Janeiro (b) São Paulo (c) New York City (d) London (e) Melbourne}
 	\label{fig:box_plots_hour_of_day}
 \end{figure}
 
@@ -435,7 +435,7 @@ For example, the percentage of users that posted 20 tweets in a period of three 
 		\label{subfig:melbourne_loglog_users}
 	\end{subfigure}
 	
-	\caption[Five numerical solutions]{Log-log plots for the users distribution over the number of tweets posted (a) Rio de Janeiro (b) São Paulo (c) New York City (d) London (e) Melbourne}
+	\caption[Log-log plots of users distribution]{Log-log plots for the users distribution over the number of tweets posted (a) Rio de Janeiro (b) São Paulo (c) New York City (d) London (e) Melbourne}
 	\label{fig:loglog-plots-users}
 \end{figure}
 
@@ -604,7 +604,7 @@ Furthermore, it is worth mentioning that our model had successfully discover a t
 \includegraphics[width=1.0\linewidth]{figures/sp_topics_heatmap.png}
 \label{fig:sp}
 \end{subfigure}
-\caption{Day-of-the-week activity per each topic in both cities, Rio de Janeiro and São Paulo}
+\caption[Day-of-the-week Twitter activity]{Day-of-the-week activity per each topic in both cities, Rio de Janeiro and São Paulo}
 \label{fig:topics_heat_maps}
 \end{figure}
 
@@ -874,7 +874,7 @@ According to results, all classification models have performed reasonably well u
 	\end{tabular}
 \end{table}
 
-\begin{figure}[!htbp]
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.7]{figures/svm_linear_leave_one_out_emb_200.png}
 	\caption{SVM model with BoE(200) for each travel mode}
@@ -888,13 +888,13 @@ After testing each model with a hidden travel-mode class, the models trained wit
 	\small
 	\caption{Sample of tweet messages correctly classified}
 	\label{tab:tweets_examples}
-	\begin{tabular}{|c|}
+	\resizebox{\textwidth}{!}{\begin{tabular}{|c|}
 		\hline
 		when you get into your uber and he has a pipe in the back \\
 		a ground stop for \#ewr is no longer in effect \#flightdelay \\
 		snowy walk to work. \#blizzard2017 \#centralpark \#noreaster2017 \@ bethesda terrace fountain -  \textbf{Figure~\ref{fig:central_park}} \\
 		m.t.a. n.y.c subways: w train irregular subway service at whitehall street-south ferry \#traffic - \textbf{Figure~\ref{fig:brooklyn}} \\ \hline
-	\end{tabular}
+	\end{tabular}}
 \end{table}
 
 The best result of the \emph{leave-one-group-out} was the Linear SVM model, with the dimensionality of 200 in the size of the feature vectors. Figure~\ref{fig:svm_leave} presents the results of each experiment led for the different hidden travel-mode classes. An interesting point to observe is the low performance obtained to the experiment with the travel-mode class "Walk" hidden. This is due to the different semantic and syntactic contexts that the word \emph{walk} is used. Although all other classes can be used in the same context, for example, \emph{car}, \emph{train}, or \emph{bus}, usually the word \emph{walk} is not applied in the same way.

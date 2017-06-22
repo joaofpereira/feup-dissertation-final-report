@@ -6,7 +6,8 @@ A level-1 auxiliary file: acknows_en.aux
 A level-1 auxiliary file: quote.aux
 A level-1 auxiliary file: abbrevs_en.aux
 A level-1 auxiliary file: chapter1.aux
-A level-1 auxiliary file: chapter2.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: old.aux
 A level-1 auxiliary file: chapter3.aux
 A level-1 auxiliary file: chapter4.aux
 A level-1 auxiliary file: chapter5.aux
@@ -57,45 +58,45 @@ Warning--empty journal in kn:villena2012
 Warning--empty journal in kn:Yarowsky1995
 Warning--empty journal in kn:Yerva2010
 Warning--empty journal in kn:Zhao2011
-You've used 91 entries,
+You've used 97 entries,
             2543 wiz_defined-function locations,
-            1132 strings with 23793 characters,
-and the built_in function-call counts, 41891 in all, are:
-= -- 4207
-> -- 2358
-< -- 42
-+ -- 851
-- -- 844
-* -- 3147
-:= -- 6890
-add.period$ -- 275
-call.type$ -- 91
-change.case$ -- 664
-chr.to.int$ -- 91
-cite$ -- 133
-duplicate$ -- 1542
-empty$ -- 2640
-format.name$ -- 927
-if$ -- 8449
+            1170 strings with 25182 characters,
+and the built_in function-call counts, 44814 in all, are:
+= -- 4494
+> -- 2540
+< -- 44
++ -- 919
+- -- 910
+* -- 3394
+:= -- 7385
+add.period$ -- 293
+call.type$ -- 97
+change.case$ -- 714
+chr.to.int$ -- 97
+cite$ -- 139
+duplicate$ -- 1635
+empty$ -- 2822
+format.name$ -- 997
+if$ -- 9020
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 92
-newline$ -- 459
-num.names$ -- 273
-pop$ -- 621
+missing$ -- 98
+newline$ -- 489
+num.names$ -- 291
+pop$ -- 659
 preamble$ -- 1
-purify$ -- 761
+purify$ -- 817
 quote$ -- 0
-skip$ -- 1423
+skip$ -- 1498
 stack$ -- 0
-substring$ -- 2334
-swap$ -- 327
-text.length$ -- 42
-text.prefix$ -- 11
+substring$ -- 2507
+swap$ -- 339
+text.length$ -- 44
+text.prefix$ -- 12
 top$ -- 0
-type$ -- 712
+type$ -- 760
 warning$ -- 42
-while$ -- 412
-width$ -- 94
-write$ -- 1135
+while$ -- 442
+width$ -- 101
+write$ -- 1213
 (There were 43 warnings)
