@@ -6,69 +6,66 @@
 \BOOKMARK [1][-]{section.1.1}{1.1 Context and Motivation}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.2}{1.2 Problem Statement}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.3}{1.3 Goals and Expected Contributions}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.4}{1.4 Dissertation Structure}{chapter.1}% 9
-\BOOKMARK [0][-]{chapter.2}{2 Introduction}{}% 10
-\BOOKMARK [1][-]{section.2.1}{2.1 Context and Motivation}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.2}{2.2 Problem Statement and Goals}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.3}{2.3 Structure of this Dissertation}{chapter.2}% 13
-\BOOKMARK [0][-]{chapter.3}{3 Background and Literature Review}{}% 14
-\BOOKMARK [1][-]{section.3.1}{3.1 Smart Cities and Intelligent Transportation Systems}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.2}{3.2 Social Media Analytics}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Twitter}{section.3.2}% 17
-\BOOKMARK [1][-]{section.3.3}{3.3 Text Mining}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.4}{3.4 Information Extraction}{chapter.3}% 19
-\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Name Entity Recognition and Name Entity Disambiguation}{section.3.4}% 20
-\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Content Filtering}{section.3.4}% 21
-\BOOKMARK [2][-]{subsection.3.4.3}{3.4.3 Topic Modeling}{section.3.4}% 22
-\BOOKMARK [1][-]{section.3.5}{3.5 Sentiment Analysis}{chapter.3}% 23
-\BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 Lexicon-based vs Machine-learning based}{section.3.5}% 24
-\BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 Aspect-based Sentiment Analysis}{section.3.5}% 25
-\BOOKMARK [1][-]{section.3.6}{3.6 Conclusion}{chapter.3}% 26
-\BOOKMARK [0][-]{chapter.4}{4 Framework}{}% 27
-\BOOKMARK [1][-]{section.4.1}{4.1 Requirements}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.2}{4.2 Architecture Overview}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.3}{4.3 Data Collection}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.4}{4.4 Data Preprocessing}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.5}{4.5 Text Analytics}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.6}{4.6 Data Storage and Aggregation}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.7}{4.7 Visualization}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.8}{4.8 Summary}{chapter.4}% 35
-\BOOKMARK [0][-]{chapter.5}{5 Experiments}{}% 36
-\BOOKMARK [1][-]{section.5.1}{5.1 Exploratory Data Analysis}{chapter.5}% 37
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Geographic Distributions}{section.5.1}% 38
-\BOOKMARK [2][-]{subsection.5.1.2}{5.1.2 Temporal Frequencies}{section.5.1}% 39
-\BOOKMARK [2][-]{subsection.5.1.3}{5.1.3 Content Composition}{section.5.1}% 40
-\BOOKMARK [2][-]{subsection.5.1.4}{5.1.4 Final Remarks}{section.5.1}% 41
-\BOOKMARK [1][-]{section.5.2}{5.2 Topic Modelling}{chapter.5}% 42
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Data Selection}{section.5.2}% 43
-\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Data Preparation}{section.5.2}% 44
-\BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Features Selection}{section.5.2}% 45
-\BOOKMARK [2][-]{subsection.5.2.4}{5.2.4 LDA Model Parametrization}{section.5.2}% 46
-\BOOKMARK [2][-]{subsection.5.2.5}{5.2.5 Results and Analysis}{section.5.2}% 47
-\BOOKMARK [2][-]{subsection.5.2.6}{5.2.6 Final Remarks}{section.5.2}% 48
-\BOOKMARK [1][-]{section.5.3}{5.3 Portuguese Travel-related Classification}{chapter.5}% 49
-\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 Data Selection}{section.5.3}% 50
-\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Data Preparation}{section.5.3}% 51
-\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Features Selection}{section.5.3}% 52
-\BOOKMARK [2][-]{subsection.5.3.4}{5.3.4 Training and Test Datasets}{section.5.3}% 53
-\BOOKMARK [2][-]{subsection.5.3.5}{5.3.5 Estimators and Evaluation Metrics}{section.5.3}% 54
-\BOOKMARK [2][-]{subsection.5.3.6}{5.3.6 Results and Analysis}{section.5.3}% 55
-\BOOKMARK [2][-]{subsection.5.3.7}{5.3.7 Final Remarks}{section.5.3}% 56
-\BOOKMARK [1][-]{section.5.4}{5.4 English Travel-related Classification}{chapter.5}% 57
-\BOOKMARK [2][-]{subsection.5.4.1}{5.4.1 Data Collection and Preparation}{section.5.4}% 58
-\BOOKMARK [2][-]{subsection.5.4.2}{5.4.2 Features Selection}{section.5.4}% 59
-\BOOKMARK [2][-]{subsection.5.4.3}{5.4.3 Training and Test Datasets}{section.5.4}% 60
-\BOOKMARK [2][-]{subsection.5.4.4}{5.4.4 Classification}{section.5.4}% 61
-\BOOKMARK [2][-]{subsection.5.4.5}{5.4.5 Preliminary Results}{section.5.4}% 62
-\BOOKMARK [2][-]{subsection.5.4.6}{5.4.6 Leave-one-group-out}{section.5.4}% 63
-\BOOKMARK [2][-]{subsection.5.4.7}{5.4.7 Final Remarks}{section.5.4}% 64
-\BOOKMARK [1][-]{section.5.5}{5.5 Summary}{chapter.5}% 65
-\BOOKMARK [0][-]{chapter.6}{6 Conclusions and Future Work}{}% 66
-\BOOKMARK [1][-]{section.6.1}{6.1 Expected Contributions}{chapter.6}% 67
-\BOOKMARK [1][-]{section.6.2}{6.2 Task Planning and Scheduling}{chapter.6}% 68
-\BOOKMARK [0][-]{section*.43}{References}{}% 69
-\BOOKMARK [0][-]{appendix.A}{A Loren Ipsum}{}% 70
-\BOOKMARK [1][-]{section.A.1}{A.1 O que \351 o Loren Ipsum?}{appendix.A}% 71
-\BOOKMARK [1][-]{section.A.2}{A.2 De onde Vem o Loren?}{appendix.A}% 72
-\BOOKMARK [1][-]{section.A.3}{A.3 Porque se usa o Loren?}{appendix.A}% 73
-\BOOKMARK [1][-]{section.A.4}{A.4 Onde se Podem Encontrar Exemplos?}{appendix.A}% 74
+\BOOKMARK [1][-]{section.1.4}{1.4 Publications}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.5}{1.5 Dissertation Structure}{chapter.1}% 10
+\BOOKMARK [0][-]{chapter.2}{2 Background and Literature Review}{}% 11
+\BOOKMARK [1][-]{section.2.1}{2.1 Smart Cities and Intelligent Transportation Systems}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{3 Old Background and Literature Review}{}% 13
+\BOOKMARK [1][-]{section.3.1}{3.1 Smart Cities and Intelligent Transportation Systems}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{3.2 Social Media Analytics}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Twitter}{section.3.2}% 16
+\BOOKMARK [1][-]{section.3.3}{3.3 Text Mining}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.4}{3.4 Information Extraction}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Name Entity Recognition and Name Entity Disambiguation}{section.3.4}% 19
+\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Content Filtering}{section.3.4}% 20
+\BOOKMARK [2][-]{subsection.3.4.3}{3.4.3 Topic Modeling}{section.3.4}% 21
+\BOOKMARK [1][-]{section.3.5}{3.5 Sentiment Analysis}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 Lexicon-based vs Machine-learning based}{section.3.5}% 23
+\BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 Aspect-based Sentiment Analysis}{section.3.5}% 24
+\BOOKMARK [1][-]{section.3.6}{3.6 Conclusion}{chapter.3}% 25
+\BOOKMARK [0][-]{chapter.4}{4 Framework}{}% 26
+\BOOKMARK [1][-]{section.4.1}{4.1 Requirements}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.2}{4.2 Architecture Overview}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.3}{4.3 Data Collection}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.4}{4.4 Data Preprocessing}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.5}{4.5 Text Analytics}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 Travel-related Classification}{section.4.5}% 32
+\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Topic Modelling}{section.4.5}% 33
+\BOOKMARK [2][-]{subsection.4.5.3}{4.5.3 Final Remarks}{section.4.5}% 34
+\BOOKMARK [1][-]{section.4.6}{4.6 Data Storage and Aggregation}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.7}{4.7 Visualization}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.8}{4.8 Summary}{chapter.4}% 37
+\BOOKMARK [0][-]{chapter.5}{5 Exploratory Data Analysis}{}% 38
+\BOOKMARK [1][-]{section.5.1}{5.1 Geographic Distributions}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.2}{5.2 Temporal Frequencies}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.3}{5.3 Content Composition}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.4}{5.4 Summary}{chapter.5}% 42
+\BOOKMARK [0][-]{chapter.6}{6 Experiments}{}% 43
+\BOOKMARK [1][-]{section.6.1}{6.1 Topic Modelling}{chapter.6}% 44
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 Data Selection}{section.6.1}% 45
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 Data Preparation}{section.6.1}% 46
+\BOOKMARK [2][-]{subsection.6.1.3}{6.1.3 Features Selection}{section.6.1}% 47
+\BOOKMARK [2][-]{subsection.6.1.4}{6.1.4 LDA Model Parametrization}{section.6.1}% 48
+\BOOKMARK [2][-]{subsection.6.1.5}{6.1.5 Results and Analysis}{section.6.1}% 49
+\BOOKMARK [2][-]{subsection.6.1.6}{6.1.6 Final Remarks}{section.6.1}% 50
+\BOOKMARK [1][-]{section.6.2}{6.2 Portuguese Travel-related Classification}{chapter.6}% 51
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Data Selection}{section.6.2}% 52
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 Data Preparation}{section.6.2}% 53
+\BOOKMARK [2][-]{subsection.6.2.3}{6.2.3 Features Selection}{section.6.2}% 54
+\BOOKMARK [2][-]{subsection.6.2.4}{6.2.4 Training and Test Datasets}{section.6.2}% 55
+\BOOKMARK [2][-]{subsection.6.2.5}{6.2.5 Estimators and Evaluation Metrics}{section.6.2}% 56
+\BOOKMARK [2][-]{subsection.6.2.6}{6.2.6 Results and Analysis}{section.6.2}% 57
+\BOOKMARK [2][-]{subsection.6.2.7}{6.2.7 Final Remarks}{section.6.2}% 58
+\BOOKMARK [1][-]{section.6.3}{6.3 English Travel-related Classification}{chapter.6}% 59
+\BOOKMARK [2][-]{subsection.6.3.1}{6.3.1 Data Collection and Preparation}{section.6.3}% 60
+\BOOKMARK [2][-]{subsection.6.3.2}{6.3.2 Features Selection}{section.6.3}% 61
+\BOOKMARK [2][-]{subsection.6.3.3}{6.3.3 Training and Test Datasets}{section.6.3}% 62
+\BOOKMARK [2][-]{subsection.6.3.4}{6.3.4 Classification}{section.6.3}% 63
+\BOOKMARK [2][-]{subsection.6.3.5}{6.3.5 Preliminary Results}{section.6.3}% 64
+\BOOKMARK [2][-]{subsection.6.3.6}{6.3.6 Leave-one-group-out}{section.6.3}% 65
+\BOOKMARK [2][-]{subsection.6.3.7}{6.3.7 Concluding Remarks}{section.6.3}% 66
+\BOOKMARK [1][-]{section.6.4}{6.4 Summary}{chapter.6}% 67
+\BOOKMARK [0][-]{chapter.7}{7 Conclusions and Future Work}{}% 68
+\BOOKMARK [1][-]{section.7.1}{7.1 Expected Contributions}{chapter.7}% 69
+\BOOKMARK [1][-]{section.7.2}{7.2 Task Planning and Scheduling}{chapter.7}% 70
+\BOOKMARK [0][-]{section*.43}{References}{}% 71

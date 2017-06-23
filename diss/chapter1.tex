@@ -11,38 +11,54 @@ Availability and authenticity are some of the social media content advantages co
 Mining Twitter data is although the availability and free cost, a laborious and time-consuming process due to the restrictions and difficulties present in its content. The informal language, the existence of slang, abbreviations, jargons and the short length of the message are some of the problems when analyzing this data. Harvesting tweets automatically and, at the same time, extracting valuable information for the target domains delineated in this dissertation makes the task even more complex. However, by surpassing the previous mentioned problems, the extracted information may be of extremely importance and useful to the final stakeholders, namely \textit{smart cities} and transportation entities, during decision-making policies to improve their services.
 
 \section{Problem Statement}\label{sec:problem}
-The problem around this dissertation establishes in the analysis of a continuous flow of social media streams, in particular from Twitter, about a target scenario, as, for example, the quality of the urban transportation services in Porto. Hence, it will be necessary to filter the relevant messages, extract sentiment aspects/topics with polarity and create useful aggregated data visualizations. The problem presented can be divided in five distinct points:
+The problem around this dissertation is focused in the analysis of a continuous flow of social media streams provided by Twitter. To analyse such streams, multiple steps composed in an iterative process are needed in order to filter out non-related content and proceed with extraction of information about a specific scenario. Here, since the target scenarios are associated to \textit{smart cities} and transportation domains, data related to it must be explored and analysed. To the best of our knowledge, there are no public datasets related to these domains and the creation of a gold standard dataset constitutes a complex endeavor, which is, for this reason, an obstacle to surpass in this dissertation. The extraction of information from social media content is another overwhelming task since it is necessary the application of several NLP methods in order to minimize/extinct its peculiarly problems. Hence, the main problem can be divided in five distinct sub-problems:
 
 \begin{enumerate}
-	\item \textbf{Data collection for our target scenario}
+	\item \textbf{Data collection method for various locations}\\
+	Choosing a method to collect data that provides a large range of valuable information for different cities constitutes the first sub-problem.
 	
-	At this point, a real scenario must be chosen so that a case study can be produced.
+	\item \textbf{Content filtering}\\
+	It is necessary the guarantee of that all information is fully related to the target scenario in the analysis, as well as removing messages which does not brought additional information (for instance, tweets only composed by \textit{emoticons}) or are not related to the end-users expectations, i.e. if we are targeting content from a specific city, we must assure that such content is indeed posted when users were there.
 	
-	\item \textbf{Named Entity Disambiguation and content filtering}
+	\item \textbf{Identification of topics in Twitter messages}\\
+	The identification of topics in Twitter messages is a very important point in the analyses of the \textit{smart cities} context. This task allows the identification of what is been talked about recently and also where the conversation topics are geographically distributed.
 	
-	The identification of the entities present in the messages is a important point in order to disambiguate some mentions that could not be related with target scenario, making the filtering task easier, since only messages that are related must appear in the final dataset.
+	\item \textbf{Travel-related classification}\\
+	In order to produce valuable information for the transportation services, we need to analyse the content of a message and verify if it is truly related with the domain in study. Hence, discriminate travel-related tweets is one of the sub-problems that must be tackled.
 	
-	\item \textbf{Identification of aspects/topics in Twitter messages}
-	
-	Since each opinion usually has a target aspect/topic about an entity, or even a service of a city, the recognition of it is relevant so that the sentiment present in the message has an orientation.
-	
-	\item \textbf{Sentiment polarity classification}
-	
-	The polarity of a sentiment may have three different types: positive, negative or neutral. At this point, it will be necessary to estimate the level of polarity expressed in the message.
-	
-	\item \textbf{Data aggregation and visualization}
-	
-	The aggregation of the results provide by all other tasks is needed. Some messages could refer to the same aspect through different ways, so it will be  necessary aggregate messages that present this characteristic. Another important task of the aggregation is the continuously calculation of the results So that when an user access the analytics UI, the results are presented immediately, without waiting time. At the visualization of the results, some qualitative and quantitative indicators may be presented to the end-user to make the analysis easier.
-	
+	\item \textbf{Data aggregation and visualization}\\
+	The aggregation of the results provide by all other tasks is needed. This aggregation task may be continuously calculating the results in order to make the user experience easier and smooth without taking to much response time by the data visualization UI. The graphical visualizations should be of easy interpretation by the end-user and having this in mind some qualitative and quantitative indicators may be presented.
 \end{enumerate}
 
-Taking into account all the aforementioned points, the final goal of this dissertation is to create a framework, based on the concept of analysis. The framework should be capable of automatically processing social media texts, regarding semantic processing, topic detection and sentiment analysis. An user interface will be provide to the end-user, illustrating a set of qualitative and quantitative indicators to analysis. This knowledge can be relevant both to users of a particular service or to the responsible entities in order to improve the decision-making process.
-
 \section{Goals and Expected Contributions}\label{sec:contributions}
+Following the previous mentioned problem in Section \ref{sec:problem}, the main goal of this dissertation passes through the development of a prototype framework based on the concept of analysis. Such framework demands a solution for each of the aforementioned sub-problems, and for that reason modularity is needed in the design and implementation of the final tool. Its usability will be directed to companies or even ordinary users and should be able to provide relevant information about a specific real-world scenario under the \textit{smart cities} and transportation fields. The framework should be capable of automatically processing social media texts, more specifically, general topic detection and characterization of travel-related tweets. The following list summarizes the crucial goals behind this dissertation:
 
+\begin{itemize}
+	\item Extraction of valuable information from Social Media Content to the Transportation and \textit{Smart Cities} domains;
+	\item Designing and implementation of a framework capable of automatize the analysis process;
+	\item Application, when possible, of recent advances in the area of text analysis;
+\end{itemize}
+
+\medskip
+
+In terms of expected contributions, we hope that such generated information through the framework data analytics may be relevant both to ordinary users of a particular service and to the responsible entities in order to improve decision-making policies.
+
+\section{Publications}\label{sec:publications}
+In this section several scientific contributions performed during the period of this dissertation are mentioned:
+
+\begin{itemize}
+		\item
+		João Pereira, Arian Pasquali, Pedro Saleiro and Rosaldo J. F. Rossetti. {\color{blue}Transportation in Social Media: an automatic classifier for travel-related tweets}. In \emph{Portuguese Conference on Artificial Intelligence} (EPIA), 2017. In Press.
+		
+		\item
+		João Pereira, Arian Pasquali, Pedro Saleiro and Rosaldo J. F. Rossetti. {\color{blue}Classifying Travel-related Tweets using Word Embeddings}. In \emph{International Conference on Information and Knowledge Management} (CIKM), 2017. Under review.
+		
+		\item
+		João Pereira, Arian Pasquali, Pedro Saleiro and Rosaldo J. F. Rossetti. {\color{blue}Characterizing Geo-located Tweets in Brazilian Megacities}. In \emph{IEEE International Summer School on Smart Cities} (IEEE S3C), 2017. Under review.
+\end{itemize}
 
 \section{Dissertation Structure}\label{sec:diss_structure}
-The effort applied to this dissertation generated a great diversity of points and due to that the remaining document is structured into four chapters.
+The effort applied to this dissertation generated a great diversity of points and due to that the remainder of the document is structured into four chapters.
 Section \ref{chap:sota} starts with a brief conceptualization in the Smart Cities and Intelligent Transportation System domains, as well as previous related works using social media content as its basis.
 The proposed framework is referenced in Section \ref{chap:framework}, being each its composing modules depth described.
 Experiments performed to test each module of the framework are reported in Section~\ref{chap:experiments}.
