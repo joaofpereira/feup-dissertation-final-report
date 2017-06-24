@@ -78,6 +78,11 @@ Andrea Caragliu and Chiara~F. {Del Bo}.
   Planning for the Future}.
 \newblock {\em Social Science Computer Review}, 34(6):1--16, 2015.
 
+\bibitem[CDBN11]{caragliu2011smart}
+Andrea Caragliu, Chiara Del~Bo, and Peter Nijkamp.
+\newblock Smart cities in europe.
+\newblock {\em Journal of urban technology}, 18(2):65--82, 2011.
+
 \bibitem[Chi08]{chi2008social}
 Ed~H Chi.
 \newblock The social web: Research and opportunities.
@@ -204,6 +209,12 @@ Minqing Hu and Bing Liu.
 Andreas Hotho, Andreas N{\"u}rnberger, and Gerhard Paa{\ss}.
 \newblock A brief survey of text mining.
 \newblock 20(1):19--62, 2005.
+
+\bibitem[Hol08]{hollands2008will}
+Robert~G Hollands.
+\newblock Will the real smart city please stand up? intelligent, progressive or
+  entrepreneurial?
+\newblock {\em City}, 12(3):303--320, 2008.
 
 \bibitem[HZL13]{kn:He2013}
 Wu~He, Shenghua Zha, and Ling Li.

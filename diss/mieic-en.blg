@@ -14,9 +14,7 @@ A level-1 auxiliary file: chapter4.aux
 A level-1 auxiliary file: chapter5.aux
 A level-1 auxiliary file: nomenclature.aux
 The style file: alpha.bst
-A level-1 auxiliary file: appendix1.aux
 Database file #1: myrefs.bib
-Warning--I didn't find a database entry for "kn:Lip08"
 Warning--empty journal in kn:Anastasi2013
 Warning--empty journal in kn:Banerjee2012
 Warning--there's a number but no volume in kn:Banerjee2012
@@ -59,45 +57,45 @@ Warning--empty journal in kn:villena2012
 Warning--empty journal in kn:Yarowsky1995
 Warning--empty journal in kn:Yerva2010
 Warning--empty journal in kn:Zhao2011
-You've used 97 entries,
+You've used 99 entries,
             2543 wiz_defined-function locations,
-            1171 strings with 25209 characters,
-and the built_in function-call counts, 44814 in all, are:
-= -- 4494
-> -- 2540
-< -- 44
-+ -- 919
-- -- 910
-* -- 3394
-:= -- 7385
-add.period$ -- 293
-call.type$ -- 97
-change.case$ -- 714
-chr.to.int$ -- 97
-cite$ -- 139
-duplicate$ -- 1635
-empty$ -- 2822
-format.name$ -- 997
-if$ -- 9020
+            1180 strings with 25457 characters,
+and the built_in function-call counts, 45606 in all, are:
+= -- 4577
+> -- 2573
+< -- 45
++ -- 930
+- -- 921
+* -- 3458
+:= -- 7515
+add.period$ -- 299
+call.type$ -- 99
+change.case$ -- 726
+chr.to.int$ -- 99
+cite$ -- 141
+duplicate$ -- 1664
+empty$ -- 2880
+format.name$ -- 1011
+if$ -- 9177
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 98
-newline$ -- 489
-num.names$ -- 291
-pop$ -- 659
+missing$ -- 100
+newline$ -- 499
+num.names$ -- 297
+pop$ -- 666
 preamble$ -- 1
-purify$ -- 817
+purify$ -- 831
 quote$ -- 0
-skip$ -- 1498
+skip$ -- 1521
 stack$ -- 0
-substring$ -- 2507
-swap$ -- 339
-text.length$ -- 44
-text.prefix$ -- 12
+substring$ -- 2565
+swap$ -- 341
+text.length$ -- 45
+text.prefix$ -- 13
 top$ -- 0
-type$ -- 760
+type$ -- 776
 warning$ -- 42
-while$ -- 442
-width$ -- 101
-write$ -- 1213
-(There were 43 warnings)
+while$ -- 451
+width$ -- 103
+write$ -- 1239
+(There were 42 warnings)
