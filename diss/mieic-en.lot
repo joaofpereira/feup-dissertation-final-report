@@ -4,28 +4,28 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Background and Literature Review}{5}{chapter.2}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Old Background and Literature Review}{9}{chapter.3}
-\contentsline {table}{\numberline {3.1}{\ignorespaces Text Mining Issues by A. Stavrianou \cite {kn:Stavrianou2007}\relax }}{15}{table.caption.10}
+\contentsline {xchapter}{Old Background and Literature Review}{11}{chapter.3}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Text Mining Issues by A. Stavrianou \cite {kn:Stavrianou2007}\relax }}{17}{table.caption.10}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Framework}{31}{chapter.4}
+\contentsline {xchapter}{Framework}{33}{chapter.4}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Exploratory Data Analysis}{41}{chapter.5}
-\contentsline {table}{\numberline {5.1}{\ignorespaces Collecting Bounding-boxes Coordinates (South-West and North-East)\relax }}{41}{table.caption.15}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Twitter Default Bounding-boxes Coordinates (South-West and North-East)\relax }}{43}{table.caption.16}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Datasets composition according bounding-box analysis}}{44}{table.caption.17}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Volume of tweets for each type of geo-location\relax }}{44}{table.caption.18}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Percentage of Metadata composing the datasets\relax }}{53}{table.caption.25}
+\contentsline {xchapter}{Exploratory Data Analysis}{43}{chapter.5}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Collecting Bounding-boxes Coordinates (South-West and North-East)\relax }}{43}{table.caption.15}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Twitter Default Bounding-boxes Coordinates (South-West and North-East)\relax }}{45}{table.caption.16}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Datasets composition according bounding-box analysis}}{46}{table.caption.17}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Volume of tweets for each type of geo-location\relax }}{46}{table.caption.18}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Percentage of Metadata composing the datasets\relax }}{55}{table.caption.25}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Experiments}{55}{chapter.6}
-\contentsline {table}{\numberline {6.1}{\ignorespaces Datasets composition\relax }}{56}{table.caption.26}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Example of the topics classification\relax }}{58}{table.caption.27}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Final results of the LDA topics aggregation\relax }}{59}{table.caption.28}
-\contentsline {table}{\numberline {6.4}{\ignorespaces Rio de Janeiro and S\IeC {\~a}o Paulo datasets composition for the travel-related classification\relax }}{61}{table.caption.30}
-\contentsline {table}{\numberline {6.5}{\ignorespaces Travel terms used to build the training set\relax }}{63}{table.caption.31}
-\contentsline {table}{\numberline {6.6}{\ignorespaces Performance results with 100 sized vectors for BoE\relax }}{64}{table.caption.32}
-\contentsline {table}{\numberline {6.7}{\ignorespaces Preliminary Results\relax }}{69}{table.caption.37}
-\contentsline {table}{\numberline {6.8}{\ignorespaces Datasets Composition\relax }}{69}{table.caption.38}
-\contentsline {table}{\numberline {6.9}{\ignorespaces \emph {Leave one group out} experiments results for SVM, LR and RF classifiers\relax }}{70}{table.caption.39}
-\contentsline {table}{\numberline {6.10}{\ignorespaces Sample of tweet messages correctly classified\relax }}{71}{table.caption.41}
+\contentsline {xchapter}{Experiments}{57}{chapter.6}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Datasets composition\relax }}{58}{table.caption.26}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Example of the topics classification\relax }}{60}{table.caption.27}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Final results of the LDA topics aggregation\relax }}{61}{table.caption.28}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Rio de Janeiro and S\IeC {\~a}o Paulo datasets composition for the travel-related classification\relax }}{63}{table.caption.30}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Travel terms used to build the training set\relax }}{65}{table.caption.31}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Performance results with 100 sized vectors for BoE\relax }}{66}{table.caption.32}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Preliminary Results\relax }}{71}{table.caption.37}
+\contentsline {table}{\numberline {6.8}{\ignorespaces Datasets Composition\relax }}{71}{table.caption.38}
+\contentsline {table}{\numberline {6.9}{\ignorespaces \emph {Leave one group out} experiments results for SVM, LR and RF classifiers\relax }}{72}{table.caption.39}
+\contentsline {table}{\numberline {6.10}{\ignorespaces Sample of tweet messages correctly classified\relax }}{73}{table.caption.41}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Conclusions and Future Work}{75}{chapter.7}
+\contentsline {xchapter}{Conclusions and Future Work}{77}{chapter.7}
