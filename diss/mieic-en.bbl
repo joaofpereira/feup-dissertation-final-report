@@ -7,6 +7,12 @@ G.~Anastasi, M.~Antonelli, A.~Bechini, S.~Brienza, E.~D'Andrea, D.~De
 \newblock Urban and social sensing for sustainable mobility in smart cities.
 \newblock pages 1--4, Oct 2013.
 
+\bibitem[ACK{\etalchar{+}}05]{ananiadou2015textmining}
+Sophia Ananiadou, Julia Chruszcz, John Keane, John McNaught, and Paul Watry.
+\newblock The national centre for text mining: Aims and objectives, January
+  2005.
+\newblock [Accessed on 25/06/2017].
+
 \bibitem[AMB{\etalchar{+}}13]{kn:Allisio2013}
 Leonardo Allisio, Valeria Mussa, Cristina Bosco, Viviana Patti, and Giancarlo
   Ruffo.
@@ -283,6 +289,13 @@ Nicos Komninos.
 \newblock {\em International Journal of Innovation and Regional Development},
   1(4):337--355, 2009.
 
+\bibitem[KOM16]{kurkcu2016evaluating}
+Abdullah Kurkcu, Kaan Ozbay, and Ender~Faruk Morgul.
+\newblock Evaluating the usability of geo-located twitter as a tool for human
+  activity and mobility patterns: A case study for new york city.
+\newblock In {\em Transportation Research Board 95th Annual Meeting}, number
+  16-3901, 2016.
+
 \bibitem[KS12]{kn:kumar2012}
 Akshi Kumar and Teeja~Mary Sebastian.
 \newblock Sentiment analysis on twitter.
@@ -340,10 +353,22 @@ Mojtaba Maghrebi, Alireza Abbasi, and S~Travis Waller.
 \newblock In {\em Intelligent Transportation Systems (ITSC), 2016 IEEE 19th
   International Conference on}, pages 1648--1653. IEEE, 2016.
 
+\bibitem[MB08]{mcauliffe2008supervised}
+Jon~D Mcauliffe and David~M Blei.
+\newblock Supervised topic models.
+\newblock In {\em Advances in neural information processing systems}, pages
+  121--128, 2008.
+
 \bibitem[MCCD13]{mikolov2013efficient}
 Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean.
 \newblock Efficient estimation of word representations in vector space.
 \newblock {\em arXiv preprint arXiv:1301.3781}, 2013.
+
+\bibitem[MH13]{mai2013twitter}
+Eric Mai and Rob Hranac.
+\newblock Twitter interactions as a data source for transportation incidents.
+\newblock In {\em Proc. Transportation Research Board 92nd Ann. Meeting},
+  number 13-1636, 2013.
 
 \bibitem[MHK14]{kn:Medhat2014}
 Walaa Medhat, Ahmed Hassan, and Hoda Korashy.
@@ -457,6 +482,13 @@ Radim Rehurek and Petr Sojka.
 \newblock In {\em In Proceedings of the LREC 2010 Workshop on New Challenges
   for NLP Frameworks}. Citeseer, 2010.
 
+\bibitem[RSR15]{rebelo2015twitterjam}
+Francisco Rebelo, Carlos Soares, and Rosaldo~JF Rossetti.
+\newblock Twitterjam: Identification of mobility patterns in urban centers
+  based on tweets.
+\newblock In {\em Smart Cities Conference (ISC2), 2015 IEEE First
+  International}, pages 1--6. IEEE, 2015.
+
 \bibitem[SAN07]{kn:Stavrianou2007}
 Anna Stavrianou, Periklis Andritsos, and Nicolas Nicoloyannis.
 \newblock Overview and semantic issues of text mining.
@@ -517,6 +549,12 @@ Pedro Saleiro, Lus Rei, Arian Pasquali, Carlos Soares, Jorge Teixeira, Fabio
 \newblock {POPSTAR at RepLab 2013: Name ambiguity resolution on Twitter}.
 \newblock {\em CEUR Workshop Proceedings}, 1179, 2013.
 
+\bibitem[SSP11]{signorini2011use}
+Alessio Signorini, Alberto~Maria Segre, and Philip~M Polgreen.
+\newblock The use of twitter to track levels of disease activity and public
+  concern in the us during the influenza a h1n1 pandemic.
+\newblock {\em PloS one}, 6(5):e19467, 2011.
+
 \bibitem[SST{\etalchar{+}}09]{kn:Sankaranarayanan2009}
 Jagan Sankaranarayanan, Hanan Samet, Benjamin~E. Teitler, Michael~D. Lieberman,
   and Jon Sperling.
@@ -530,6 +568,13 @@ Mike Thelwall, Kevan Buckley, Georgios Paltoglou, Di~Cai, and Arvid Kappas.
 \newblock Sentiment in short strength detection informal text.
 \newblock {\em J. Am. Soc. Inf. Sci. Technol.}, 61(12):2544--2558, December
   2010.
+
+\bibitem[TT15]{tuarob2015quantifying}
+Suppawong Tuarob and Conrad~S Tucker.
+\newblock Quantifying product favorability and extracting notable product
+  features using large scale social media data.
+\newblock {\em Journal of Computing and Information Science in Engineering},
+  15(3):031003, 2015.
 
 \bibitem[TWQ{\etalchar{+}}14]{kn:tang2014coooolll}
 Duyu Tang, Furu Wei, Bing Qin, Ting Liu, and Ming Zhou.
@@ -572,9 +617,9 @@ Minoru Yoshida, Shin Matsushima, Shingo Ono, Issei Sato, and Hiroshi Nakagawa.
   reputation management.
 \newblock {\em CLEF (Notebook Papers/LABs/Workshops)}, 2010.
 
-\bibitem[ZCLL10]{kn:Zeng2010}
+\bibitem[ZCLL10]{zeng2010social}
 Daniel Zeng, Hsinchun Chen, Robert Lusch, and Shu-Hsing Li.
-\newblock {Social Media Analytics and Intelligence}.
+\newblock Social media analytics and intelligence.
 \newblock {\em IEEE Intelligent Systems}, 25(6):13--16, 2010.
 
 \bibitem[ZJW{\etalchar{+}}11]{kn:Zhao2011}
@@ -582,5 +627,11 @@ Wayne~Xin Zhao, Jing Jiang, Jianshu Weng, Jing He, Ee-Peng Lim, Hongfei Yan,
   and Xiaoming Li.
 \newblock Comparing twitter and traditional media using topic models.
 \newblock pages 338--349, 2011.
+
+\bibitem[ZNHG16]{zhang2016mining}
+Zhenhua Zhang, Ming Ni, Qing He, and Jing Gao.
+\newblock Mining transportation information from social media for planned and
+  unplanned events.
+\newblock 2016.
 
 \end{thebibliography}
