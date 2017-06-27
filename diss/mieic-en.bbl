@@ -13,22 +13,16 @@ Sophia Ananiadou, Julia Chruszcz, John Keane, John McNaught, and Paul Watry.
   2005.
 \newblock [Accessed on 25/06/2017].
 
-\bibitem[AMB{\etalchar{+}}13]{kn:Allisio2013}
-Leonardo Allisio, Valeria Mussa, Cristina Bosco, Viviana Patti, and Giancarlo
-  Ruffo.
-\newblock {Felicitt??: Visualizing and estimating happiness in Italian cities
-  from geotagged Tweets}.
-\newblock {\em CEUR Workshop Proceedings}, 1096:95--106, 2013.
+\bibitem[AHH{\etalchar{+}}12]{kn:Abel2012}
+Fabian Abel, Claudia Hauff, Geert-Jan Houben, Richard Stronkman, and Ke~Tao.
+\newblock {Twitcident}.
+\newblock {\em Proceedings of the 21st international conference companion on
+  World Wide Web - WWW '12 Companion}, page 305, 2012.
 
 \bibitem[Ang15]{kn:Angelidou2015}
 Margarita Angelidou.
 \newblock {Smart cities: A conjuncture of four forces}.
 \newblock {\em Cities}, 47:95--106, 2015.
-
-\bibitem[AZ12]{kn:Aggarwal2012}
-Charu~C Aggarwal and ChengXiang Zhai.
-\newblock {\em Mining text data}.
-\newblock Springer Science \& Business Media, 2012.
 
 \bibitem[BAG{\etalchar{+}}12]{batty2012smart}
 Michael Batty, Kay~W Axhausen, Fosca Giannotti, Alexei Pozdnoukhov, Armando
@@ -36,13 +30,6 @@ Michael Batty, Kay~W Axhausen, Fosca Giannotti, Alexei Pozdnoukhov, Armando
 \newblock Smart cities of the future.
 \newblock {\em The European Physical Journal Special Topics}, 214(1):481--518,
   2012.
-
-\bibitem[BCJ{\etalchar{+}}12]{kn:Banerjee2012}
-Nilanjan Banerjee, Dipanjan Chakraborty, Anupam Joshi, Sumit Mittal, Angshu
-  Rai, and B~Ravindran.
-\newblock {Towards Analyzing Micro-Blogs for Detection and Classification of
-  Real-Time Intentions Towards Analyzing Micro-Blogs for}.
-\newblock (January), 2012.
 
 \bibitem[BDF{\etalchar{+}}13]{kn:Bontcheva2013}
 Kalina Bontcheva, Leon Derczynski, Adam Funk, Mark~A Greenwood, Diana Maynard,
@@ -55,28 +42,6 @@ Kalina Bontcheva, Leon Derczynski, Adam Funk, Mark~A Greenwood, Diana Maynard,
 David~M Blei, Andrew~Y Ng, and Michael~I Jordan.
 \newblock Latent dirichlet allocation.
 \newblock {\em Journal of machine Learning research}, 3(Jan):993--1022, 2003.
-
-\bibitem[Bor99]{kn:Borthwick1999}
-Andrew Borthwick.
-\newblock {\em A maximum entropy approach to named entity recognition}.
-\newblock PhD thesis, Citeseer, 1999.
-
-\bibitem[BSW99]{kn:Bikel1999}
-Daniel~M. Bikel, Richard Schwartz, and Ralph~M. Weischedel.
-\newblock An algorithm that learns what\&lsquo;s in a name.
-\newblock {\em Mach. Learn.}, 34(1-3):211--231, February 1999.
-
-\bibitem[CBB{\etalchar{+}}13]{kn:Cossu2013}
-Jean-Val{\`e}re Cossu, Benjamin Bigot, Ludovic Bonnefoy, Mohamed Morchid,
-  Xavier Bost, Gr{\'e}gory Senay, Richard Dufour, Vincent Bouvier, Juan-Manuel
-  Torres-Moreno, and Marc El-B{\`e}ze.
-\newblock Lia@replab 2013.
-\newblock 2013.
-
-\bibitem[CBRB12]{kn:Chenlo2012}
-Jos{\'e}~M. Chenlo, Jordi~Atserias Batalla, Carlos Rodriguez, and Roi Blanco.
-\newblock Fbm-yahoo! at replab 2012.
-\newblock 2012.
 
 \bibitem[CD15]{kn:Caragliu2015}
 Andrea Caragliu and Chiara~F. {Del Bo}.
@@ -113,12 +78,6 @@ Sara Carvalho, Lu{\'\i}s Sarmento, and Rosaldo J.~F. Rossetti.
   Transportation Systems (ITSC 2010), Funchal, Portugal, 19-22 Sept. 2010},
   pages 1--4, 2010.
 
-\bibitem[CVSO10]{kn:Cumbreras2010}
-Miguel {\'A}ngel~Garc{\'i}a Cumbreras, Manuel~Garc{\'i}a Vega,
-  Fernando~Mart{\'i}nez Santiago, and Jos{\'e} Manuel~Perea Ortega.
-\newblock Sinai at weps-3: Online reputation management.
-\newblock 2010.
-
 \bibitem[DDLM15]{kn:DAndrea2015}
 Eleonora D'Andrea, Pietro Ducange, Beatrice Lazzerini, and Francesco
   Marcelloni.
@@ -131,85 +90,16 @@ Derek Doran, Karl Severin, Swapna Gokhale, and Aldo Dagnino.
 \newblock {Social media enabled human sensing for smart cities}.
 \newblock {\em AI Communications}, 29(1):57--75, 2015.
 
-\bibitem[dSHJ14]{kn:daSilva2014}
-Nádia~F.F. da~Silva, Eduardo~R. Hruschka, and Estevam R.~Hruschka Jr.
-\newblock Tweet sentiment analysis with classifier ensembles.
-\newblock {\em Decision Support Systems}, 66:170 -- 179, 2014.
-
-\bibitem[Fel13]{kn:Feldman:2013}
-Ronen Feldman.
-\newblock Techniques and applications for sentiment analysis.
-\newblock {\em Commun. ACM}, 56(4):82--89, April 2013.
-
 \bibitem[FG13]{kn:Fan2013}
 Weiguo Fan and Michael~D Gordon.
 \newblock {Unveiling the Power of Social Media Analytics}.
 \newblock {\em Communications of the ACM}, 12(JUNE 2014):1--26, 2013.
-
-\bibitem[FS10]{kn:Ferragina2010}
-Paolo Ferragina and Ugo Scaiella.
-\newblock Tagme: On-the-fly annotation of short text fragments (by wikipedia
-  entities).
-\newblock pages 1625--1628, 2010.
-
-\bibitem[GBH09]{kn:Go2009}
-Alec Go, Richa Bhayani, and Lei Huang.
-\newblock Twitter sentiment classification using distant supervision.
-\newblock {\em CS224N Project Report, Stanford}, 1(12), 2009.
-
-\bibitem[GC16]{kn:Giachanou2016}
-Anastasia Giachanou and Fabio Crestani.
-\newblock Like it or not: A survey of twitter sentiment analysis methods.
-\newblock {\em ACM Comput. Surv.}, 49(2):28:1--28:41, June 2016.
-
-\bibitem[GSZ13]{kn:Ghiassi2013}
-M.~Ghiassi, J.~Skinner, and D.~Zimbra.
-\newblock Twitter brand sentiment analysis: A hybrid system using n-gram
-  analysis and dynamic artificial neural network.
-\newblock {\em Expert Systems with Applications}, 40(16):6266 -- 6282, 2013.
-
-\bibitem[GSZS14]{kn:Goonetilleke2014}
-Oshini Goonetilleke, Timos Sellis, Xiuzhen Zhang, and Saket Sathe.
-\newblock {Twitter analytics}.
-\newblock {\em ACM SIGKDD Explorations Newsletter}, 16(1):11--20, 2014.
 
 \bibitem[GTGMK{\etalchar{+}}14]{gal2014potential}
 Ayelet Gal-Tzur, Susan~M Grant-Muller, Tsvi Kuflik, Einat Minkov, Silvio
   Nocera, and Itay Shoor.
 \newblock The potential of social media in delivering transport policy goals.
 \newblock {\em Transport Policy}, 32:115--123, 2014.
-
-\bibitem[GWS13]{kn:Gindl2013}
-Stefan Gindl, Albert Weichselbraun, and Arno Scharl.
-\newblock Rule-based opinion target and aspect extraction to acquire affective
-  knowledge.
-\newblock pages 557--564, 2013.
-
-\bibitem[HAZ13]{kn:Hassan2013}
-A.~Hassan, A.~Abbasi, and D.~Zeng.
-\newblock Twitter sentiment analysis: A bootstrap ensemble framework.
-\newblock pages 357--364, Sept 2013.
-
-\bibitem[HBB13]{kn:hamdan2013}
-Hussam Hamdan, Frederic B{\'e}chet, and Patrice Bellot.
-\newblock Experiments with dbpedia, wordnet and sentiwordnet as resources for
-  sentiment analysis in micro-blogging.
-\newblock 2:455--459, 2013.
-
-\bibitem[HD10]{kn:Hong2010}
-Liangjie Hong and Brian~D Davison.
-\newblock Empirical study of topic modeling in twitter.
-\newblock pages 80--88, 2010.
-
-\bibitem[HF13]{kn:hangya2013}
-Viktor Hangya and Rich{\'a}rd Farkas.
-\newblock Filtering and polarity detection for reputation management on tweets.
-\newblock 2013.
-
-\bibitem[HL04]{kn:hu2004}
-Minqing Hu and Bing Liu.
-\newblock Mining and summarizing customer reviews.
-\newblock pages 168--177, 2004.
 
 \bibitem[HNP05]{kn:Hotho2005}
 Andreas Hotho, Andreas N{\"u}rnberger, and Gerhard Paa{\ss}.
@@ -228,45 +118,6 @@ Wu~He, Shenghua Zha, and Ling Li.
   the pizza industry.
 \newblock {\em International Journal of Information Management},
   33(3):464--472, 2013.
-
-\bibitem[IK02]{kn:Isozaki2002}
-Hideki Isozaki and Hideto Kazawa.
-\newblock Efficient support vector classifiers for named entity recognition.
-\newblock pages 1--7, 2002.
-
-\bibitem[IK10]{kn:Irmak2010}
-Utku Irmak and Reiner Kraft.
-\newblock A scalable machine-learning approach for semi-structured named entity
-  recognition.
-\newblock pages 461--470, 2010.
-
-\bibitem[Iso01]{kn:Isozaki2001}
-Hideki Isozaki.
-\newblock Japanese named entity recognition based on a simple rule generator
-  and decision tree learning.
-\newblock pages 314--321, 2001.
-
-\bibitem[JG10]{kn:Jakob}
-Niklas Jakob and Iryna Gurevych.
-\newblock Extracting opinion targets in a single- and cross-domain setting with
-  conditional random fields.
-\newblock pages 1035--1045, 2010.
-
-\bibitem[JHS09]{kn:Jin2009}
-Wei Jin, Hung~Hay Ho, and Rohini~K. Srihari.
-\newblock Opinionminer: A novel machine learning system for web opinion mining
-  and extraction.
-\newblock pages 1195--1204, 2009.
-
-\bibitem[Kap12]{kn:kaptein2012}
-Rianne Kaptein.
-\newblock Learning to analyze relevancy and polarity of tweets.
-\newblock 2012.
-
-\bibitem[KC13]{kn:kelley2013}
-Patrick~Gage Kelley and Justin Cranshaw.
-\newblock Conducting research on twitter: A call for guidelines and metrics.
-\newblock 2013.
 
 \bibitem[KH10]{kaplan2010users}
 Andreas~M Kaplan and Michael Haenlein.
@@ -302,18 +153,6 @@ Abdullah Kurkcu, Kaan Ozbay, and Ender~Faruk Morgul.
 \newblock In {\em Transportation Research Board 95th Annual Meeting}, number
   16-3901, 2016.
 
-\bibitem[KS12]{kn:kumar2012}
-Akshi Kumar and Teeja~Mary Sebastian.
-\newblock Sentiment analysis on twitter.
-\newblock {\em IJCSI International Journal of Computer Science Issues},
-  9(3):372--378, 2012.
-
-\bibitem[KWM11]{kn:Kouloumpis2011}
-E~Kouloumpis, T~Wilson, and J~Moore.
-\newblock {Twitter sentiment analysis: The good the bad and the omg!}
-\newblock {\em Proceedings of the Fifth International AAAI Conference on
-  Weblogs and Social Media (ICWSM 11)}, pages 538--541, 2011.
-
 \bibitem[LAR12]{kn:Liu2012}
 Wendy Liu, Faiyaz {Al Zamal}, and Derek Ruths.
 \newblock {Using Social Media to Infer Gender Composition of Commuter
@@ -348,11 +187,6 @@ Thomas Ludwig, Tim Siebigteroth, and Volkmar Pipek.
   Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
   8852:421--428, 2015.
 
-\bibitem[LWH{\etalchar{+}}13]{kn:Li2013}
-Yang Li, Chi Wang, Fangqiu Han, Jiawei Han, Dan Roth, and Xifeng Yan.
-\newblock Mining evidences for named entity disambiguation.
-\newblock pages 1070--1078, 2013.
-
 \bibitem[MAW16]{maghrebi2016transportation}
 Mojtaba Maghrebi, Alireza Abbasi, and S~Travis Waller.
 \newblock Transportation application of social media: Travel mode extraction.
@@ -375,11 +209,6 @@ Eric Mai and Rob Hranac.
 \newblock Twitter interactions as a data source for transportation incidents.
 \newblock In {\em Proc. Transportation Research Board 92nd Ann. Meeting},
   number 13-1636, 2013.
-
-\bibitem[MHK14]{kn:Medhat2014}
-Walaa Medhat, Ahmed Hassan, and Hoda Korashy.
-\newblock {Sentiment analysis algorithms and applications: A survey}.
-\newblock {\em Ain Shams Engineering Journal}, 5(4):1093--1113, 2014.
 
 \bibitem[MKWP{\etalchar{+}}16]{mac2016effects}
 Sunghwan Mac~Kim, Stephen Wan, C{\'e}cile Paris, Brian Jin, and Bella Robinson.
@@ -411,11 +240,6 @@ Cataldo Musto, Giovanni Semeraro, Pasquale Lops, and Marco~De Gemmis.
   streams}.
 \newblock {\em Information Systems}, 54:127--146, 2015.
 
-\bibitem[MWdR12]{kn:Meij2012}
-Edgar Meij, Wouter Weerkamp, and Maarten de~Rijke.
-\newblock Adding semantics to microblog posts.
-\newblock pages 563--572, 2012.
-
 \bibitem[MYZ13]{mikolov2013linguistic}
 Tomas Mikolov, Wen-tau Yih, and Geoffrey Zweig.
 \newblock Linguistic regularities in continuous space word representations.
@@ -441,33 +265,16 @@ Jo{\~a}o Oliveira, Mike Pinto, Pedro Saleiro, and Jorge Teixeira.
 \newblock In {\em Proceedings of the Ninth International C* Conference on
   Computer Science \& Software Engineering}, pages 123--124. ACM, 2016.
 
-\bibitem[PdRS12]{kn:peetz2012}
-Maria-Hendrike Peetz, Maarten de~Rijke, and Anne Schuth.
-\newblock From sentiment to reputation.
-\newblock 2012.
-
 \bibitem[Phi12]{kn:Judah2012}
 Judah Phillips.
 \newblock {\em Social Media Analytics}, pages 247--269.
 \newblock John Wiley \& Sons, Inc., 2012.
-
-\bibitem[PP15]{kn:Patawar2015}
-Maithilee~L. Patawar and M.~A. Potey.
-\newblock Approaches to named entity recognition: A survey.
-\newblock {\em International Journal of Innovative Research in Computer and
-  Communication Engineering}, 3, December 2015.
 
 \bibitem[PPSR17]{pereira2017transportation}
 Jo{\~a}o Pereira, Arian Pasquali, Pedro Saleiro, and Rosaldo Rossetti.
 \newblock Transportation in social media: an automatic classifier for
   travel-related tweets.
 \newblock {\em arXiv preprint arXiv:1706.05090}, 2017.
-
-\bibitem[QYOP15]{kn:Qureshi2015}
-M.~Atif Qureshi, Arjumand Younus, Colm O'Riordan, and Gabriella Pasi.
-\newblock {\em Company Name Disambiguation in Tweets: A Two-Step Filtering
-  Approach}.
-\newblock Springer International Publishing, Cham, 2015.
 
 \bibitem[RDL10]{ramage2010characterizing}
 Daniel Ramage, Susan~T Dumais, and Daniel~J Liebling.
@@ -486,22 +293,12 @@ Jo~Royle and Audrey Laing.
 \newblock {\em International Journal of Information Management}, 34(2):65--73,
   2014.
 
-\bibitem[RM99]{kn:Ramshaw1999}
-L.~A. Ramshaw and M.~P. Marcus.
-\newblock {\em Text Chunking Using Transformation-Based Learning}.
-\newblock Springer Netherlands, Dordrecht, 1999.
-
 \bibitem[RMM{\etalchar{+}}12]{kn:Roitman2012}
 Haggai Roitman, Jonathan Mamou, Sameep Mehta, Aharon Satt, and L.V.
   Subramaniam.
 \newblock {Harnessing the crowds for smart city sensing}.
 \newblock {\em Proceedings of the 1st international workshop on Multimodal
   crowd sensing - CrowdSens '12}, (November):17, 2012.
-
-\bibitem[RR09]{kn:Ratinov2009}
-Lev Ratinov and Dan Roth.
-\newblock Design challenges and misconceptions in named entity recognition.
-\newblock pages 147--155, 2009.
 
 \bibitem[RS10]{rehurek2010software}
 Radim Rehurek and Petr Sojka.
@@ -521,12 +318,6 @@ Anna Stavrianou, Periklis Andritsos, and Nicolas Nicoloyannis.
 \newblock Overview and semantic issues of text mining.
 \newblock {\em ACM Sigmod Record}, 36(3):23--34, 2007.
 
-\bibitem[SDX13]{kn:Stieglitz2013}
-Stefan Stieglitz and Linh Dang-Xuan.
-\newblock {Social media and political communication: a social media analytics
-  framework}.
-\newblock {\em Social Network Analysis and Mining}, 3(4):1277--1291, 2013.
-
 \bibitem[SFD{\etalchar{+}}10]{kn:Sriram2010}
 Bharath Sriram, Dave Fuhry, Engin Demir, Hakan Ferhatosmanoglu, and Murat
   Demirbas.
@@ -542,12 +333,6 @@ R{\'o}bert Szab{\'o}, K{\'a}roly Farkas, M{\'a}rton Isp{\'a}ny, Andr{\'a}s~A
   V{\'a}gner, Lajos Koll{\'a}r, Cs~Sidl{\'o}, et~al.
 \newblock Framework for smart city applications based on participatory sensing.
 \newblock pages 295--300, 2013.
-
-\bibitem[SGA13]{Spina2013}
-Damiano Spina, Julio Gonzalo, and Enrique Amig{\'{o}}.
-\newblock {Discovering filter keywords for company name disambiguation in
-  twitter}.
-\newblock {\em Expert Systems with Applications}, 40(12):4986--5003, 2013.
 
 \bibitem[SGS16]{saleiro2016sentiment}
 Pedro Saleiro, Lu{\'\i}s Gomes, and Carlos Soares.
@@ -568,18 +353,6 @@ SINTEF.
 Pedro Saleiro, Eduarda Mendes~Rodrigues, Carlos Soares, and Eugenio Oliveira.
 \newblock Texrep: A text mining framework for online reputation monitoring.
 \newblock {\em New Generation Computing}, 2015.
-
-\bibitem[Spi14]{kn:spina2014}
-Damiano Spina.
-\newblock {\em Entity-based filtering and topic detection For online reputation
-  monitoring in Twitter}.
-\newblock PhD thesis, Universidad Nacional de Educaci{\'o}n a Distancia, 2014.
-
-\bibitem[SRP{\etalchar{+}}13]{kn:Saleiro2013}
-Pedro Saleiro, Lus Rei, Arian Pasquali, Carlos Soares, Jorge Teixeira, Fabio
-  Pinto, Mohammad Nozari, Catarina Felix, and Pedro Strecht.
-\newblock {POPSTAR at RepLab 2013: Name ambiguity resolution on Twitter}.
-\newblock {\em CEUR Workshop Proceedings}, 1179, 2013.
 
 \bibitem[SRSO17]{saleiro2017feup}
 Pedro Saleiro, Eduarda~Mendes Rodrigues, Carlos Soares, and Eug{\'e}nio
@@ -602,12 +375,6 @@ Jagan Sankaranarayanan, Hanan Samet, Benjamin~E. Teitler, Michael~D. Lieberman,
   on Advances in Geographic Information Systems - GIS '09}, (January 2009):42,
   2009.
 
-\bibitem[TBP{\etalchar{+}}10]{kn:Thelwall:2010}
-Mike Thelwall, Kevan Buckley, Georgios Paltoglou, Di~Cai, and Arvid Kappas.
-\newblock Sentiment in short strength detection informal text.
-\newblock {\em J. Am. Soc. Inf. Sci. Technol.}, 61(12):2544--2558, December
-  2010.
-
 \bibitem[TT15]{tuarob2015quantifying}
 Suppawong Tuarob and Conrad~S Tucker.
 \newblock Quantifying product favorability and extracting notable product
@@ -615,57 +382,21 @@ Suppawong Tuarob and Conrad~S Tucker.
 \newblock {\em Journal of Computing and Information Science in Engineering},
   15(3):031003, 2015.
 
-\bibitem[TWQ{\etalchar{+}}14]{kn:tang2014coooolll}
-Duyu Tang, Furu Wei, Bing Qin, Ting Liu, and Ming Zhou.
-\newblock Coooolll: A deep learning system for twitter sentiment
-  classification.
-\newblock pages 208--212, 2014.
-
-\bibitem[TWY{\etalchar{+}}14]{kn:tang2014learning}
-Duyu Tang, Furu Wei, Nan Yang, Ming Zhou, Ting Liu, and Bing Qin.
-\newblock Learning sentiment-specific word embedding for twitter sentiment
-  classification.
-\newblock pages 1555--1565, 2014.
-
 \bibitem[URS16]{kn:Cecilia2016}
 Daniela Ulloa, Rosaldo J.~F. Rossetti, and Pedro Saleiro.
 \newblock {A Framework for Open Innovation through Automatic Analysis of Social
   Media Data}.
 \newblock 2016.
 
-\bibitem[VRLSM{\etalchar{+}}12]{kn:villena2012}
-Julio Villena-Rom{\'a}n, Sara Lana-Serrano, Cristina Moreno, Janine
-  Garc{\'\i}a-Morera, and Jos{\'e} Carlos~Gonz{\'a}lez Crist{\'o}bal.
-\newblock Daedalus at replab 2012: Polarity classification and filtering on
-  twitter data.
-\newblock 60, 2012.
-
 \bibitem[Yar95]{kn:Yarowsky1995}
 David Yarowsky.
 \newblock Unsupervised word sense disambiguation rivaling supervised methods.
 \newblock pages 189--196, 1995.
 
-\bibitem[YMA10]{kn:Yerva2010}
-Surender~Reddy Yerva, Zolt{\'a}n Mikl{\'o}s, and Karl Aberer.
-\newblock It was easy, when apples and blackberries were only fruits.
-\newblock 2010.
-
-\bibitem[YMO{\etalchar{+}}10]{kn:Yoshida2010}
-Minoru Yoshida, Shin Matsushima, Shingo Ono, Issei Sato, and Hiroshi Nakagawa.
-\newblock Itc-ut: Tweet categorization by query categorization for on-line
-  reputation management.
-\newblock {\em CLEF (Notebook Papers/LABs/Workshops)}, 2010.
-
 \bibitem[ZCLL10]{zeng2010social}
 Daniel Zeng, Hsinchun Chen, Robert Lusch, and Shu-Hsing Li.
 \newblock Social media analytics and intelligence.
 \newblock {\em IEEE Intelligent Systems}, 25(6):13--16, 2010.
-
-\bibitem[ZJW{\etalchar{+}}11]{kn:Zhao2011}
-Wayne~Xin Zhao, Jing Jiang, Jianshu Weng, Jing He, Ee-Peng Lim, Hongfei Yan,
-  and Xiaoming Li.
-\newblock Comparing twitter and traditional media using topic models.
-\newblock pages 338--349, 2011.
 
 \bibitem[ZNHG16]{zhang2016mining}
 Zhenhua Zhang, Ming Ni, Qing He, and Jing Gao.

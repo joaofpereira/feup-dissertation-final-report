@@ -5,27 +5,27 @@
 \contentsline {xchapter}{Background and Literature Review}{5}{chapter.2}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces \textit {Smart City} conjecture of four forces. Source:~\cite {kn:Angelidou2015}\relax }}{6}{figure.caption.8}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Framework}{17}{chapter.3}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Framework Architecture Overview}}{19}{figure.caption.12}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Plate notation of LDA by D.Blei et al. ~\cite {blei2003latent}}}{23}{figure.caption.13}
+\contentsline {xchapter}{Framework}{19}{chapter.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Framework Architecture Overview}}{21}{figure.caption.12}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Plate notation of LDA by D.Blei et al. ~\cite {blei2003latent}}}{25}{figure.caption.13}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Exploratory Data Analysis}{27}{chapter.4}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Search Bounding-boxes for the data collection\relax }}{28}{figure.caption.14}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Exploratory analysis in Brazilian cities}}{32}{figure.caption.19}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Exploratory analysis in English-speaking cities}}{33}{figure.caption.20}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Daily volume of tweets}}{34}{figure.caption.21}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Days-of-the-week box-plots for the volume of tweets}}{35}{figure.caption.22}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Hour-of-the-day box-plots for the volume of tweets}}{36}{figure.caption.23}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Log-log plots of users distribution}}{38}{figure.caption.24}
+\contentsline {xchapter}{Exploratory Data Analysis}{29}{chapter.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Search Bounding-boxes for the data collection\relax }}{30}{figure.caption.14}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Exploratory analysis in Brazilian cities}}{34}{figure.caption.19}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Exploratory analysis in English-speaking cities}}{35}{figure.caption.20}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Daily volume of tweets}}{36}{figure.caption.21}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Days-of-the-week box-plots for the volume of tweets}}{37}{figure.caption.22}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Hour-of-the-day box-plots for the volume of tweets}}{38}{figure.caption.23}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Log-log plots of users distribution}}{40}{figure.caption.24}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Experiments}{41}{chapter.5}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces ROC Curve of SVM, LR and RF experiences\relax }}{46}{figure.caption.29}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Positive Predicted Tweets per Day of Week\relax }}{46}{figure.caption.30}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Rio de Janeiro Heatmap to the positive tweets\relax }}{47}{figure.caption.31}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces S\IeC {\~a}o Paulo Heatmap to the positive tweets\relax }}{48}{figure.caption.32}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces SVM model with BoE(200) for each travel mode\relax }}{51}{figure.caption.36}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Spatial density of the predicted tweets}}{53}{figure.caption.38}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Day-of-the-week Twitter activity}}{58}{figure.caption.42}
+\contentsline {xchapter}{Experiments}{43}{chapter.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces ROC Curve of SVM, LR and RF experiences\relax }}{47}{figure.caption.29}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Positive Predicted Tweets per Day of Week\relax }}{48}{figure.caption.30}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Rio de Janeiro Heatmap to the positive tweets\relax }}{48}{figure.caption.31}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces S\IeC {\~a}o Paulo Heatmap to the positive tweets\relax }}{49}{figure.caption.32}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces SVM model with BoE(200) for each travel mode\relax }}{53}{figure.caption.36}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Spatial density of the predicted tweets}}{54}{figure.caption.38}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Day-of-the-week Twitter activity}}{59}{figure.caption.42}
 \addvspace {10\p@ }
 \contentsline {xchapter}{Conclusions and Future Work}{61}{chapter.6}
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Dissertation working plan.\relax }}{63}{figure.caption.43}
