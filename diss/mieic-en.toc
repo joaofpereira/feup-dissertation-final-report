@@ -11,65 +11,51 @@
 \contentsline {section}{\numberline {2.3}Social Media Analytics}{8}{section.2.3}
 \contentsline {section}{\numberline {2.4}Text Mining}{9}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Text Classification}{11}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Topic Modelling}{12}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Related Frameworks}{13}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Harvesting Framework Systems through Social Media}{13}{subsection.2.5.1}
-\contentsline {chapter}{\numberline {3}Old Background and Literature Review}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Smart Cities and Intelligent Transportation Systems}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}Social Media Analytics}{18}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Twitter}{18}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Text Mining}{20}{section.3.3}
-\contentsline {section}{\numberline {3.4}Information Extraction}{22}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Name Entity Recognition and Name Entity Disambiguation}{22}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Content Filtering}{25}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Topic Modeling}{27}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Sentiment Analysis}{28}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Lexicon-based vs Machine-learning based}{28}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Aspect-based Sentiment Analysis}{33}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Conclusion}{34}{section.3.6}
-\contentsline {chapter}{\numberline {4}Framework}{37}{chapter.4}
-\contentsline {section}{\numberline {4.1}Requirements}{37}{section.4.1}
-\contentsline {section}{\numberline {4.2}Architecture Overview}{38}{section.4.2}
-\contentsline {section}{\numberline {4.3}Data Collection}{38}{section.4.3}
-\contentsline {section}{\numberline {4.4}Data Preprocessing}{40}{section.4.4}
-\contentsline {section}{\numberline {4.5}Text Analytics}{42}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Travel-related Classification}{42}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Topic Modelling}{43}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Final Remarks}{44}{subsection.4.5.3}
-\contentsline {section}{\numberline {4.6}Data Storage and Aggregation}{44}{section.4.6}
-\contentsline {section}{\numberline {4.7}Visualization}{44}{section.4.7}
-\contentsline {section}{\numberline {4.8}Summary}{45}{section.4.8}
-\contentsline {chapter}{\numberline {5}Exploratory Data Analysis}{47}{chapter.5}
-\contentsline {section}{\numberline {5.1}Geographic Distributions}{47}{section.5.1}
-\contentsline {section}{\numberline {5.2}Temporal Frequencies}{51}{section.5.2}
-\contentsline {section}{\numberline {5.3}Content Composition}{57}{section.5.3}
+\contentsline {subsection}{\numberline {2.4.2}Topic Modelling}{13}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Related Social Media Frameworks}{15}{section.2.5}
+\contentsline {chapter}{\numberline {3}Framework}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Requirements}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Architecture Overview}{18}{section.3.2}
+\contentsline {section}{\numberline {3.3}Data Collection}{18}{section.3.3}
+\contentsline {section}{\numberline {3.4}Data Preprocessing}{20}{section.3.4}
+\contentsline {section}{\numberline {3.5}Text Analytics}{22}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Travel-related Classification}{22}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Topic Modelling}{23}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Final Remarks}{24}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}Data Storage and Aggregation}{24}{section.3.6}
+\contentsline {section}{\numberline {3.7}Visualization}{24}{section.3.7}
+\contentsline {section}{\numberline {3.8}Summary}{25}{section.3.8}
+\contentsline {chapter}{\numberline {4}Exploratory Data Analysis}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Geographic Distributions}{27}{section.4.1}
+\contentsline {section}{\numberline {4.2}Temporal Frequencies}{31}{section.4.2}
+\contentsline {section}{\numberline {4.3}Content Composition}{37}{section.4.3}
+\contentsline {section}{\numberline {4.4}Summary}{39}{section.4.4}
+\contentsline {chapter}{\numberline {5}Experiments}{41}{chapter.5}
+\contentsline {section}{\numberline {5.1}Portuguese Travel-related Classification}{42}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Data Selection}{42}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Data Preparation}{42}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Features Selection}{43}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Training and Test Datasets}{43}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Estimators and Evaluation Metrics}{44}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Results and Analysis}{45}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.7}Final Remarks}{47}{subsection.5.1.7}
+\contentsline {section}{\numberline {5.2}English Travel-related Classification}{48}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Data Collection and Preparation}{48}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Features Selection}{49}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Training and Test Datasets}{49}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Classification}{49}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Preliminary Results}{49}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}\emph {Leave-one-group-out}}{50}{subsection.5.2.6}
+\contentsline {subsection}{\numberline {5.2.7}Concluding Remarks}{52}{subsection.5.2.7}
+\contentsline {section}{\numberline {5.3}Topic Modelling}{54}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Data Selection}{54}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Data Preparation}{55}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Features Selection}{55}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}LDA Model Parametrization}{56}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Results and Analysis}{56}{subsection.5.3.5}
+\contentsline {subsection}{\numberline {5.3.6}Final Remarks}{58}{subsection.5.3.6}
 \contentsline {section}{\numberline {5.4}Summary}{59}{section.5.4}
-\contentsline {chapter}{\numberline {6}Experiments}{61}{chapter.6}
-\contentsline {section}{\numberline {6.1}Portuguese Travel-related Classification}{62}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Data Selection}{62}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Data Preparation}{62}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Features Selection}{63}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Training and Test Datasets}{63}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}Estimators and Evaluation Metrics}{64}{subsection.6.1.5}
-\contentsline {subsection}{\numberline {6.1.6}Results and Analysis}{65}{subsection.6.1.6}
-\contentsline {subsection}{\numberline {6.1.7}Final Remarks}{67}{subsection.6.1.7}
-\contentsline {section}{\numberline {6.2}English Travel-related Classification}{68}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Data Collection and Preparation}{68}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Features Selection}{69}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Training and Test Datasets}{69}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Classification}{69}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Preliminary Results}{69}{subsection.6.2.5}
-\contentsline {subsection}{\numberline {6.2.6}\emph {Leave-one-group-out}}{70}{subsection.6.2.6}
-\contentsline {subsection}{\numberline {6.2.7}Concluding Remarks}{72}{subsection.6.2.7}
-\contentsline {section}{\numberline {6.3}Topic Modelling}{74}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Data Selection}{74}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Data Preparation}{75}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Features Selection}{75}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}LDA Model Parametrization}{76}{subsection.6.3.4}
-\contentsline {subsection}{\numberline {6.3.5}Results and Analysis}{76}{subsection.6.3.5}
-\contentsline {subsection}{\numberline {6.3.6}Final Remarks}{78}{subsection.6.3.6}
-\contentsline {section}{\numberline {6.4}Summary}{79}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{81}{chapter.7}
-\contentsline {section}{\numberline {7.1}Expected Contributions}{82}{section.7.1}
-\contentsline {section}{\numberline {7.2}Task Planning and Scheduling}{82}{section.7.2}
-\contentsline {chapter}{References}{85}{section*.47}
+\contentsline {chapter}{\numberline {6}Conclusions and Future Work}{61}{chapter.6}
+\contentsline {section}{\numberline {6.1}Expected Contributions}{62}{section.6.1}
+\contentsline {section}{\numberline {6.2}Task Planning and Scheduling}{62}{section.6.2}
+\contentsline {chapter}{References}{65}{section*.44}

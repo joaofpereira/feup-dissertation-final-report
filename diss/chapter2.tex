@@ -99,56 +99,96 @@ Tagging can be describe as the process of labeling each term of the text with a 
 
 Tokenization serves to pick up all the terms presented in a text document and to achieve this it's necessary splitting its content into a stream of words implying the removal of the punctuation marks and non-text characters \cite{kn:Hotho2005}. Some authors also see tokenization as a text representation form since one of the most used models to represent texts is \textit{Bag-of-words} (BoW). This model broke down texts into words and stores it in a term-frequency vector according the occurrence of a word in the text. Hence, each word may represent a feature \cite{kn:Sriram2010}. Another commonly used model to represent texts is Vector Space Models that represent all the documents in a multi-dimensional space where documents are converted to vectors and each vector may be seen as a feature. This model provides some advantages since the documents can be compared with each other by performing some specific vector operations \cite{kn:Hotho2005}.
 
-Once been introduced some of the most preliminary important steps in text mining, the remainder subsection are focused in two different text analytics approaches: text classification and topic modelling.
+Once been introduced some of the most preliminary important steps in text mining, the remainder subsection are focused in two different text analytics approaches: text classification and topic modelling. The majority of Social Media Analytics approaches focus its efforts in modelling and classification in order to understand the large range of data collected and support commonly used techniques to extract information from it, such as sentiment analysis, trend analysis and topic modeling~\cite{kn:Fan2013}.
 
 \subsection{Text Classification}
 
 Text classification is a text mining task which main goal is the discrimination or characterization of a piece of text into a specific format value. Such value can vary from number (sentiment analysis tasks), labels (multi-labeling tasks), classes (binary or multi-class tasks). Classification in text analysis is a widely used methodology and had already been reported in several scientic contributions regarding the smart cities and transportation domains.
 
-A. Sifnorini et al.~\cite{signorini2011use} reported a study which main goal was the tracking of the disease Influenza A (H1N1) virus. Tweets collected by the authors using term-based search sum up more than 300 million examples. Their methodology consists in training SVM models with sets of frequency features composed by the most used weekly-terms over the whole dataset. Each model was specifically trained according a certain set of keywords and follow an iterative process, i.e. authors firstly have classified all illness-related tweets related and than used the resulting related subset of data to perform new classification regarding specific keywords, such as what was the disease source, countermeasures used and infected people characteristics. Final results allowed the verification of a decrease of Twitter activity while more new cases were appearing meaning that over time people starts to less concern about this epidemic.
+Support Vector Machines (SVM)~\cite{signorini2011use, zhang2016mining, pereira2017transportation, carvalho2010real}, Ordinary Least Squares (OLS)~\cite{saleiro2016sentiment}, Random Forests (RF)~\cite{saleiro2017feup}, MultiLayer Perceptron (MLP)~\cite{saleiro2017texrep}, Naïve Bayes (NB) and Decision Trees J48 (DT J48)~\cite{kuflik2017automating} are some of the supervised classification models used to analyse social media data over fields such as health and pharmacovigilance, political opinion, transportation (travel classification, traffic and incidents detection), financial sentiment analysis and \textit{online} reputation monitoring.
+
+A. Sifnorini et al.~\cite{signorini2011use} reported a study which main goal was the tracking of the disease Influenza A (H1N1) virus. Tweets collected by the authors using term-based search sum up more than 300 million examples. Their methodology consists in training SVM models with sets of frequency features composed by the most used weekly-terms over the whole dataset. Each model was specifically trained according a certain set of keywords and follow an iterative process, i.e. authors firstly have classified all illness-related tweets related and than used the resulting related subset of data to perform new classification regarding specific keywords, such as what was the disease source, countermeasures used and infected people characteristics. Final results allowed the verification of a decrease of Twitter activity while more new cases were appearing meaning less concerning about this epidemic through time.
 
 Accident-related classification for Twitter data was proposed by Z. Zhang et al.~\cite{zhang2016mining}. Authors explored the Twitter Streaming API to collect geo-located tweets from Northern Virginia during a completed year, January to December of 2014, and recurring to auxiliary loop detectors that are, in intervals of 15 minutes, recording the traffic flow. In order to automatize the detection of accidents in that interval of time (were the sensors are not recording the scene), authors have built a binary classification model using Linear SVM with a balanced dataset composed by 400 training examples for each of the accident-related and non-related classes composed by a boolean-vectors according the final 3,000 tokens resulted from the token filtering and stemming process. Performance was improved by submitting the model to a 5-fold cross validation which was proved by values of accuracy and precision over than 70\% of success.
 
-A. Nikfarjam et. al~\cite{}
+J. Pereira et al.~\cite{pereira2017transportation} try to discriminate travel-related tweets recurring to a combination of two different types of features: bag-of-words and word embeddings. Authors explored almost 9,000,000 geo-located tweets from two Brazilian \textit{megacities} and construct, manually, a balanced training dataset of travel-related and non-related tweets. The binary classification proved to have better performance under the SVM model experiments with linear \textit{kernel} function, as well as the two previous mentioned works here.  Still considering this task, S. Carvalho et al.~\cite{carvalho2010real} have, similar to the previous case, constructed a bag-of-words dependent classification model for travel-related tweets and achieved improvements at the task performance with support of a bootstrapping approach implying a training in two phases to the SVM model.  By assuming the similarities, i.e. all four works were related to binary text classifications, we can induce an hypotheses that Linear SVM models have superior performances relatively to other models for this type of classification tasks.
+
+Multi-class classification models were also applied to the transportation domain through text analysis of social media content. T. Kufliket al~\cite{kuflik2017automating} build multiple classification models using methods such as Naïve Bayes and Decision Trees (J48) to predict multiple modes of transport during three different sports events. Tweets sum up a total of 3.7M and were submitted to the models classification task in order to prove that an harvesting automatically information from Social Media Content is possible and may help transportation entities in the planning and management of their services during social occasions as it is demonstrate in theirs use cases.
+
+On the other hand, P. Saleiro et al.~\cite{saleiro2016sentiment} tried to predict the 2011 Portuguese bailout results analysing the tweets opinion about all five political parties candidates. The opinion was measure using a OLS model trained with specific sentiment aggregate functions and proved to be capable of correctly predict who would be elected prime minister of Portugal only exploring sentiment analysis in social media data. In SemEval-2017 Task 5, P. Saleiro et al. explored word embeddings techniques to extract the sentiment polarity and intensity in financial-related tweets. Similar to~\cite{pereira2017transportation}, authors have proved good performance of models trained with bag-of-words and bag-of-embeddings features together although the approach been applied to different domains. The usage of features representing syntactic and semantic similarities of texts, such as word embeddings, can be seen with great potential namely to the area of text classification.
 
 \begin{table}[htbp]
 	\centering
-	\caption{Summary of the related work for text classification}
+	\caption{Brief overview of the related work for text classification - Best Experiments}
 	\label{my-label}
 	\resizebox{\textwidth}{!}{\begin{tabular}{c|c|c|c|c}
 			\hline
 			\textbf{Approach} & \textbf{Features} & \textbf{Classification Methods} & \textbf{Goal} & \textbf{Potential Domain}\\ \hline
-			A. Sifnorini et al.~\cite{signorini2011use} & Bag-of-words & Linear SVMs & \begin{tabular}[c]{@{}c@{}}Tracking the evolution of public sentiment and\\ increasing of social media activity about the H1N1 pandemic\end{tabular} & Smart City - Health \\ \hline
-			Z. Zhang et al.~\cite{zhang2016mining} & \begin{tabular}[c]{@{}c@{}}Boolean vectors matrix \\ (3,000 different tokens)\end{tabular} & Linear SVMs & \begin{tabular}[c]{@{}c@{}}Improve transportation control by automatic \\ discriminate accident-related tweets \end{tabular} & Transportation \\ \hline
+			A. Sifnorini et al.~\cite{signorini2011use} & Bag-of-words & Linear SVM & \begin{tabular}[c]{@{}c@{}}Tracking the evolution of public sentiment\\ and increasing of social media activity about\\ the H1N1 pandemic\end{tabular} & Smart City - Health \\ \hline
+			
+			Z. Zhang et al.~\cite{zhang2016mining} & \begin{tabular}[c]{@{}c@{}}Boolean vectors matrix \\ (3,000 different tokens)\end{tabular} & Linear SVM & \begin{tabular}[c]{@{}c@{}}Improve transportation control by automatic \\discriminate accident-related tweets \end{tabular} & \begin{tabular}[c]{@{}c@{}}Smart City - Travel and \\Transportation\end{tabular} \\ \hline
+			
+			J. Pereira et. al~\cite{pereira2017transportation} &  \begin{tabular}[c]{@{}c@{}}Word Embeddings,\\ Bag-of-words\end{tabular} & Linear SVM & \begin{tabular}[c]{@{}c@{}} Discrimination of travel-related tweets through \\word embeddings techniques\end{tabular} & \begin{tabular}[c]{@{}c@{}}Smart City - Travel and \\Transportation\end{tabular} \\ \hline
+			
+			T. Kuflik et al.~\cite{kuflik2017automating} & Bag-of-words &  \begin{tabular}[c]{@{}c@{}} Naïve Bayes, \\ DT J48\end{tabular} & \begin{tabular}[c]{@{}c@{}}Multi-class mode of transport classification and the \\ purpose behind it\end{tabular} & \begin{tabular}[c]{@{}c@{}}Smart City - Travel and \\Transportation\end{tabular} \\ \hline
+			
+			S. Carvalho et al.~\cite{carvalho2010real} & Bag-of-words & \begin{tabular}[c]{@{}c@{}}Linear SVM with \\ Bootstrapping\end{tabular} & Discrimination of travel-related tweets & \begin{tabular}[c]{@{}c@{}}Smart City - Travel and \\Transportation\end{tabular}\\ \hline
+			
+			P. Saleiro et al.~\cite{saleiro2016sentiment} & \begin{tabular}[c]{@{}c@{}} Sentiment Aggregate\\ Functions \end{tabular} & OLS & \begin{tabular}[c]{@{}c@{}} Predicting Portuguese polls results through \\ opinion mining \end{tabular} & Smart Cities - Government \\ \hline
+			
+			P. Saleiro et al.~\cite{saleiro2017feup} & \begin{tabular}[c]{@{}c@{}}Word Embeddings,\\ Bag-of-words,\\ domain-specific lexicons\end{tabular} & RF & \begin{tabular}[c]{@{}c@{}} Extraction of sentiment polarity and intensity from social\\  media content and web news \end{tabular} &  Smart City - Economy \\ \hline
+			
 		\end{tabular}}
 	\end{table}
 	
-	
-The majority of SMA techniques focus on modeling in order to understand the large range of data collected and support techniques, such as sentiment analysis, trend analysis and topic modeling, are the most commonly used \cite{kn:Fan2013}.
+There is a wide diversity in text classification approaches. A worth noting fact in this review at the literature is that word embeddings have been supporting conventional techniques in order to improve performances in text classification tasks. Transportation domain lacks in studies having this particular feature in the training process of its classification models. Hence, it is of major importance perform experiments about this domain aiming conclusions and additional content to support the potential advantages brought by word embeddings.
 
 \subsection{Topic Modelling}
 
-G. Lansley and P. Longley~\cite{lansley2016geography}
+Topic modelling is a text mining unsupervised technique/method aiming the identification of similarities in unlabeled texts. Usually, this technique is applied over texts of large volume since to correctly identify the resulting patterns in its content requires the existence of lots of information.
 
-\begin{table}[htbp]
-	\centering
-	\caption{Summary of the related work for topic modelling}
-	\label{tab:topic_related_work}
-	\resizebox{\textwidth}{!}{\begin{tabular}{c|c|c|c|c}
-			\hline
-			\textbf{Approach} & \textbf{Features} & \textbf{Methods} & \textbf{Goal} & \textbf{Potential Domain}\\ \hline
-			S. Tuarob and C. Tucker~\cite{tuarob2015quantifying} & Bag-of-words & \begin{tabular}[c]{@{}c@{}}Unsupervised Latent Dirichlet \\ Allocation\end{tabular} & \begin{tabular}[c]{@{}c@{}} Extraction of people's polarization sentiment about a\\ specific feature of a product (aspect sentiment analysis)\end{tabular} & Smart City - Economy \\ \hline
-			
-			Z. Zhang et al.~\cite{zhang2016mining} & Tagged Bag-of-words & \begin{tabular}[c]{@{}c@{}}Supervised Latent Dirichlet \\ Allocation~\cite{mcauliffe2008supervised}\end{tabular} & \begin{tabular}[c]{@{}c@{}} Comparing performances with SVMs models \\ to accident-related tweets \end{tabular} & Transportation \\ \hline
-	\end{tabular}}
-\end{table}
+One of the first studies made using Twitter data was proposed by H. Kwak et al.~\cite{kwak2010twitter} and consisted in the collection of messages to classify the trends in its content. Results showed that almost 80\% of the trends in Twitter are related to real-time news and the period in which each trend maintains itself in the top is limited. The authors proved that Twitter can be seen as a mirror of real-time occurring events/incidents in the world.
+
+Several works were already proposed to identify social patterns in the population daily-basis life and mapping such patterns geographically by topic modelling techniques to discover latent topics in social media streams. Usually, studies about topic modelling, in particular LDA model, to text mining problems follow unsupervised approaches~\cite{lansley2016geography,oliveira2016sentibubbles} - where is not required the creation of a training dataset. Others improved the model and made it an supervised approach~\cite{ramage2010characterizing}, dependent of training data, and compare to the traditional one in order to prove better results.
+
+Using entity-centric aggregations and topic modelling techniques, J. Oliveira et al.~\cite{oliveira2016sentibubbles} built a system focused in data visualization that allows an user to search for an entity during a specific period and shows which are the main topics identified in the Twitter messages.  Ordinary weekday patterns were identified by G. Lansley et al.~\cite{lansley2016geography} in their study regarding the inner region of London. The authors used a LDA model to distribute 20 topics over 1.3M tweets. After crossing the results of the experiment with land-uses datasets it was possible to observe interesting patterns in specific zones and places of the British city. Nonetheless, D. Ramage et al.~\cite{ramage2010characterizing} improved a LDA model by adding a supervised layer that automatic label each tweet used in their experiment.
+
+Conditional Random Fields (CRF) are explored by A. Nikfarjam et. al~\cite{nikfarjam2015pharmacovigilance} which have applied word embeddings in combination to other text features, such as adverse drug reactions lexicons, POS tagging and negation collocations in order to train a supervised model. Such model was able to demonstrate high performances on the extraction of concepts/topics from the social media user-generated content. To prove robustness and efficiency in the model, authors have compared the obtained results with DailyStrength corpus and were able to notice that due to the limited size of text in a tweet, the detection of different reactions about drugs is more complex, which could be simplified with access of greater amount of information provided in the training process of the model.
 
 Differently from the majority of works involving topic modelling techniques, S. Tuarob and C. Tucker~\cite{tuarob2015quantifying} take support of a LDA model to extract the most frequent words for groups of tweets previously collected. The overall work is focused in sentiment analysis approaches and aims the perception of what people fells about a specific product as well as its composing features. Authors used the LDA model to find what were the main 2 topics present in each product set of tweets and considered the most frequent 30 words. Moreover, POS tagging, disambiguation and stemming techniques were used in order to filter out and normalized words related to the product. Finally, an unsupervised method to the polarization classification was applied to obtain the final 
 results which proved the existence of consistency and coherence about the product feature/aspect extracted.
 
 Topic modeling techniques consisting in supervised learning approaches were explored by Z. Zhang et al.~\cite{zhang2016mining}, where authors have compared the results obtained from a SVM classification for accident-related tweets with a classification using a two-topic generative model SLDA (Supervised LDA). Contrarily to the unsupervised method, this one takes into consideration the label assigned to the training examples and can be trained as a genuine classification model. By comparing the final results between both models, it is possible to observe a significative increase of the precision and a decrease of only 0.04 points in the accuracy meaning that supervised topic modelling techniques to binary classification may compete well with conventional classification models, with respect to tweets.
 
-\section{Related Frameworks}
+\begin{table}[htbp]
+	\centering
+	\caption{Brief overview of the related work for topic modelling}
+	\label{tab:topic_related_work}
+	\resizebox{\textwidth}{!}{\begin{tabular}{c|c|c|c|c}
+			\hline
+			\textbf{Approach} & \textbf{Features} & \textbf{Methods} & \textbf{Goal} & \textbf{Potential Domain}\\ \hline
+			H. Kwak et al.~\cite{lansley2016geography} & Twitter metadata & \begin{tabular}[c]{@{}c@{}} Aggregation of trending topics using \\external information \end{tabular} & \begin{tabular}[c]{@{}c@{}} Quantitative study in order to reveal Twitter\\ as both social media and news media platform \end{tabular} & Smart City \\ \hline
+			
+			J. Oliveira et al.~\cite{oliveira2016sentibubbles} & specific-entity words & \begin{tabular}[c]{@{}c@{}}Unsupervised Latent Dirichlet \\ Allocation\end{tabular} & \begin{tabular}[c]{@{}c@{}} Extract the most relevant entity-related topics \end{tabular} & Smart City \\ \hline
+			
+			G. Lansley and P. Longley~\cite{lansley2016geography} & Bag-of-words & \begin{tabular}[c]{@{}c@{}}Unsupervised Latent Dirichlet \\ Allocation\end{tabular} & \begin{tabular}[c]{@{}c@{}} Study social dynamics of London using Twitter topics\end{tabular} & Smart City \\ \hline
+			
+			S. Tuarob and C. Tucker~\cite{tuarob2015quantifying} & Bag-of-words & \begin{tabular}[c]{@{}c@{}}Unsupervised Latent Dirichlet \\ Allocation\end{tabular} & \begin{tabular}[c]{@{}c@{}} Extraction of people's polarization sentiment about a\\ specific feature of a product (aspect sentiment analysis)\end{tabular} & Smart City - Economy \\ \hline
+			
+			D. Ramage et al.~\cite{lansley2016geography} & Labeled bag-of-words & \begin{tabular}[c]{@{}c@{}}Supervised Latent Dirichlet \\ Allocation\end{tabular} & \begin{tabular}[c]{@{}c@{}} Proving the applicability of supervised approaches\\ in conventional LDA model \end{tabular} & Smart City \\ \hline
+			
+			Z. Zhang et al.~\cite{zhang2016mining} & Labeled bag-of-words & \begin{tabular}[c]{@{}c@{}}Supervised Latent Dirichlet \\ Allocation~\cite{mcauliffe2008supervised}\end{tabular} & \begin{tabular}[c]{@{}c@{}} Comparing performances with SVMs models \\ to accident-related tweets \end{tabular} & \begin{tabular}[c]{@{}c@{}}Smart City - Travel and \\Transportation\end{tabular} \\ \hline
+			
+			A. Nikfarjam et. al~\cite{nikfarjam2015pharmacovigilance} &  \begin{tabular}[c]{@{}c@{}}ADR Lexicons, POS Tagging \\ Negation, Word Embeddings\end{tabular} & CRF & 
+			\begin{tabular}[c]{@{}c@{}} Discrimination of adverse drug reactions in tweets\\ content\end{tabular} & Smart City - Health \\ \hline
+	\end{tabular}}
+\end{table}
+
+Probabilistic topic models, such as Latent Dirichlet Allocation (LDA), are the most used techniques in topic detection tasks. Although high applicability, authors question themselves regarding the performance of this technique over social media data which present limitations, starting at the size of the message and ending in the bad phrasal construction and informality~\cite{kn:Mehrotra2013}. In this dissertation we will tackle this question and will try to answer that by presenting results obtained in a real-world scenario.
+
+\section{Related Social Media Frameworks}
+
+F. Rebelo~\cite{rebelo2015twitterjam}
 
 G. Anastasi et al. \cite{kn:Anastasi2013} proposed a framework which objective was the promotion of flexible transportation systems usage, i.e. encouraging people to share transport or to opt for the use of bicycles in order to minimize infrastructural and environmental problems. Their tool takes advantages of the crowd sensing techniques by exploring social media streams to predict accidents or traffic congestion and alert the users of their service about this type of events.
 
@@ -156,5 +196,5 @@ W. Liu et al. \cite{kn:Liu2012} have made a study in three different transportat
 
 T. Ludwig et al. \cite{kn:Ludwig2015} proposed a tool capable of collect and display social media streams in order to help the integration and coordination of volunteers in actions performed by emergency services to prevent engagement in dangerous areas. Their tool present to the end-users map visualization of a city where they could identify public calls of the emergency services to accept or deny them.
 
-\subsection{Harvesting Framework Systems through Social Media}
+P. Saleiro et al.~\cite{saleiro2017texrep}
 

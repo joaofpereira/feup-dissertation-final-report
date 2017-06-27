@@ -16,6 +16,7 @@ A level-1 auxiliary file: nomenclature.aux
 The style file: alpha.bst
 Database file #1: myrefs.bib
 Warning--I didn't find a database entry for "kn:Zeng2010"
+Warning--I didn't find a database entry for "kn:Saleiro2016"
 Warning--empty journal in kn:Anastasi2013
 Warning--empty journal in kn:Banerjee2012
 Warning--there's a number but no volume in kn:Banerjee2012
@@ -61,45 +62,45 @@ Warning--empty journal in kn:Yarowsky1995
 Warning--empty journal in kn:Yerva2010
 Warning--empty journal in kn:Zhao2011
 Warning--empty journal in zhang2016mining
-You've used 107 entries,
+You've used 113 entries,
             2543 wiz_defined-function locations,
-            1222 strings with 27130 characters,
-and the built_in function-call counts, 49077 in all, are:
-= -- 4913
-> -- 2771
-< -- 49
-+ -- 1002
-- -- 991
-* -- 3709
-:= -- 8083
-add.period$ -- 324
-call.type$ -- 107
-change.case$ -- 782
-chr.to.int$ -- 107
-cite$ -- 152
-duplicate$ -- 1797
-empty$ -- 3127
-format.name$ -- 1088
-if$ -- 9890
+            1251 strings with 28456 characters,
+and the built_in function-call counts, 52087 in all, are:
+= -- 5216
+> -- 2961
+< -- 51
++ -- 1075
+- -- 1064
+* -- 3935
+:= -- 8583
+add.period$ -- 345
+call.type$ -- 113
+change.case$ -- 831
+chr.to.int$ -- 113
+cite$ -- 158
+duplicate$ -- 1905
+empty$ -- 3314
+format.name$ -- 1166
+if$ -- 10503
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 107
-newline$ -- 539
-num.names$ -- 321
-pop$ -- 727
+missing$ -- 113
+newline$ -- 569
+num.names$ -- 339
+pop$ -- 777
 preamble$ -- 1
-purify$ -- 895
+purify$ -- 950
 quote$ -- 0
-skip$ -- 1636
+skip$ -- 1728
 stack$ -- 0
-substring$ -- 2707
-swap$ -- 368
-text.length$ -- 49
+substring$ -- 2838
+swap$ -- 395
+text.length$ -- 51
 text.prefix$ -- 13
 top$ -- 0
-type$ -- 840
+type$ -- 888
 warning$ -- 45
-while$ -- 483
-width$ -- 112
-write$ -- 1341
-(There were 46 warnings)
+while$ -- 509
+width$ -- 118
+write$ -- 1419
+(There were 47 warnings)
