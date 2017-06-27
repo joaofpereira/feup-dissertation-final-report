@@ -14,7 +14,7 @@ Word embeddings, on the other hand, is a text representation technique that trie
 We are particularly interested in exploring the characteristics of word embeddings techniques to understand which extent it is possible to improve the performance of our classifier to capture such travel-related expressions. In the following subsections, we describe the necessary steps to build our classification model.
 
 \subsection{Data Selection}
-Messages were collected for a period of one whole month, between days March 12 and April 12, 2017, and the resulting datasets sum up a total of 6.1M and 2.9M tweets for Rio de Janeiro and São Paulo, respectively. Due to the problem detected in Section~\ref{subsec:geographical_distribution}, we filtered the data in order to only use the tweets that were actually inside the cities' areas. The final composition of the datasets is presented in Table~\ref{tab:brazilian_datasets_travel}, and according the previous mentioned criteria, a sum up of 7.7M tweets (5.3M and 2.4M tweets for Rio de Janeiro and São Paulo, respectively) was considered in this experiment.
+Messages were collected for a period of one whole month, between days March 12 and April 12, 2017, and the resulting datasets sum up a total of 6.1M and 2.9M tweets for Rio de Janeiro and São Paulo, respectively. Due to the problem detected in Section~\ref{sec:geographical_distribution}, we filtered the data in order to only use the tweets that were actually inside the cities' areas. The final composition of the datasets is presented in Table~\ref{tab:brazilian_datasets_travel}, and according the previous mentioned criteria, a sum up of 7.7M tweets (5.3M and 2.4M tweets for Rio de Janeiro and São Paulo, respectively) was considered in this experiment.
 
 \begin{table}[ht]
 	\small
@@ -78,7 +78,7 @@ We selected 1,000 tweets randomly that were not present in the training set to b
 \subsection{Estimators and Evaluation Metrics}
 Support Vector Machines (SVM), Logistic Regression (LR) and Random Forests (RF) were the classifiers used in our experiments. The SVM classifier was tested under three different kernels, namely \textit{rbf}, \textit{sigmoid} and \textit{linear}; the latter proved to obtain the best results. 
 
-The LR classifier was used with the standard parameters, whereas the RF classifier used 100 trees in the forest. The gini criterion and the maximum number of features were limited to those as aforementioned in Section~\ref{features_4_3_2}, in the case of the RF classifier.
+The LR classifier was used with the standard parameters, whereas the RF classifier used 100 trees in the forest. The gini criterion and the maximum number of features were limited to those as aforementioned in Section~\ref{subsec:features_4_3_2}, in the case of the RF classifier.
 
 To evaluate the performance of the classifiers in our experiences we used five different metrics. Firstly we compute a group of three per-class metrics, namely precision, recall and the F1-score. Bearing in mind this study considers a binary classification, metrics were associated with the travel-related class only, i.e. the positive class. Therefore, the interpretation for each metric is provided below:
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.15)  27 JUN 2017 20:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.6.15)  27 JUN 2017 22:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1018,7 +1018,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 156.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 156.
-<figures/uporto-feup.pdf, id=261, 338.26375pt x 126.4725pt>
+<figures/uporto-feup.pdf, id=265, 338.26375pt x 126.4725pt>
 File: figures/uporto-feup.pdf Graphic file (type pdf)
 
 <use figures/uporto-feup.pdf>
@@ -1193,7 +1193,7 @@ Chapter 2.
 
 
 ]
-<figures/four_forces.png, id=573, 636.3775pt x 418.56375pt>
+<figures/four_forces.png, id=576, 636.3775pt x 418.56375pt>
 File: figures/four_forces.png Graphic file (type png)
 
 <use figures/four_forces.png>
@@ -1240,7 +1240,7 @@ Chapter 3.
 LaTeX Font Info:    Font shape `T1/pcrs/m/n' will be
 (Font)              scaled to size 10.40245pt on input line 23.
  [20]
-<figures/architecture.pdf, id=804, 922.44624pt x 796.9775pt>
+<figures/architecture.pdf, id=807, 922.44624pt x 796.9775pt>
 File: figures/architecture.pdf Graphic file (type pdf)
 
 <use figures/architecture.pdf>
@@ -1256,7 +1256,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--41
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 56.
  [24] [25]
-<figures/lda-model.pdf, id=936, 584.1825pt x 275.0275pt>
+<figures/lda-model.pdf, id=939, 584.1825pt x 275.0275pt>
 File: figures/lda-model.pdf Graphic file (type pdf)
 
 <use figures/lda-model.pdf>
@@ -1268,33 +1268,34 @@ Package pdftex.def Info: figures/lda-model.pdf used on input line 95.
 
 (./exploratory_analysis.tex
 Chapter 4.
-<figures/sp_bb.png, id=995, 930.47626pt x 757.83125pt>
+<figures/sp_bb.png, id=998, 930.47626pt x 757.83125pt>
 File: figures/sp_bb.png Graphic file (type png)
  <use figures/sp_bb.png>
 Package pdftex.def Info: figures/sp_bb.png used on input line 13.
 (pdftex.def)             Requested size: 132.30428pt x 107.74924pt.
 
-<figures/london_bb.png, id=996, 854.19125pt x 727.71875pt>
+<figures/london_bb.png, id=999, 854.19125pt x 727.71875pt>
 File: figures/london_bb.png Graphic file (type png)
 
 <use figures/london_bb.png>
 Package pdftex.def Info: figures/london_bb.png used on input line 20.
 (pdftex.def)             Requested size: 128.0387pt x 109.07536pt.
 
-<figures/melbourne_bb.png, id=997, 835.12pt x 720.6925pt>
+<figures/melbourne_bb.png, id=1000, 835.12pt x 720.6925pt>
 File: figures/melbourne_bb.png Graphic file (type png)
 
 <use figures/melbourne_bb.png>
 Package pdftex.def Info: figures/melbourne_bb.png used on input line 27.
 (pdftex.def)             Requested size: 128.0387pt x 110.48552pt.
 
-<figures/rio_bb.png, id=998, 1389.19pt x 757.83125pt>
+<figures/rio_bb.png, id=1001, 1389.19pt x 757.83125pt>
 File: figures/rio_bb.png Graphic file (type png)
- <use figures/rio_bb.png>
+
+<use figures/rio_bb.png>
 Package pdftex.def Info: figures/rio_bb.png used on input line 36.
 (pdftex.def)             Requested size: 179.25157pt x 97.78145pt.
 
-<figures/newyork_bb.png, id=999, 1038.88126pt x 647.41875pt>
+<figures/newyork_bb.png, id=1002, 1038.88126pt x 647.41875pt>
 File: figures/newyork_bb.png Graphic file (type png)
 
 <use figures/newyork_bb.png>
@@ -1317,111 +1318,111 @@ Underfull \hbox (badness 2042) in paragraph at lines 99--99
 j / rio-[]de-[]janeiro / panorama$[][] \T1/ptm/m/n/9 (last vis-ited on 17
  []
 
-[31] [32] <figures/sp_bbs.png, id=1057, 618.31pt x 615.29875pt>
+[31] [32] <figures/sp_bbs.png, id=1060, 618.31pt x 615.29875pt>
 File: figures/sp_bbs.png Graphic file (type png)
 
 <use figures/sp_bbs.png>
 Package pdftex.def Info: figures/sp_bbs.png used on input line 141.
 (pdftex.def)             Requested size: 170.71393pt x 169.87897pt.
- <figures/rio_bbs.png, id=1058, 1220.56pt x 674.52pt>
+ <figures/rio_bbs.png, id=1061, 1220.56pt x 674.52pt>
 File: figures/rio_bbs.png Graphic file (type png)
 
 <use figures/rio_bbs.png>
 Package pdftex.def Info: figures/rio_bbs.png used on input line 148.
 (pdftex.def)             Requested size: 213.39568pt x 117.92955pt.
 
-<figures/sp_markers.png, id=1059, 549.05125pt x 631.35875pt>
+<figures/sp_markers.png, id=1062, 549.05125pt x 631.35875pt>
 File: figures/sp_markers.png Graphic file (type png)
 
 <use figures/sp_markers.png>
 Package pdftex.def Info: figures/sp_markers.png used on input line 157.
 (pdftex.def)             Requested size: 170.71393pt x 196.29721pt.
 
-<figures/rio_markers.png, id=1060, 641.39626pt x 377.41pt>
+<figures/rio_markers.png, id=1063, 641.39626pt x 377.41pt>
 File: figures/rio_markers.png Graphic file (type png)
 
 <use figures/rio_markers.png>
 Package pdftex.def Info: figures/rio_markers.png used on input line 164.
 (pdftex.def)             Requested size: 213.39568pt x 125.56499pt.
 
-<figures/sp_points.png, id=1061, 837.1275pt x 741.77126pt>
+<figures/sp_points.png, id=1064, 837.1275pt x 741.77126pt>
 File: figures/sp_points.png Graphic file (type png)
 
 <use figures/sp_points.png>
 Package pdftex.def Info: figures/sp_points.png used on input line 173.
 (pdftex.def)             Requested size: 170.71393pt x 151.26047pt.
 
-<figures/rio_points.png, id=1062, 1343.0175pt x 762.85pt>
+<figures/rio_points.png, id=1065, 1343.0175pt x 762.85pt>
 File: figures/rio_points.png Graphic file (type png)
 
 <use figures/rio_points.png>
 Package pdftex.def Info: figures/rio_points.png used on input line 180.
 (pdftex.def)             Requested size: 213.39568pt x 121.20876pt.
 
-<figures/nyc_bbs.png, id=1063, 897.3525pt x 862.22125pt>
+<figures/nyc_bbs.png, id=1066, 897.3525pt x 862.22125pt>
 File: figures/nyc_bbs.png Graphic file (type png)
 
 <use figures/nyc_bbs.png>
 Package pdftex.def Info: figures/nyc_bbs.png used on input line 193.
 (pdftex.def)             Requested size: 128.0387pt x 123.02568pt.
 
-<figures/london_bbs.png, id=1064, 779.91376pt x 571.13374pt>
+<figures/london_bbs.png, id=1067, 779.91376pt x 571.13374pt>
 File: figures/london_bbs.png Graphic file (type png)
 
 <use figures/london_bbs.png>
 Package pdftex.def Info: figures/london_bbs.png used on input line 200.
 (pdftex.def)             Requested size: 128.0387pt x 93.7624pt.
 
-<figures/melbourne_bbs.png, id=1065, 420.57124pt x 491.8375pt>
+<figures/melbourne_bbs.png, id=1068, 420.57124pt x 491.8375pt>
 File: figures/melbourne_bbs.png Graphic file (type png)
 
 <use figures/melbourne_bbs.png>
 Package pdftex.def Info: figures/melbourne_bbs.png used on input line 207.
 (pdftex.def)             Requested size: 128.0387pt x 149.73628pt.
 
-<figures/nyc_markers.png, id=1066, 901.3675pt x 884.30376pt>
+<figures/nyc_markers.png, id=1069, 901.3675pt x 884.30376pt>
 File: figures/nyc_markers.png Graphic file (type png)
 
 <use figures/nyc_markers.png>
 Package pdftex.def Info: figures/nyc_markers.png used on input line 217.
 (pdftex.def)             Requested size: 128.0387pt x 125.60979pt.
 
-<figures/london_markers.png, id=1067, 714.67pt x 547.04375pt>
+<figures/london_markers.png, id=1070, 714.67pt x 547.04375pt>
 File: figures/london_markers.png Graphic file (type png)
 
 <use figures/london_markers.png>
 Package pdftex.def Info: figures/london_markers.png used on input line 224.
 (pdftex.def)             Requested size: 128.0387pt x 98.00452pt.
 
-<figures/melbourne_markers.png, id=1068, 517.935pt x 528.97626pt>
+<figures/melbourne_markers.png, id=1071, 517.935pt x 528.97626pt>
 File: figures/melbourne_markers.png Graphic file (type png)
 
 <use figures/melbourne_markers.png>
 Package pdftex.def Info: figures/melbourne_markers.png used on input line 231.
 (pdftex.def)             Requested size: 128.0387pt x 130.76665pt.
 
-<figures/nyc_points.png, id=1069, 741.77126pt x 642.4pt>
+<figures/nyc_points.png, id=1072, 741.77126pt x 642.4pt>
 File: figures/nyc_points.png Graphic file (type png)
 
 <use figures/nyc_points.png>
 Package pdftex.def Info: figures/nyc_points.png used on input line 240.
 (pdftex.def)             Requested size: 128.0387pt x 110.88274pt.
 
-<figures/london_points.png, id=1070, 640.3925pt x 545.03625pt>
+<figures/london_points.png, id=1073, 640.3925pt x 545.03625pt>
 File: figures/london_points.png Graphic file (type png)
 
 <use figures/london_points.png>
 Package pdftex.def Info: figures/london_points.png used on input line 247.
 (pdftex.def)             Requested size: 128.0387pt x 108.97205pt.
 
-<figures/melbourne_points.png, id=1071, 409.53pt x 513.92pt>
+<figures/melbourne_points.png, id=1074, 409.53pt x 513.92pt>
 File: figures/melbourne_points.png Graphic file (type png)
 
 <use figures/melbourne_points.png>
 Package pdftex.def Info: figures/melbourne_points.png used on input line 254.
 (pdftex.def)             Requested size: 128.0387pt x 160.67801pt.
 
-<figures/rio_sp_whole_months.png, id=1072, 1175.8329pt x 716.9184pt>
+<figures/rio_sp_whole_months.png, id=1075, 1175.8329pt x 716.9184pt>
 File: figures/rio_sp_whole_months.png Graphic file (type png)
 
 <use figures/rio_sp_whole_months.png>
@@ -1429,7 +1430,7 @@ Package pdftex.def Info: figures/rio_sp_whole_months.png used on input line 270
 .
 (pdftex.def)             Requested size: 341.43437pt x 208.17448pt.
 
-<figures/nyc_london_melbourne_whole_months.png, id=1074, 1175.8329pt x 716.9184
+<figures/nyc_london_melbourne_whole_months.png, id=1077, 1175.8329pt x 716.9184
 pt>
 File: figures/nyc_london_melbourne_whole_months.png Graphic file (type png)
  <use figures/nyc_london_melbourne_whole_months.png>
@@ -1437,7 +1438,7 @@ Package pdftex.def Info: figures/nyc_london_melbourne_whole_months.png used on
 input line 276.
 (pdftex.def)             Requested size: 341.43437pt x 208.17448pt.
 
-<figures/rio_box_plt_day_of_week.png, id=1078, 1175.8329pt x 716.9184pt>
+<figures/rio_box_plt_day_of_week.png, id=1081, 1175.8329pt x 716.9184pt>
 File: figures/rio_box_plt_day_of_week.png Graphic file (type png)
 
 <use figures/rio_box_plt_day_of_week.png>
@@ -1445,7 +1446,7 @@ Package pdftex.def Info: figures/rio_box_plt_day_of_week.png used on input line
  291.
 (pdftex.def)             Requested size: 192.0548pt x 117.09404pt.
 
-<figures/sp_box_plt_day_of_week.png, id=1079, 1175.8329pt x 716.9184pt>
+<figures/sp_box_plt_day_of_week.png, id=1082, 1175.8329pt x 716.9184pt>
 File: figures/sp_box_plt_day_of_week.png Graphic file (type png)
 
 <use figures/sp_box_plt_day_of_week.png>
@@ -1453,7 +1454,7 @@ Package pdftex.def Info: figures/sp_box_plt_day_of_week.png used on input line
 298.
 (pdftex.def)             Requested size: 192.0548pt x 117.09404pt.
 
-<figures/nyc_box_plt_day_of_week.png, id=1080, 1175.8329pt x 716.9184pt>
+<figures/nyc_box_plt_day_of_week.png, id=1083, 1175.8329pt x 716.9184pt>
 File: figures/nyc_box_plt_day_of_week.png Graphic file (type png)
 
 <use figures/nyc_box_plt_day_of_week.png>
@@ -1461,7 +1462,7 @@ Package pdftex.def Info: figures/nyc_box_plt_day_of_week.png used on input line
  307.
 (pdftex.def)             Requested size: 192.0548pt x 117.09404pt.
 
-<figures/london_box_plt_day_of_week.png, id=1081, 1175.8329pt x 716.9184pt>
+<figures/london_box_plt_day_of_week.png, id=1084, 1175.8329pt x 716.9184pt>
 File: figures/london_box_plt_day_of_week.png Graphic file (type png)
 
 <use figures/london_box_plt_day_of_week.png>
@@ -1469,7 +1470,7 @@ Package pdftex.def Info: figures/london_box_plt_day_of_week.png used on input l
 ine 314.
 (pdftex.def)             Requested size: 192.0548pt x 117.09404pt.
 
-<figures/melbourne_box_plt_day_of_week.png, id=1082, 1175.8329pt x 716.9184pt>
+<figures/melbourne_box_plt_day_of_week.png, id=1085, 1175.8329pt x 716.9184pt>
 File: figures/melbourne_box_plt_day_of_week.png Graphic file (type png)
 
 <use figures/melbourne_box_plt_day_of_week.png>
@@ -1486,7 +1487,7 @@ ures/melbourne_markers.png> <./figures/nyc_points.png> <./figures/london_points
 day_of_week.png> <./figures/sp_box_plt_day_of_week.png> <./figures/nyc_box_plt_
 day_of_week.png> <./figures/london_box_plt_day_of_week.png> <./figures/melbourn
 e_box_plt_day_of_week.png>]
-<figures/rio_box_plt_hour_of_day.png, id=1114, 1175.8329pt x 716.9184pt>
+<figures/rio_box_plt_hour_of_day.png, id=1117, 1175.8329pt x 716.9184pt>
 File: figures/rio_box_plt_hour_of_day.png Graphic file (type png)
 
 <use figures/rio_box_plt_hour_of_day.png>
@@ -1494,7 +1495,7 @@ Package pdftex.def Info: figures/rio_box_plt_hour_of_day.png used on input line
  338.
 (pdftex.def)             Requested size: 192.0548pt x 117.09404pt.
 
-<figures/sp_box_plt_hour_of_day.png, id=1115, 1175.8329pt x 716.9184pt>
+<figures/sp_box_plt_hour_of_day.png, id=1118, 1175.8329pt x 716.9184pt>
 File: figures/sp_box_plt_hour_of_day.png Graphic file (type png)
 
 <use figures/sp_box_plt_hour_of_day.png>
@@ -1502,7 +1503,7 @@ Package pdftex.def Info: figures/sp_box_plt_hour_of_day.png used on input line
 345.
 (pdftex.def)             Requested size: 192.0548pt x 117.09404pt.
 
-<figures/nyc_box_plt_hour_of_day.png, id=1116, 1175.8329pt x 716.9184pt>
+<figures/nyc_box_plt_hour_of_day.png, id=1119, 1175.8329pt x 716.9184pt>
 File: figures/nyc_box_plt_hour_of_day.png Graphic file (type png)
 
 <use figures/nyc_box_plt_hour_of_day.png>
@@ -1510,7 +1511,7 @@ Package pdftex.def Info: figures/nyc_box_plt_hour_of_day.png used on input line
  354.
 (pdftex.def)             Requested size: 192.0548pt x 117.09404pt.
 
-<figures/london_box_plt_hour_of_day.png, id=1117, 1175.8329pt x 716.9184pt>
+<figures/london_box_plt_hour_of_day.png, id=1120, 1175.8329pt x 716.9184pt>
 File: figures/london_box_plt_hour_of_day.png Graphic file (type png)
 
 <use figures/london_box_plt_hour_of_day.png>
@@ -1518,7 +1519,7 @@ Package pdftex.def Info: figures/london_box_plt_hour_of_day.png used on input l
 ine 361.
 (pdftex.def)             Requested size: 192.0548pt x 117.09404pt.
 
-<figures/melbourne_box_plt_hour_of_day.png, id=1118, 1175.8329pt x 716.9184pt>
+<figures/melbourne_box_plt_hour_of_day.png, id=1121, 1175.8329pt x 716.9184pt>
 File: figures/melbourne_box_plt_hour_of_day.png Graphic file (type png)
 
 <use figures/melbourne_box_plt_hour_of_day.png>
@@ -1528,28 +1529,28 @@ t line 370.
  [38 <./figures/rio_box_plt_hour_of_day.png> <./figures/sp_box_plt_hour_of_day.
 png> <./figures/nyc_box_plt_hour_of_day.png> <./figures/london_box_plt_hour_of_
 day.png> <./figures/melbourne_box_plt_hour_of_day.png>]
-<figures/rio_loglog_users.png, id=1136, 1175.8329pt x 716.9184pt>
+<figures/rio_loglog_users.png, id=1139, 1175.8329pt x 716.9184pt>
 File: figures/rio_loglog_users.png Graphic file (type png)
 
 <use figures/rio_loglog_users.png>
 Package pdftex.def Info: figures/rio_loglog_users.png used on input line 395.
 (pdftex.def)             Requested size: 192.0548pt x 117.09404pt.
 
-<figures/sp_loglog_users.png, id=1137, 1175.8329pt x 716.9184pt>
+<figures/sp_loglog_users.png, id=1140, 1175.8329pt x 716.9184pt>
 File: figures/sp_loglog_users.png Graphic file (type png)
 
 <use figures/sp_loglog_users.png>
 Package pdftex.def Info: figures/sp_loglog_users.png used on input line 402.
 (pdftex.def)             Requested size: 192.0548pt x 117.09404pt.
 
-<figures/nyc_loglog_users.png, id=1138, 1175.8329pt x 716.9184pt>
+<figures/nyc_loglog_users.png, id=1141, 1175.8329pt x 716.9184pt>
 File: figures/nyc_loglog_users.png Graphic file (type png)
 
 <use figures/nyc_loglog_users.png>
 Package pdftex.def Info: figures/nyc_loglog_users.png used on input line 411.
 (pdftex.def)             Requested size: 192.0548pt x 117.09404pt.
 
-<figures/london_loglog_users.png, id=1139, 1175.8329pt x 716.9184pt>
+<figures/london_loglog_users.png, id=1142, 1175.8329pt x 716.9184pt>
 File: figures/london_loglog_users.png Graphic file (type png)
 
 <use figures/london_loglog_users.png>
@@ -1557,7 +1558,7 @@ Package pdftex.def Info: figures/london_loglog_users.png used on input line 418
 .
 (pdftex.def)             Requested size: 192.0548pt x 117.09404pt.
 
-<figures/melbourne_loglog_users.png, id=1140, 1175.8329pt x 716.9184pt>
+<figures/melbourne_loglog_users.png, id=1143, 1175.8329pt x 716.9184pt>
 File: figures/melbourne_loglog_users.png Graphic file (type png)
 
 <use figures/melbourne_loglog_users.png>
@@ -1586,21 +1587,11 @@ Chapter 5.
 
 \openout5 = `mieic-en.mtc'.
 
-(./mieic-en.mtc5) [43]
-
-LaTeX Warning: Reference `subsec:geographical_distribution' on page 44 undefine
-d on input line 17.
-
-[44]
-
-LaTeX Warning: Reference `features_4_3_2' on page 45 undefined on input line 81
-.
-
-[45] [46]
+(./mieic-en.mtc5) [43] [44] [45] [46]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 120.
 
-<figures/roc_auc_brazilian_travel_related.png, id=1201, 462.528pt x 346.896pt>
+<figures/roc_auc_brazilian_travel_related.png, id=1206, 462.528pt x 346.896pt>
 File: figures/roc_auc_brazilian_travel_related.png Graphic file (type png)
 
 <use figures/roc_auc_brazilian_travel_related.png>
@@ -1608,7 +1599,7 @@ Package pdftex.def Info: figures/roc_auc_brazilian_travel_related.png used on i
 nput line 138.
 (pdftex.def)             Requested size: 298.75264pt x 224.07703pt.
  [47 <./figures/roc_auc_brazilian_travel_related.png>]
-<figures/predicted_day_of_week.png, id=1210, 1340.6085pt x 738.5994pt>
+<figures/predicted_day_of_week.png, id=1215, 1340.6085pt x 738.5994pt>
 File: figures/predicted_day_of_week.png Graphic file (type png)
 
 <use figures/predicted_day_of_week.png>
@@ -1616,13 +1607,13 @@ Package pdftex.def Info: figures/predicted_day_of_week.png used on input line 1
 49.
 (pdftex.def)             Requested size: 298.75264pt x 164.58861pt.
 
-<figures/rio_1.png, id=1211, 854.19125pt x 792.9625pt>
+<figures/rio_1.png, id=1216, 854.19125pt x 792.9625pt>
 File: figures/rio_1.png Graphic file (type png)
  <use figures/rio_1.png>
 Package pdftex.def Info: figures/rio_1.png used on input line 156.
 (pdftex.def)             Requested size: 309.42633pt x 287.24492pt.
 
-<figures/sp_1.png, id=1212, 780.9175pt x 783.92876pt>
+<figures/sp_1.png, id=1217, 780.9175pt x 783.92876pt>
 File: figures/sp_1.png Graphic file (type png)
  <use figures/sp_1.png>
 Package pdftex.def Info: figures/sp_1.png used on input line 163.
@@ -1638,7 +1629,7 @@ Underfull \vbox (badness 7151) has occurred while \output is active []
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 223.
  [51]
-<figures/svm_linear_leave_one_out_emb_200.png, id=1242, 451.6875pt x 316.18124p
+<figures/svm_linear_leave_one_out_emb_200.png, id=1247, 451.6875pt x 316.18124p
 t>
 File: figures/svm_linear_leave_one_out_emb_200.png Graphic file (type png)
  <use figures/svm_linear_leave_one_out_emb_200.png>
@@ -1646,14 +1637,14 @@ Package pdftex.def Info: figures/svm_linear_leave_one_out_emb_200.png used on i
 nput line 267.
 (pdftex.def)             Requested size: 316.17908pt x 221.32535pt.
  [52]
-<figures/nyc_map.png, id=1251, 968.61874pt x 557.08125pt>
+<figures/nyc_map.png, id=1256, 968.61874pt x 557.08125pt>
 File: figures/nyc_map.png Graphic file (type png)
 
 <use figures/nyc_map.png>
 Package pdftex.def Info: figures/nyc_map.png used on input line 296.
 (pdftex.def)             Requested size: 307.28885pt x 176.73108pt.
 
-<figures/nyc_map2.png, id=1252, 979.66pt x 613.29124pt>
+<figures/nyc_map2.png, id=1257, 979.66pt x 613.29124pt>
 File: figures/nyc_map2.png Graphic file (type png)
 
 <use figures/nyc_map2.png>
@@ -1669,7 +1660,7 @@ LaTeX Warning: Reference `fig:pipeline_lda' on page 56 undefined on input line
 Underfull \vbox (badness 3568) has occurred while \output is active []
 
  [58]
-<figures/rio_topics_heatmap.png, id=1284, 1069.9975pt x 883.3pt>
+<figures/rio_topics_heatmap.png, id=1289, 1069.9975pt x 883.3pt>
 File: figures/rio_topics_heatmap.png Graphic file (type png)
 
 <use figures/rio_topics_heatmap.png>
@@ -1677,7 +1668,7 @@ Package pdftex.def Info: figures/rio_topics_heatmap.png used on input line 451.
 
 (pdftex.def)             Requested size: 209.1301pt x 172.64041pt.
 
-<figures/sp_topics_heatmap.png, id=1285, 1026.83624pt x 882.29625pt>
+<figures/sp_topics_heatmap.png, id=1290, 1026.83624pt x 882.29625pt>
 File: figures/sp_topics_heatmap.png Graphic file (type png)
 
 <use figures/sp_topics_heatmap.png>
@@ -1697,19 +1688,7 @@ Chapter 6.
 
 
 
-] [62]
-<figures/workplan.png, id=1314, 1201.48875pt x 440.64626pt>
-File: figures/workplan.png Graphic file (type png)
-
-<use figures/workplan.png>
-Package pdftex.def Info: figures/workplan.png used on input line 56.
-(pdftex.def)             Requested size: 469.47308pt x 172.1808pt.
-
-Overfull \hbox (42.68173pt too wide) in paragraph at lines 56--57
- [][] 
- []
-
-) [63 <./figures/workplan.png>]
+]) [62]
 \openout2 = `nomenclature.aux'.
 
  (./nomenclature.tex
@@ -1727,18 +1706,19 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [64
+) [63
 
 
 ]
 No file mieic-en.nls.
-(./mieic-en.bbl (./mieic-en.brf)
+[64
+
+
+] (./mieic-en.bbl (./mieic-en.brf)
 \tf@brf=\write10
 \openout10 = `mieic-en.brf'.
 
  [65
-
-
 
 ] [66] [67] [68]
 Underfull \hbox (badness 10000) in paragraph at lines 351--351
@@ -1746,12 +1726,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 351--351
 085217 . htm$[][]\T1/ptm/m/n/10.95 ,
  []
 
-[69]
 
 Package lineno Warning: Linenumber reference failed, 
 (lineno)                rerun to get it right.
 
-)
+[69])
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the mieic-en.maf file.
@@ -1773,28 +1752,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
 Package rerunfilecheck Info: File `mieic-en.out' has not changed.
-(rerunfilecheck)             Checksum: E218DC485624290EAE19DBC67B9AD9C9;4552.
+(rerunfilecheck)             Checksum: CEE8773D5CEC668D1E92719583C2712A;4590.
 
 
 Package rerunfilecheck Warning: File `mieic-en.brf' has changed.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `mieic-en.brf':
-(rerunfilecheck)             Before: 7B745165A319816FFF0173800C5B3942;6671
-(rerunfilecheck)             After:  2A61485C3DC5C9BBD3BDBAC93E5000C6;6671.
+(rerunfilecheck)             Before: 271F7C5F8B896743756F7F3073AC50B5;6724
+(rerunfilecheck)             After:  1BB23A350F040FB471504FA77EAFE78B;6725.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
  ) 
 Here is how much of TeX's memory you used:
- 13703 strings out of 493029
- 205388 string characters out of 6136234
- 317286 words of memory out of 5000000
- 16343 multiletter control sequences out of 15000+600000
+ 13697 strings out of 493029
+ 205292 string characters out of 6136234
+ 317192 words of memory out of 5000000
+ 16340 multiletter control sequences out of 15000+600000
  106194 words of font info for 147 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,16n,49p,2950b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1863,10 +1839,10 @@ ve/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on mieic-en.pdf (90 pages, 13906827 bytes).
+Output written on mieic-en.pdf (90 pages, 13878174 bytes).
 PDF statistics:
- 1566 PDF objects out of 1728 (max. 8388607)
- 1323 compressed objects within 14 object streams
- 299 named destinations out of 1000 (max. 500000)
- 768 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1567 PDF objects out of 1728 (max. 8388607)
+ 1326 compressed objects within 14 object streams
+ 297 named destinations out of 1000 (max. 500000)
+ 771 words of extra memory for PDF output out of 10000 (max. 10000000)
 

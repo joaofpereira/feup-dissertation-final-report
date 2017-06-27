@@ -2,60 +2,21 @@
 
 \minitoc \mtcskip \noindent
 
-This planning report had two distinct objectives. The first one is the search of related works in order to see what is already developed to the problem context of this dissertation. The second objective is the initial planning of the dissertation work, as well as the approach and methodology chosen to tackle the problem in hands. From the all work made so far, it is possible to make some conclusions.
+\section{Final Remarks}
+The literature review, studied in Chapter~\ref{chap:sota}, shows the main challenges across the evolution process of a city in order to be titled as \textit{smart}. Moreover, the biggest restrictions in the development of intelligent systems using social media data are enunciated as well as possible methodologies and techniques to solve it. By combining the challenges of a \textit{smart city} and the restrictions present in the analysis of text messages, in particular, social media messages, the problem around this dissertation was divided into five distinct ones. The solutions presented to each of the sub-problems took into consideration lacks observed in the literature review. Domain generalization in the conception of an automatic system capable of collect, filter, processing, aggregate and demonstrate, through graphical representations, valuable information to final entities/users is one of the identified lacks, in terms of being constructed with the support of supervised methods. The transportation domain also present lacks regarding discrimination of travel-related tweets using methods that take advantages from semantic and syntactic similarities in texts. The majority of works present conventional techniques such as bag-of-words, which although good performances represents high risks when implementing supervised learning models due to the possibility of overfit the model in the training routine.
 
-This dissertation proposes to tackle the problem of extraction of aspect-based sentiment from the citizens opinions about the services of a city, in social media streams, through a framework that may be capable of processing the messages and build some appealing visual indicators.
+Assuming the challenges identified for this dissertation as well as the previous mentioned lacks in the literature review, we propose and develop a domain-agnostic framework and test it using five different cities over the world as use cases for three distinct analysis: simple statistics, travel-related classification for English and Portuguese languages and Twitter topics identification over two Brazilian megacities, Rio de Janeiro and São Paulo.
 
-Hence, the problem was decomposed in some sub-problems. The literature review served to find interesting solutions for each sub-problem. There, a great diversity of approaches was found, not only about sentiment analysis that is the most important task in this dissertation but also for another problems like the content filtering and disambiguation.
+Travel-related classification of tweets using a combined approach of bag-of-words and bag-of-embeddings proved, as P. Saleiro~\cite{saleiro2017texrep} also reported for sentiment polarity of financial tweets, that each representation completes the other since results showed consistency and robustness over the classification performed to Portuguese texts. On the contrary, English speaking tweets do not present similar results, however, as it was previous mentioned, there was a suspicion of overffiting in the model training process. Further experiments, proved such theory since the model was able to maintain its performance only using bag-of-embeddings as training features.
 
-The proposed framework can be seen as a potential tool to the users of the city's services and for the responsible entities, allowing that only good decisions are made to improve the quality of the cities and, in this particular case, the urban transportation systems. 
+Characterization of topics is a very common type of analysis in terms of information extraction from tweets. In this dissertation, we explore this analysis and implement a specific module for this task, integrating it in the final framework. Our experiment reveal promising results, however auxiliary methods would probably improved the information obtained turning it more concise and accurate. Literature review shows approaches potential which can help in this future improvements of the model responsible for identification of topics in tweets.
 
-To summarize the conclusions of all the work made so far, a SWOT analysis was conceived and the points that composed it are present below.
+It is worth nothing that every experiment was performed having only into consideration geo-located tweets. This choice, as previously mentioned, was due to the additional information contained in this type of tweets. By analyse the location and combine it with results of the classification tasks, characterizations and studies over specific areas in cities are possible to be reported as weel as identifying existent and notable patterns regarding travel-related problems and urban dynamics.
 
-\begin{enumerate}
-   \item \textbf{Strengths}
-   \begin{itemize}
-     \item Added value proposal by combining multiple State-of-the-Art approaches to tackle chained sub-tasks;
-     \item Well defined sub-tasks/modules will make it easier to track errors.
-   \end{itemize}
-   \item \textbf{Weaknesses}
-   \begin{itemize}
-     \item It might be difficult to collect enough relevant data for specific scenarios (e.g. the quality of the urban transportation in Porto);
-     \item Twitter data might not be so reliable if there are few relevant messages.
-   \end{itemize}
-   \textbf{Opportunities}
-   \begin{itemize}
-     \item New scenario application for aspect-based sentiment analysis: transportation systems and Smart Cities;
-     \item Extending State-of-the-Art approaches in each sub-task/module if the target scenario presents specific constraints.
-   \end{itemize}
-   \textbf{Threats}
-   \begin{itemize}
-     \item Absence of ground-truths for the target scenarios may lead to underperformed modules;
-     \item Limited time for implementation is a risk of some unforeseen difficulties arise.
-   \end{itemize}
-\end{enumerate}
+Having all considered, it is necessary to divulge that the final framework is still far of its full potential, and supported on this, we consider it as a scalable, flexible and adaptive prototype that must improved over time since implementing supervised learning systems is a laborious and time-consuming process
 
-\section{Expected Contributions}
+\section{Contributions}
 
-The work to be developed in this dissertation should present contributions both at the technological and scientific level. Some of the most important contributions are listed below:
 
-\begin{itemize}
-\item A brief review of related literature to help contextualize readers in the subject of information extraction, in particular the sentiment analysis, from social media streams and how difficult is this task;
-\item Development of a tool that could bring a potential value to the cities in order to improve the quality of its services;
-\item The studies of use cases about Smart Cities and Transportation Systems using aspect-based sentiment analysis may be considered something innovative since there are very few works related with both scenarios.
-\end{itemize}
+\section{Future Work}
 
-\section{Task Planning and Scheduling}
-The tasks to be undertaken are mostly based in the modules described in Section \ref{sec:architecture} for the proposed framework architecture.
-The first task is to choose what are the specific scenarios that will serve to test the developed framework. A priori, two different scenarios will be enough to prove the good functionality and usability of the tool. Hence, the crawler module will be used to collect social media streams from the middle of February until, approximately, the ending of May. Meanwhile, the setup of the framework environment needs to be done. After this first step, the development of the modules will occur. The first module to tackle is the aspect-based sentiment analysis and the sub-module of preprocessing. With the estimation of a possible margin of error, these tasks are ready to employment in the begin or middle of April. The target filtering module will be developed, if everything is going as planned, between the beginning/middle of April until the middle of May. The remaining month of May will serve to work on the aggregation module and the analytics UI. The month of June will be to test the final framework into the collected dataset about the two different scenarios. In order to evaluate the usability of the framework, it's planned the existence of a bunch of interviews to see if it's really possible that users of this tool are capable of immediately identify some conclusion from the analysis presented. This evaluation step will occur in the first two weeks of June, being the remaining two to the final dissertation report write up.
-
-In the Figure \ref{fig:workplan} it's possible to visualize a Gantt chart scheduling according the mentioned tasks and the ideal scenario in case there are no delays.
-
-\begin{figure}
-  \centering
-    \includegraphics[width=1.1\textwidth]{workplan}
-    \caption{Dissertation working plan.}
-    \label{fig:workplan}
-\end{figure}
-
-\vspace*{12mm} 
