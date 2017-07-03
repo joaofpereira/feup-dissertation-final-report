@@ -1,23 +1,5 @@
-%% FEUP THESIS STYLE for LaTeX2e
-%% how to use feupteses (English version)
-%%
-%% FEUP, JCL & JCF, 31 July 2012
-%%
-%% PLEASE send improvements to jlopes at fe.up.pt and to jcf at fe.up.pt
-%%
-
-%%========================================
-%% Commands: pdflatex tese
-%%           bibtex tese
-%%           makeindex tese (only if creating an index) 
-%%           pdflatex tese
-%% Alternative:
-%%          latexmk -pdf tese.tex
-%%========================================
-
 \documentclass[11pt,a4paper,twoside,openright]{report}
 
-%% My packages
 \usepackage{amssymb}
 \usepackage{multirow}
 \usepackage{multicol}
@@ -31,11 +13,7 @@
 \usepackage{breakcites}
 \usepackage{tasks}
 
-%% For iso-8859-1 (latin1), comment next line and uncomment the second line
 \usepackage[utf8]{inputenc}
-%\usepackage[latin1]{inputenc}
-
-%% English version
 
 %% MIEIC options
 %\usepackage[mieic]{feupteses}
@@ -85,8 +63,7 @@
 %% Uncomment to create an index (at the end of the document)
 %\makeindex
 
-%% Path to the figures directory
-%% TIP: use folder ``figures'' to keep all your figures
+% Path to the figures directory
 \graphicspath{{figures/}}
 
 \makenomenclature
@@ -98,10 +75,6 @@
 \include{mymacros}
 %%----------------------------------------
 
-%%
-%% Hyperlinks
-%%
-
 % MiniTOC
 \usepackage[tight]{minitoc}
 \setcounter{minitocdepth}{1}
@@ -110,7 +83,7 @@
 \renewcommand{\mtctitle}{}
 \renewcommand{\kernafterminitoc}{\vspace{0.3cm}}
 \renewcommand{\mtcoffset}{-0.3cm}
-%\setcounter{minitocdepth}{1}
+
 
 %%========================================
 %% Start of document
@@ -124,14 +97,13 @@
 \author{João Filipe Figueiredo Pereira}
 
 %% Uncomment next line for date of submission
-%\thesisdate{July 31, 2008}
+\thesisdate{June 27, 2017}
 
 %%Uncomment next line for copyright text if used
 %\copyrightnotice{Name of the Author, 2008}
 
 \supervisor{Supervisor}{Rosaldo José Fernandes Rossetti}
 \supervisor{Co-supervisor}{Pedro dos Santos Saleiro da Cruz}
-
 
 %% Uncomment next line if necessary
 %\supervisor{Second Supervisor}{Name of the Supervisor}
@@ -167,7 +139,7 @@
   \cleardoublepage
   \pdfbookmark[0]{List of Tables}{tables}
   \listoftables
-  \include{abbrevs_en}  % the list of abbreviations used
+  %\include{abbrevs_en}  % the list of abbreviations used
 \end{Prolog}
 
 %%----------------------------------------
@@ -175,13 +147,10 @@
 %%----------------------------------------
 \StartBody
 
-%% TIP: use a separate file for each chapter
 \include{chapter1}
-%\include{intro}
 \include{chapter2}
-%\include{old}
 \include{chapter3}
-\include{exploratory_analysis}
+\include{chapter4}
 \include{chapter4}
 \include{chapter5}
 
