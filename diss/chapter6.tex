@@ -1,0 +1,48 @@
+\chapter{Conclusions and Future Work} \label{chap:conclusions}
+
+\minitoc \mtcskip \noindent
+
+\section{Final Remarks}
+The literature review, studied in Chapter~\ref{chap:sota}, shows the main challenges across the evolution process of a city in order to be titled as \textit{smart}. Moreover, the biggest restrictions in the development of intelligent systems using social media data are enunciated as well as possible methodologies and techniques to solve it. By combining the challenges of a \textit{smart city} and the restrictions present in the analysis of text messages, in particular, social media messages, the problem around this dissertation was divided into five distinct ones. The solutions presented to each of the sub-problems took into consideration lacks observed in the literature review. Domain generalization in the conception of an automatic system capable of collect, filter, processing, aggregate and demonstrate, through graphical representations, valuable information to final entities/users is one of the identified lacks, in terms of being constructed with the support of supervised methods. The transportation domain also present lacks regarding discrimination of travel-related tweets using methods that take advantages from semantic and syntactic similarities in texts. The majority of works present conventional techniques such as bag-of-words, which although good performances represents high risks when implementing supervised learning models due to the possibility of overfit the model in the training routine.
+
+Assuming the challenges identified for this dissertation as well as the previous mentioned lacks in the literature review, we propose and develop a domain-agnostic framework and test it using five different cities over the world as use cases for three distinct analysis: simple statistics, travel-related classification for English and Portuguese languages and Twitter topics identification over two Brazilian megacities, Rio de Janeiro and São Paulo.
+
+Travel-related classification of tweets using a combined approach of bag-of-words and bag-of-embeddings proved, as P. Saleiro~\cite{saleiro2017texrep} also reported for sentiment polarity of financial tweets, that each representation completes the other since results showed consistency and robustness over the classification performed to Portuguese texts. On the contrary, English speaking tweets do not present similar results, however, as it was previous mentioned, there was a suspicion of overffiting in the model training process. Further experiments, proved such theory since the model was able to maintain its performance only using bag-of-embeddings as training features.
+
+Characterization of topics is a very common type of analysis in terms of information extraction from tweets. In this dissertation, we explore this analysis and implement a specific module for this task, integrating it in the final framework. Our experiment reveal promising results, however auxiliary methods would probably improved the information obtained turning it more concise and accurate. Literature review shows approaches potential which can help in this future improvements of the model responsible for identification of topics in tweets.
+
+It is worth nothing that every experiment was performed having only into consideration geo-located tweets. This choice, as previously mentioned, was due to the additional information contained in this type of tweets. By analyse the location and combine it with results of the classification tasks, characterizations and studies over specific areas in cities are possible to be reported as weel as identifying existent and notable patterns regarding travel-related problems and urban dynamics.
+
+Having all considered, it is necessary to divulge that the final framework is still far of its full potential, and supported on this, we consider it as a scalable, flexible and adaptive prototype that must improved over time since implementing supervised learning systems is a laborious and time-consuming process
+
+\section{Contributions}
+
+At the end of this dissertation, efforts applied are summarized in three different types of contributions.
+
+\begin{itemize}
+	\item \textbf{Scientific Contributions}
+	
+	 In order to test each module composing the framework, several experiments using conventional and recently text mining methods were followed. Our desire to share the advantages obtained on such experiments take us to perform three attempts of scientific contributions. The first one is about automatic classification of travel-related Portuguese speaking tweets, for the cities of Rio de Janeiro and São Paulo, and is currently under the press phase in the EPIA 2017. Attempts are performed taking into consideration different types of features in the training phase of the model, being the most accurate the one combining bag-of-words and bag-of-embedding.
+	
+	Further experiment reports the previous mentioned method over English speaking tweets from New York City. The final results reveal differences comparing to the Portuguese experiment. Having this considered, another approach was chosen to prove signs of overfitting in the training process, \textit{leave-one-group-out strategy}. Final remarks demonstrate the consistency of word embeddings model for hidden modes of transport classes, while bag-of-words model prove to be dependent of the examples used in the training phase. The overall experiment was submitted to the CIKM-2017 and is currently in review.
+	
+	Finally, the experiment regarding topic modelling is reported to the IEEE S3C 2017. There is described the use of LDA model to characterize the topic present in a tweet. Promising results were obtained after a difficult topic classification phase. The final model was then used to implement the topic modelling sub-module of the developed framework in this dissertation. It is worth noting that this contribution, similar to the previous one, is under review phase.
+	
+	\item \textbf{Technical Contributions}
+	
+	At the end of this work, we report that every implementation performed during the dissertation period will be open-sourced to help future candidates in the integration of new functionalities to the framework. Besides that, the implementation of the travel-related classification models require the conception of labeled datasets regarding the transportation domain. These datasets, containing Portuguese and English speaking tweets will be uploaded in order to fulfill the absence of public datasets, with hope of being considered a gold standard in future developments of this kind.
+
+	\item \textbf{Applicational Contributions}
+	
+	The most important contributions of this dissertation are the analysis provided by the developed automatic analysis-based system. The information provide by such system can serve to support monitoring tasks in cities as well as help in future decision-making policies by the responsible entities' services. Although the final framework being presented as a prototype, with integration of new features to the system, there are infinite possibilities for its use as well as its potential for the smart cities domain.
+\end{itemize}
+
+\section{Future Work}
+
+The dissertation purpose had as it main focus the conception of an automatic system capable of analyse real-time data streams from social media platforms in order to produce valuable information for users of services or even its responsible entities. For achieve the proposed goals, we tried to explore already consistent state-of-the-art methodologies as well as unexplored ones regarding specific domains. Since this framework can be seen as a prototype of a future complex system, several improvements can be invested here. Although already existent modules and text analysis devised, it worth noting the conjecture of a additional sentiment analysis module in order to infer the sentiment polarity value regarding specific zones where the travel-related tweets were located in, as so the overall sentiment in an identified topic.
+
+Another important work to pursue in the future is to correlate the results of this study with official sources of transportation agencies relatively to traffic congestions and other events on the transportation network, including all modes of transports and their integration interfaces and modules. This kind of association will be useful both to validate the proposed approach as well as to improve the inference process and knowledge extraction. The automatic classifier herein presented will then be integrated into data fusion routines to enhance transportation supply and demand prediction processes alongside other sensors and sources of information.
+
+A possible future direction to improve the topic modelling approach is the application of spatio-temporal aggregation methods under a sample of data to create more complex documents, retrain the model and verify if the results can be different taking into consideration some of the factors that distinguish both cities: demographics, culture and location. An attempt to pursue good performances using supervised LDA models also needs to be enhanced here.
+
+Lastly, there is a need of creation of other specific models to other fields of a \textit{smart city} in order to assure equally performances for any of its fields.

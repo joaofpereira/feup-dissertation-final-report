@@ -1,23 +1,8 @@
 \documentclass[11pt,a4paper,twoside,openright]{report}
 
-\usepackage{amssymb}
-\usepackage{multirow}
-\usepackage{multicol}
-\usepackage{caption}
-\usepackage{fancyvrb}
-\usepackage{subcaption}
-\usepackage{url}
-\usepackage[intoc]{nomencl}
-\usepackage{array}
-\usepackage[breaklinks=true]{hyperref}
-\usepackage{breakcites}
-\usepackage{tasks}
-
-\usepackage[utf8]{inputenc}
-
 %% MIEIC options
 %\usepackage[mieic]{feupteses}
-\usepackage[mieic,juri,backrefs]{feupteses}
+\usepackage[mieic,juri]{feupteses}
 %\usepackage[mieic,final]{feupteses}
 %\usepackage[mieic,final,onpaper]{feupteses}
 
@@ -25,88 +10,107 @@
 %% - onpaper: links are not shown (for paper versions)
 %% - backrefs: include back references from bibliography to citation place
 
-%% Uncomment the next lines if side by side graphics used
-%\usepackage[lofdepth,lotdepth]{subfig}
-%\usepackage{graphicx}
-%\usepackage{float}
+%%
+%% Extra Packages
+%%
 
-%% Include color package
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{caption}
+\usepackage{fancyvrb}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{array}
+\usepackage{breakcites}
+\usepackage{enumerate}
+
 \usepackage{color}
-\definecolor{cloudwhite}{cmyk}{0,0,0,0.025}
+\definecolor{cloudwhite}{cmyk}{0, 0, 0, 0.025}
 
-%% Include source-code listings package
-\usepackage{listings}
-\lstset{ %
- language=C,                        % choose the language of the code
- basicstyle=\footnotesize\ttfamily,
- keywordstyle=\bfseries,
- numbers=left,                      % where to put the line-numbers
- numberstyle=\scriptsize\texttt,    % the size of the fonts that are used for the line-numbers
- stepnumber=1,                      % the step between two line-numbers. If it's 1 each line will be numbered
- numbersep=8pt,                     % how far the line-numbers are from the code
- frame=tb,
- float=htb,
- aboveskip=8mm,
- belowskip=4mm,
- backgroundcolor=\color{cloudwhite},
- showspaces=false,                  % show spaces adding particular underscores
- showstringspaces=false,            % underline spaces within strings
- showtabs=false,                    % show tabs within strings adding particular underscores
- tabsize=2,	                    % sets default tabsize to 2 spaces
- captionpos=b,                      % sets the caption-position to bottom
- breaklines=true,                   % sets automatic line breaking
- breakatwhitespace=false,           % sets if automatic breaks should only happen at whitespace
- escapeinside={\%*}{*)},            % if you want to add a comment within your code
- morekeywords={*,var,template,new}  % if you want to add more keywords to the set
-}
-
-%% Uncomment to create an index (at the end of the document)
-%\makeindex
-
-% Path to the figures directory
+\emergencystretch=1em
 \graphicspath{{figures/}}
 
-\makenomenclature
-\renewcommand{\nomentryend}{.}
-\renewcommand{\nomlabel}[1]{\hfil\textbf{#1}}
+%%
+%% My Macros
+%%
 
-%%----------------------------------------
-%% TIP: if you want to define more macros, use an external file to keep them
 \include{mymacros}
-%%----------------------------------------
 
-% MiniTOC
+%%
+%% Include source-code listings package
+%%
+
+\usepackage{listings}
+\lstset{ %
+	 language=C,                        % choose the language of the code
+	 basicstyle=\footnotesize\ttfamily,
+	 keywordstyle=\bfseries,
+	 numbers=left,                      % where to put the line-numbers
+	 numberstyle=\scriptsize\texttt,    % the size of the fonts that are used for the line-numbers
+	 stepnumber=1,                      % the step between two line-numbers. If it's 1 each line will be numbered
+	 numbersep=8pt,                     % how far the line-numbers are from the code
+	 frame=tb,
+	 float=htb,
+	 aboveskip=8mm,
+	 belowskip=4mm,
+	 backgroundcolor=\color{cloudwhite},
+	 showspaces=false,                  % show spaces adding particular underscores
+	 showstringspaces=false,            % underline spaces within strings
+	 showtabs=false,                    % show tabs within strings adding particular underscores
+	 tabsize=2,	                    % sets default tabsize to 2 spaces
+	 captionpos=b,                      % sets the caption-position to bottom
+	 breaklines=true,                   % sets automatic line breaking
+	 breakatwhitespace=false,           % sets if automatic breaks should only happen at whitespace
+	 escapeinside={\%*}{*)},            % if you want to add a comment within your code
+	 morekeywords={*,var,template,new}  % if you want to add more keywords to the set
+}
+
+
+%%
+%% Acronyms and Glossary
+%%
+
+\usepackage[acronym,toc]{glossaries}
+
+\makeglossaries
+\include{acronyms}
+\include{glossary}
+
+%%
+%% MiniTOC
+%%
+
 \usepackage[tight]{minitoc}
-\setcounter{minitocdepth}{1}
 
 \dominitoc
 \renewcommand{\mtctitle}{}
 \renewcommand{\kernafterminitoc}{\vspace{0.3cm}}
 \renewcommand{\mtcoffset}{-0.3cm}
+\setcounter{minitocdepth}{1}
 
 
-%%========================================
+%%
 %% Start of document
-%%========================================
+%%
+
 \begin{document}
 
-%%----------------------------------------
 %% Information about the work
-%%----------------------------------------
 \title{Social Media Text Processing and Semantic Analysis for Smart Cities}
 \author{João Filipe Figueiredo Pereira}
-
-%% Uncomment next line for date of submission
-\thesisdate{June 27, 2017}
-
-%%Uncomment next line for copyright text if used
-%\copyrightnotice{Name of the Author, 2008}
 
 \supervisor{Supervisor}{Rosaldo José Fernandes Rossetti}
 \supervisor{Co-supervisor}{Pedro dos Santos Saleiro da Cruz}
 
-%% Uncomment next line if necessary
-%\supervisor{Second Supervisor}{Name of the Supervisor}
+%% Submission Date
+\thesisdate{June 27, 2017}
+
+%%Uncomment next line for copyright text if used
+%\copyrightnotice{Name of the Author, 2008}
 
 %% Uncomment committee stuff in the final version if used
 %\committeetext{Approved in oral examination by the committee:}
@@ -115,17 +119,14 @@
 %\committeemember{Supervisor}{Doctor Name of the Supervisor}
 %\signature
 
-%% Specify cover logo (in folder ``figures'')
+%% Faculty Logo on First Page
 \logo{uporto-feup.pdf}
 
-%% Uncomment next line for additional text  below the author's name (front page)
-%\additionalfronttext{Preparação da Dissertação}
 
-%%----------------------------------------
+%%
 %% Preliminary materials
-%%----------------------------------------
+%%
 
-% remove unnecssary \include{} commands
 \begin{Prolog}
   \include{abstract_en} % the abstract
   \include{acknows_en}  % the acknowledgments
@@ -142,38 +143,45 @@
   %\include{abbrevs_en}  % the list of abbreviations used
 \end{Prolog}
 
-%%----------------------------------------
+%%
 %% Body
-%%----------------------------------------
+%%
+
 \StartBody
 
 \include{chapter1}
 \include{chapter2}
 \include{chapter3}
 \include{chapter4}
-\include{chapter4}
 \include{chapter5}
+\include{chapter6}
 
-%%----------------------------------------
+%%
 %% Final materials
-%%----------------------------------------
+%%
 
 %% Glossary / Nomenclature
 %\include{nomenclature}
 %\printnomenclature[4.5cm]
 
+%% Appendices
+% \noappendicestocpagenum
+% \addappheadtotoc
+% \appendixpage
+% \appendix
+% \include{appendix/appendix1}
+% \include{appendix/appendix2}
+
+%% Acronyms and Glossary
+\glsaddall
+\glstoctrue
+\glsnogroupskiptrue
+\printglossary[type=\acronymtype]
+\printglossary
+
 %% Bibliography
 %% Comment the next command if BibTeX file not used
 %% bibliography is in ``myrefs.bib''
 \PrintBib{myrefs}
-
-%% comment next 2 commands if numbered appendices are not used
-\appendix
-%\include{appendix1}
-
-%% Index
-%% Uncomment next command if index is required
-%% don't forget to run ``makeindex mieic-en'' command
-%\PrintIndex
 
 \end{document}
