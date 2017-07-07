@@ -67,21 +67,11 @@ As previously mentioned, in Section~\ref{sec:data_collection}, we exploit an aux
 	\end{tabular}
 \end{table}
 
-Taking a careful observation into to coordinates used to each bounding-box, we can affirm that Rio de Janeiro present the broadest bounding-box comparatively to the others cities.
+Taking a careful observation into to coordinates used within each bounding-box, we can affirm that Rio de Janeiro present the broadest bounding-box comparatively to the others cities.
 
-In the first attempts to study the geographic distribution in our datasets, we discover that not all tweets had a precise coordinate attached to it. Nonetheless, there were cases where tweets from other cities were collected to our datasets and this phenomenon is not supposed to happen when the collection method is based in geo-located characteristics. By studying the Twitter mobile application, we found out that a user can tag himself in the tweet by two different ways: (1) a user can activate the GPS in the mobile application and associate to the tweet his precisely geo-location; (2) a user can choose a place from a predefined list provide by Twitter and associate the place to the tweet.
+To perform the data filtering process, 
 
-The second method of tagging the geo-location to the tweet can arise some conflicts when this kind of tweets is used to perform scientific studies or even development of system to help the cities in the regularization, control and improvement of its services. Having this in consideration, it was necessary to understand how the Twitter Streaming API works and what kind of heuristics follows in order to retrieve this type of tweets. Hence, the documentation~\footnote{\url{https://dev.twitter.com/streaming/overview/request-parameters\#locations} (last visited on 17 June, 2017)} enhances two different heuristics:
-
-\begin{enumerate}
-	\item If the coordinates field is populated, the values there will be tested against the bounding-box;
-	\item If the coordinates field is empty but place is populated, the region defined in place is checked for intersections against the locations bounding-box. Any overlapping areas will yield a positive match.
-\end{enumerate}
-
-The first heuristic only happens if a user is able/willing to tag a post with his precise geo-location associated with it; otherwise, the user can tag the post associated with a place and in this case the second heuristic is applied. 
-Each place contained in the previous mentioned list, which is provided by Twitter, is composed by a bounding-box, and if any piece of it overlaps the bounding-box used in the collecting process, then a positive match is yielded and the tweet is retrieved. For example, if a tweet has a place such as Brazil and our filter bounding-box is defined for Rio de Janeiro, all tweets from place Brazil will be in our dataset, regardless the fact some tweets are posted elsewhere, such as in the city of Manaus, very far away from Rio de Janeiro.
-
-This restriction required the development of a external layer which was responsible for the filter of tweets located outside the area of each city. To built this so, it was necessary \textit{a posteriori} information and, thus, we extract the Twitter default bounding-box of each city appealing to the tweets \textit{place} field. Such information was then used as the limit area in order to filter out tweets which \textit{coordinates} field was not populated. These bounding-boxes, the Twitter default ones, are listed in Table~\ref{tab:bbs_filter} and its corresponding visualization is the biggest rectangle demonstrated in Figures~\ref{fig:rio_sp_geographical_distribution} (subfigures~\ref{subfig:riodejaneiro_bounding_boxes} and~\ref{subfig:saopaulo_bounding_boxes}) and~\ref{fig:nyc_london_melbourne_geographical_distribution} (subfigures~\ref{subfig:nyc_bounding_boxes},~\ref{subfig:london_bounding_boxes} and~\ref{subfig:melbourne_bounding_boxes}).
+These bounding-boxes, the Twitter default ones, are listed in Table~\ref{tab:bbs_filter} and its corresponding visualization is the biggest rectangle demonstrated in Figures~\ref{fig:rio_sp_geographical_distribution} (subfigures~\ref{subfig:riodejaneiro_bounding_boxes} and~\ref{subfig:saopaulo_bounding_boxes}) and~\ref{fig:nyc_london_melbourne_geographical_distribution} (subfigures~\ref{subfig:nyc_bounding_boxes},~\ref{subfig:london_bounding_boxes} and~\ref{subfig:melbourne_bounding_boxes}).
 
 \begin{table}[htbp]
 	\centering
@@ -135,9 +125,9 @@ Later, after the filtering process, we tried to understand the volume, as well a
 		\end{tabular}}
 	\end{table}
 	
-The final counts of the analysis for each identified type of geo-location are presented in Table~\ref{tab:volume_geolocation}. Looking at the numbers it is possible to conclude some facts applicable to all cities. Citizens tend to geo-locate themselves with a location which has variable bounding-box size since more than 70\% of the tweets are of this type. Furthermore, only a few percentage of tweets, between 0\% and 1.43\%, are located in specific places, although the existence of a higher number of distinct specific places comparatively to the bounding-boxes with variable size, with exception of Melbourne that has zero specific places in our dataset. Other interesting point to enhance is the considerable percentage of tweets with precise location (i.e. tweets that people tagged himself using the GPS). The Brazilian cities proved to be less supportive of precisely located tweets, while the English cities were more contributive. The distribution of each type of geo-located tweet is illustrated in Figures~\ref{fig:rio_sp_geographical_distribution} and~\ref{fig:nyc_london_melbourne_geographical_distribution}. The variable bounding-boxes are showed in ~\ref{subfig:saopaulo_bounding_boxes},~\ref{subfig:riodejaneiro_bounding_boxes},~\ref{subfig:nyc_bounding_boxes},~\ref{subfig:london_bounding_boxes} and~\ref{subfig:melbourne_bounding_boxes} proving that our filter method was able to correctly agglomerate places that were, indeed, inside of the Twitter default bounding-boxes. In~\ref{subfig:saopaulo_markers},~\ref{subfig:riodejaneiro_markers},~\ref{subfig:nyc_markers},~\ref{subfig:london_markers} and~\ref{subfig:melbourne_markers} is illustrated the distribution of the specific places found out in our datasets for each city. A particular point identified was the absence of specific places in Melbourne and the limited places in a certain area of London. With a first look at the image of London, there may be doubts about the results concerning the filter method, however the bounding-box used to that process was the same in both cases, and so the only viable explanation for such result is the absence of specific locations for that area in the predefined list of places provided by the Twitter applications. Lastly, in~\ref{subfig:saopaulo_points},~\ref{subfig:riodejaneiro_points},~\ref{subfig:nyc_points},~\ref{subfig:london_points} and~\ref{subfig:melbourne_points} is illustrated the distribution of precisely located tweets. Through a careful observation in this distribution it was possible the arising of another doubt relatively to the first aforementioned heuristic of the Twitter Streaming API. There were tweets retrieved that not matched the bounding-box used in the collection process and this fact conducts to uncertainty and mistrust regarding the performance of this type of collection available on Twitter. 
+The final counts of the analysis for each identified type of geo-location are presented in Table~\ref{tab:volume_geolocation}. Looking at the numbers it is possible to conclude some facts applicable to all cities. Citizens tend to geo-locate themselves with a location which has variable bounding-box size since more than 70\% of the tweets are of this type. Furthermore, only a few percentage of tweets, between 0\% and 1.43\%, are located in specific places, although the existence of a higher number of distinct specific places comparatively to the bounding-boxes with variable size, with exception of Melbourne that has zero specific places in our dataset.
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 	\centering
 	\begin{subfigure}[htbp]{0.4\textwidth}
 		\centering
@@ -162,13 +152,13 @@ The final counts of the analysis for each identified type of geo-location are pr
 		\label{subfig:saopaulo_markers}
 	\end{subfigure}
 	\quad
-		\begin{subfigure}[htbp]{0.5\textwidth}
-			\centering
-			\includegraphics[width=1\linewidth]{figures/rio_markers.png}
-			\caption{}
-			\label{subfig:riodejaneiro_markers}
-		\end{subfigure}
-		
+	\begin{subfigure}[htbp]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{figures/rio_markers.png}
+		\caption{}
+		\label{subfig:riodejaneiro_markers}
+	\end{subfigure}
+	
 	\medskip
 	
 	\begin{subfigure}[htbp]{0.4\textwidth}
@@ -189,7 +179,7 @@ The final counts of the analysis for each identified type of geo-location are pr
 	\label{fig:rio_sp_geographical_distribution}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 	\centering
 	\begin{subfigure}[htbp]{0.3\textwidth}
 		\centering
@@ -211,7 +201,7 @@ The final counts of the analysis for each identified type of geo-location are pr
 		\caption{}
 		\label{subfig:melbourne_bounding_boxes}
 	\end{subfigure}
-			
+	
 	\medskip
 	
 	\centering
@@ -262,6 +252,9 @@ The final counts of the analysis for each identified type of geo-location are pr
 	\caption[Exploratory analysis in English-speaking cities]{New York City (a, d, g), London (b, e, h) Geographical Distributions: (a, b) Bounding-boxes of places (c, d) Specific places (e, f) Geo-tagged tweets}
 	\label{fig:nyc_london_melbourne_geographical_distribution}
 \end{figure}
+
+
+Other interesting point to enhance is the considerable percentage of tweets with precise location (i.e. tweets that people tagged himself using the GPS). The Brazilian cities proved to be less supportive of precisely located tweets, while the English cities were more contributive. The distribution of each type of geo-located tweet is illustrated in Figures~\ref{fig:rio_sp_geographical_distribution} and~\ref{fig:nyc_london_melbourne_geographical_distribution}. The variable bounding-boxes are showed in ~\ref{subfig:saopaulo_bounding_boxes},~\ref{subfig:riodejaneiro_bounding_boxes},~\ref{subfig:nyc_bounding_boxes},~\ref{subfig:london_bounding_boxes} and~\ref{subfig:melbourne_bounding_boxes} proving that our filter method was able to correctly agglomerate places that were, indeed, inside of the Twitter default bounding-boxes. In~\ref{subfig:saopaulo_markers},~\ref{subfig:riodejaneiro_markers},~\ref{subfig:nyc_markers},~\ref{subfig:london_markers} and~\ref{subfig:melbourne_markers} is illustrated the distribution of the specific places found out in our datasets for each city. A particular point identified was the absence of specific places in Melbourne and the limited places in a certain area of London. With a first look at the image of London, there may be doubts about the results concerning the filter method, however the bounding-box used to that process was the same in both cases, and so the only viable explanation for such result is the absence of specific locations for that area in the predefined list of places provided by the Twitter applications. Lastly, in~\ref{subfig:saopaulo_points},~\ref{subfig:riodejaneiro_points},~\ref{subfig:nyc_points},~\ref{subfig:london_points} and~\ref{subfig:melbourne_points} is illustrated the distribution of precisely located tweets. Through a careful observation in this distribution it was possible the arising of another doubt relatively to the first aforementioned heuristic of the Twitter Streaming API. There were tweets retrieved that not matched the bounding-box used in the collection process and this fact conducts to uncertainty and mistrust regarding the performance of this type of collection available on Twitter. 
 
 \section{Temporal Frequencies}
 
@@ -332,9 +325,7 @@ During and after remarkable events, citizens are impelled to share their feeling
 \label{fig:box_plots_day_of_week}
 \end{figure}
 
-In order to understand the most active days and hours in Twitter, for all cities under this study, we aggregate the datasets by these attributes and represented the final results in a box plot representation. This type of data visualization allows, in a standardized way, the displaying of distributions of data based on the six different values: (1) minimum and (2) maximum values for each day/hour regarding the activity on Twitter; (3) median value for the each day/hour, (4) first and (5) third quartiles as well as (6) the interquartile range (IQR). Figures~\ref{fig:box_plots_day_of_week} and~\ref{fig:box_plots_hour_of_day} illustrated this type of data visualization for the whole three months of data collected. Taking into analysis the city of Rio de Janeiro, it was possible to observe and enhance Tuesdays as the day of the week where there is more activity on Twitter. Moreover, Fridays revealed to be the day less active, not only for the city of Rio de Janeiro, but for all remaining cities with exception of Melbourne. Particularly, the activity on Twitter in Melbourne is centered in the weekend days while the other cities the highest levels of activity is spread between week and weekend days. The interquartile range in the plots can tell us the amount of days whose activity was above and behold the median value, and through that we identify Rio de Janeiro and Melbourne as the cities where this phenomenon happen more times. São Paulo, New York City and London present an almost regular IQR which means that the days of weeks are similarly regarding the activity on Twitter.
-
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
 	\centering
 	\begin{subfigure}[htbp]{0.45\textwidth}
 		\centering
@@ -378,6 +369,8 @@ In order to understand the most active days and hours in Twitter, for all cities
 	\caption[Hour-of-the-day box-plots for the volume of tweets]{Hour-of-the-day box-plots for the volume of tweets (a) Rio de Janeiro (b) São Paulo (c) New York City (d) London (e) Melbourne}
 	\label{fig:box_plots_hour_of_day}
 \end{figure}
+
+In order to understand the most active days and hours in Twitter, for all cities under this study, we aggregate the datasets by these attributes and represented the final results in a box-plot representation. This type of data visualization allows, in a standardized way, the displaying of distributions of data based on the six different values: (1) minimum and (2) maximum values for each day/hour regarding the activity on Twitter; (3) median value for the each day/hour, (4) first and (5) third quartiles as well as (6) the \gls{IQR}. Figures~\ref{fig:box_plots_day_of_week} and~\ref{fig:box_plots_hour_of_day} illustrated this type of data visualization for the whole three months of data collected. Taking into analysis the city of Rio de Janeiro, it was possible to observe and enhance Tuesdays as the day of the week where there is more activity on Twitter. Moreover, Fridays revealed to be the day less active, not only for the city of Rio de Janeiro, but for all remaining cities with exception of Melbourne. Particularly, the activity on Twitter in Melbourne is centered in the weekend days while the other cities the highest levels of activity is spread between week and weekend days. The interquartile range in the plots can tell us the amount of days whose activity was above and behold the median value, and through that we identify Rio de Janeiro and Melbourne as the cities where this phenomenon happen more times. São Paulo, New York City and London present an almost regular \gls{IQR} which means that the days of weeks are similarly regarding the activity on Twitter.
 
 Looking at the hour-of-the-day box-plot (\ref{fig:box_plots_hour_of_day}), it is possible to verify an decrease in terms of activity on Twitter during the night period to all cities. More specifically, there were cases in which the volume of tweets was inexistent and based on this fact, two possible reason are suggested: (1) the absence of tweets during this period is explained through the zero activity of users in the city, regarding geo-located tweets; (2) the service on Twitter was in maintenance and due to that, any tweet was retrieved by the API. Although the observable increase of activity during day-time, the peak of it is similiar to all cities and it is established between the 19 and 23 hours.
 
