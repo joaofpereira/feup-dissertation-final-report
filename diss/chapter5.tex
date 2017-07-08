@@ -100,7 +100,7 @@ We also selected and manually analyse a random sample (with the size of 200) of 
 	}
 \end{table}
 
-It was found a group of 50 topics which had the largest number of distinct topics between them. However, there were topics which theme was the same (e.g. Love and Romance Problems or Brazilian Football \textit{versus} European Football). Within this, such groups were aggregate into the same topic, \textit{Relationships} and \textit{Sports and Games}, respectively. After this grouping process, a total of 29 different topics was achieved. 
+It was found a group of 50 topics which had the largest number of distinct topics between them. We choose to use this model trained to characterize tweets into 50 topics because the final goal of our framework is to be able of compare or monitor cities, regions or even countries having into consideration high levels of diversification and generalization. However, by studying the 50 different topics, we conclude the existence of topics which theme was the same (e.g. Love and Romance Problems or Brazilian Football \textit{versus} European Football). Within this, such groups were aggregate into the same topic, \textit{Relationships} and \textit{Sports and Games}, respectively. After this grouping process, a total of 29 different topics was achieved. 
 
 Some tweets that have added complexity to our classification objective, such as, for example, "\textit{queria namorar um mano parecido com o josh}" (Relationship) and "\textit{como eu queria meus amigos aqui agora cmg}" (Friendship), raised some doubts about which topic this tweets may belong: Relationship, Friendship or even Actions or Intentions. In a perspective of context, the first tweet belongs to the theme \texttt{flirt}, which is directly related to Relationship. The theme on the second tweet is missing the company of friends, i.e. conviviality, which is related to Friendship. The decision of join the two topics was due to the proximity between them which have as content both types of tweets, talking about love/relationship and friendship, and with this in consideration both topics should be aggregated in order to assure the desired consistency in the classification.
 
@@ -135,13 +135,13 @@ The necessity of applying such restrictions is due to the need of seeing in whic
 Furthermore, it is worth mentioning that our model had successfully discover a topic related to Big Brother Brazil 2017 (BBB17), a well-known reality show. The amount of geo-located tweets concerning this topic was considerable (1.85\% and 2.49\%, in RJ and SP, respectively), rising the question about what led people to geo-located them in such topic.
 
 \subsection{Final Remarks}
-The methodology reported across this experiment demonstrated the capability of our framework to handle different types of analysis under unregulated and non-conventional data such as the content found in most social media. The application of topic modeling technique to tweets from two different cities enables interesting comparisons between them since the whole analytics process accounts for what inhabitants talk about in their social networks. Through these analysis, cities' services are capable of monitoring human behaviour, activity patterns as well as of identifying regions where there may be some levels of intolerance on certain topics, making it possible to trigger preventive measures to solve problems in those specific areas.
+This experiment demonstrates the capability of our framework to handle different topic modelling analysis under unregulated and non-conventional data such as the content found in most social media. The application of topic modeling technique to tweets from two different cities enables interesting comparisons between them since the whole analytics process accounts for what inhabitants talk about in their social networks. Through these analysis, cities' services are capable of monitoring human behaviour, activity patterns as well as of identifying regions where there may be some levels of intolerance on certain topics, making it possible to trigger preventive measures to solve problems in those specific areas.
 
 LDA models usually require documents of large size, or at least ones with higher complexity than a single tweet so as to yield appropriate performance. A traditional approach was followed considering each tweet as a document instead of trying to aggregate tweets in more complex documents taking into consideration some criteria, e.g. grouping messages by date and hour. All topics resulting from our approach are similar in both cities but two, which are unique for each of the selected scenarios. The percentage difference between similar topics was within the interval 0.16-4.43\% evidencing the fact that both cities are also similar besides different factors that characterize each other: population, culture, lifestyle and also the region where the city is located in.
 
-In spite of the analysis carried out and reported in this paper, we can not assure that inside a topic other encapsulated topics might exist. The resulting amount of tweets for each topic was extremely high, turning a one-by-one verification into a very laborious and time consuming process. Therefore, our classification approach was limited to the verification of the top-50 words and the manual identification of such words in samples of 200 tweets per topic. Such a limitation, nonetheless, did not prevent us to draw important conclusions relatively to the results we have obtained after the application of our proposed solutions, as discussed in the Section~\ref{subsec:topic_modelling_results}.
+In spite of the analysis carried out and reported in this paper, we can not assure that inside a topic other encapsulated topics might exist. The resulting amount of tweets for each topic was extremely high, turning a one-by-one verification into a very laborious and time consuming process. Therefore, our classification approach was limited to the verification of the top-50 words and the manual identification of such words in samples of 200 tweets per topic. Such a limitation, nonetheless, did not prevent us to draw important conclusions relatively to the results we have obtained after the application of our proposed solutions, as discussed in the Section \ref{sec:results}.
 
-Future direction for this research will include application of spatio-temporal aggregation methods over both datasets in order to create more complex documents and verify whether results can be different taking into consideration temporal and spatial factors. To pursue this, it is required that a large dataset for both cities is available, which is expectable only in mid- to long-term. A possible future evaluation approach to be considered is the mapping of topics over specific areas of the cities, such as the identification of topics related to beaches alongside the coastal area in Rio de Janeiro, or the identification of transportation and travel topics over the metropolitan area in São Paulo. Finally, it is also necessary to explore other classification/evaluation approaches to enhance robustness, consistency, and efficiency of the topic modelling routine; one possible solution is the method aforementioned in Section~\ref{subsec:topic_modelling_sota}, which considers the addition of an extra layer to endow the framework with supervised labeling capabilities.
+Future direction for this research will include application of spatio-temporal aggregation methods over both datasets in order to create more complex documents and verify whether results can be different taking into consideration temporal and spatial factors. To pursue this, it is required that a large dataset for both cities is available, which is expectable only in mid- to long-term. A possible future evaluation approach to be considered is the mapping of topics over specific areas of the cities, such as the identification of topics related to beaches alongside the coastal area in Rio de Janeiro, or the identification of transportation and travel topics over the metropolitan area in São Paulo. Finally, it is also necessary to explore other classification/evaluation approaches to enhance robustness, consistency, and efficiency of the topic modelling routine; one possible solution is the method aforementioned in Section~\ref{related_work}, which considers the addition of an extra layer to endow the framework with supervised labeling capabilities.
 
 \section{Travel-related Classification}
 \label{sec:travel_related_classification}
@@ -160,7 +160,7 @@ To evaluate the performance of classifiers in our experiences we used five diffe
 
 We established the use of different groups of features to train our classification model, namely bag-of-words, bag-of-embeddings - word embeddings dependent technique - and both combined (horizontally combination of bag-of-words and bag-of-embeddings matrices into a single one).
 
-\subsection{Experiment in Rio de Janeiro and São Paulo}
+\subsection{Rio de Janeiro and São Paulo}
 \label{subsec:rio_de_janeiro_sao_paulo_experiment}
 
 Messages were collected for a period of a whole month, between days March 12 and April 12, 2017, and the resulting datasets sum up a total of 6.1M and 2.9M tweets for Rio de Janeiro and São Paulo, respectively. Due to the problem detected in Section~\ref{sec:geographical_distribution}, we filtered the data in order to use only tweets that were actually inside the cities' areas. The final composition of the datasets is presented in Table~\ref{tab:brazilian_datasets_travel}, and the subset of data considered in this experiment sum up a total of 7.7M tweets -  5.3M and 2.4M tweets for Rio de Janeiro and São Paulo, respectively.
@@ -180,12 +180,7 @@ Messages were collected for a period of a whole month, between days March 12 and
 
 \subsubsection{Training and Test Datasets}
 \label{subsec:training_test_datasets_portuguese}
-The construction of the training and test sets followed a traditional approach. We thus tried to select balanced training sets, to which it was necessary to identify tweets that could possibly be travel-related. We were inspired by a strategy used in the study by Maghrebi~et~al.~\cite{maghrebi2016transportation}, which consists in searching tweets from a collection using specific travel terms and regular expressions.
-
-Using the terms declared in Table~\ref{tab:terms} combined with the regular expression $space + term + space$, we found about 30,000 tweets. From this subset, we randomly selected a small sample of 3,000 tweets to manually confirm if they were indeed related to travel topics. After this manual annotation we selected 2,000 tweets and used them as positive samples in the training dataset.
-
-In order to select negative samples for the training dataset we randomly selected 2,000 tweets and also manually verified their content to assure that they were not travel-related. Finally, our training set was composed by 4,000 tweets, from which 2,000 were travel-related and 2,000 were not. 
-We selected 1,000 tweets randomly that were not present in the training set to build the test set, and then manually classified them as travel-related or non-travel-related. In the end, 71 tweets were found to be travel-related and whereas 929 were not.
+The construction of the training and test sets followed a semi-automatic labeling approach. We tried to built a balanced training set concerning the travel-related class and the non-related. The selection process of tweets have support on a strategy used in the study of Maghrebi et al.~\cite{maghrebi2016transportation}, which consists in searching tweets from a collection using specific travel terms in conjecture with white-spaces in the start and end of a regular expression (e.g. \emph{" carro "}, for the car mode of transport). Using the terms declared in Table~\ref{tab:terms} combined with the previous mentioned regular expression, we found about 30,000 tweets. From this subset, we randomly selected a small sample of 3,000 tweets to manually confirm if they were indeed related to travel topics. Although the randomly selection of tweets to produce such training set, we careful analyse the existence of all modes of transportation present in Table~\ref{tab:terms}. After this manual annotation we selected 2,000 tweets and used them as positive samples in the training dataset.
 
 \begin{table}[htbp]
 	\centering
@@ -205,102 +200,86 @@ We selected 1,000 tweets randomly that were not present in the training set to b
 	\end{tabular}
 \end{table}
 
-\subsection{Estimators and Evaluation Metrics}
-In order to measure the performance of a text classification model, there are several types of metrics that can help this process, depending of course the context of the task. Regarding binary classification tasks, the most common evaluation metrics used are precision, accuracy and F1-score which is the harmonic mean of the previous two. Above, it is described each of these metrics as well the mathematical equation used in its calculation.
+In order to select negative samples for the training dataset we randomly selected 2,000 tweets and also manually verified their content to assure that they were not travel-related. Finally, our training set was composed by 4,000 tweets, from which 2,000 were travel-related and 2,000 were not. 
+We selected 1,000 tweets randomly that were not present in the training set to build the test set, and then manually classified them as travel-related or non-travel-related. In the end, 71 tweets were found to be travel-related and whereas 929 were not.
 
-\begin{itemize}
-	\item \textbf{Precison:} Represents the fraction of correct predictions for the travel-related class (Equation~\ref{eq:precision}).
-	
-	\item \textbf{Recall:} Represents the fraction of travel-related tweets correctly predicted (Equation~\ref{eq:recall}).
-	\begin{multicols}{2}
-		\begin{equation}\label{eq:precision}
-		Precision = \frac{tp}{tp+fp}
-		\end{equation}
-		
-		\begin{equation}\label{eq:recall}
-		Recall = \frac{tp}{tp+fn}
-		\end{equation}
-	\end{multicols}
-	
-	where \textbf{$tp$} is related to the true positives classified tweets, \textbf{$fp$} represents the false positives and \textbf{$fn$} are the false negatives.
-	
-	\item \textbf{F1-score:} Represents the harmonic mean of precision and recall.
-\end{itemize}
+It is worth mention that we try to hide some terms from the training set in order to verify if the embeddings were able to discriminate tweets about \emph{"Uber"/"Busão"}, which are terms related to the \texttt{car/taxi} and \texttt{bus} modes of transport, respectively. To assure such test, we incorporate specific-related tweets about these modes of transport in the 71 travel-related tweets of the test set. By obtaining good result regarding the performance of the classification model, we can induce several advantages regarding the use of word-embeddings-based features in social media classification tasks for a large diversity of domains, such as the smart cities and transportation domains.
 
-\begin{equation}
-{F1}_{score} = 2*\frac{precision*recall}{precision+recall}
-\end{equation}
+\subsubsection{Results and Analysis}
+\label{subsubsec:results_rio_de_janeiro_sao_paulo}
+Table~\ref{classifiers} presents the results obtained using the different features combination for our test set composed by 1,000 tweets manually annotated.
 
-Once these first three metrics only showed us the performance of the classifier for a discrimination threshold of 0.5, we decided to calculate another metric. The ROC (Receiver operating characteristic) curve gives us the TPR (True positive rate) and the FPR (False positive rate) for all possible variations of the discrimination threshold. Through the ROC curve, we compute the area under the curve (AUC) to see what was the probability of the classifier to rank a random travel-related tweet higher than a random non-related one.
-
-\subsection{Results and Analysis}
-Table~\ref{classifiers} presents the results obtained using the different features combination for our test set composed by 1,000 tweets manually annotated. According to the evaluation metrics we conclude that the bag-of-word and bag-of-embeddings combined produced better classification models. The model produced by the Linear SVM performed slightly better than the LR and the RF. Interesting to note is that BoW features have influence on the precision scores obtained from our results, producing more conservative classifiers. Regarding the recall results, we can see that the Logistic Regression using only bag-of-embeddings features was the model with best results; perhaps if the precision is taken into consideration, the same conclusions will not be possible. Analysing the scores provided in Table~\ref{classifiers}, the best model under the F1-score was the Linear SVM, with a score of 0.85. It is worth noting that combining Bag-of-words and Bag-of-embedding with size 100 was the group of features with best performance taking into consideration the evaluation metrics used in this experiment.
-
-\begin{table}[!htbp]
-\footnotesize
-\centering
-\caption{Performance results with 100 sized vectors for BoE}
-\label{classifiers}
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\textbf{Classifier}                  & \textbf{Features} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} \\ \hline
-\multirow{3}{*}{Linear SVM}          & BoW               & 1.0                & 0.6761          & 0.8067            \\
-                                     & BoE               & 0.4338             & 0.8309          & 0.5700            \\
-                                     & \textbf{BoW + BoE}         & \textbf{1.0}       & \textbf{0.7465} & \textbf{0.8548}   \\ \hline
-\multirow{3}{*}{Logistic Regression} & BoW               & 1.0                & 0.6338          & 0.7759            \\
-                                     & BoE               & 0.4444             & 0.8451          & 0.5825            \\
-                                     & BoW + BoE         & 1.0                & 0.6761          & 0.8067            \\ \hline
-\multirow{3}{*}{Random Forest}       & BoW               & 1.0                & 0.6338          & 0.7759            \\
-                                     & BoE               & 0.2298             & 0.8028          & 0.3574            \\
-                                     & BoW + BoE         & 1.0                & 0.6338          & 0.7759            \\ \hline
-\end{tabular}
+\begin{table}[!bp]
+	\small
+	\centering
+	\caption{Performance results with 100 sized vectors for BoE}
+	\label{classifiers}
+	\begin{tabular}{c|c|c|c|c}
+		\hline
+		\textbf{Classifier}                  & \textbf{Features} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} \\ \hline
+		\multirow{3}{*}{Linear SVM}          & BoW               & 1.0                & 0.6761          & 0.8067            \\
+		& BoE               & 0.4338             & 0.8309          & 0.5700            \\
+		& \textbf{BoW + BoE}         & \textbf{1.0}       & \textbf{0.7465} & \textbf{0.8548}   \\ \hline
+		\multirow{3}{*}{Logistic Regression} & BoW               & 1.0                & 0.6338          & 0.7759            \\
+		& BoE               & 0.4444             & 0.8451          & 0.5825            \\
+		& BoW + BoE         & 1.0                & 0.6761          & 0.8067            \\ \hline
+		\multirow{3}{*}{Random Forest}       & BoW               & 1.0                & 0.6338          & 0.7759            \\
+		& BoE               & 0.2298             & 0.8028          & 0.3574            \\
+		& BoW + BoE         & 1.0                & 0.6338          & 0.7759            \\ \hline
+	\end{tabular}
 \end{table}
 
-The performance of all three classifiers is illustrated using the ROC Curve in Fig. \ref{fig:roc_curve}. The area under the curve of the Receiver Operating Characteristic (AUROC) was very similar for both the Logistic Regression and the Linear SVM models. The results obtained from the Random Forest model were not so promising as expected.
 
-\begin{figure}[!htbp]
-  \caption{ROC Curve of SVM, LR and RF experiences}
-  \centering
-  \includegraphics[width=0.7\textwidth]{figures/roc_auc_brazilian_travel_related}
-  \label{fig:roc_curve}
+\begin{figure}[!htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/roc_auc_brazilian_travel_related}
+	\caption{ROC Curve of SVM, LR and RF experiences}
+	\label{fig:roc_curve}
 \end{figure}
+
+According to the evaluation metrics we conclude that the bag-of-word and bag-of-embeddings combined produced better classification models. The model produced by the Linear SVM performed slightly better than the LR and the RF. Interesting to note is that \gls{BoW} features have influence on the precision scores obtained from our results, producing more conservative classifiers. Regarding the recall results, we can see that the Logistic Regression using only bag-of-embeddings features was the model with best results; perhaps if the precision is taken into consideration, the same conclusions will not be possible. Analysing the scores provided in Table~\ref{classifiers}, the best model under the F1-score was the Linear SVM, with a score of 0.85. It is worth noting that combining Bag-of-words and Bag-of-embedding with size 100 was the group of features with best performance taking into consideration the evaluation metrics used in this experiment.
+
+\begin{figure}[!hbp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/predicted_day_of_week}
+	\caption{Positive Predicted Tweets per Day of Week}
+	\label{fig:predicted}
+\end{figure}
+
+
+The performance of all three classifiers is illustrated using the ROC Curve in Figure~\ref{fig:roc_curve}.
+
+The area under the curve of the Receiver Operating Characteristic (AUROC) was very similar for both the Logistic Regression and the Linear SVM models. The results obtained from the Random Forest model were not so promising as expected.
 
 After the selection of our classification model, we decided to classify all the Portuguese dataset and draw some statistics from the results. The trained Linear SVM classifier was used to predict whether tweets were travel-related or not, since it was the model presenting the best score under the F1-score metric (as shown in Table~\ref{classifiers}). From a total of 7.8M tweets, our classifier was able identified 37,300 travel-related entries.
 
-Fig.~\ref{predicted} depicts the distribution of travel-related tweets over the days of the week. We can see that the first three business days (Monday, Tuesday and Wednesday) are the ones on which the Twitter activity is higher for both cities in our study.
-
-\begin{figure}[!htbp]
-  \caption{Positive Predicted Tweets per Day of Week}
-  \centering
-    \includegraphics[width=0.7\textwidth]{figures/predicted_day_of_week}
-    \label{predicted}
+\begin{figure}[!bp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/rio_1}
+	\caption{Rio de Janeiro heat map to the positive tweets}
+	\label{subfig:rio_heatmap}
 \end{figure}
 
-\begin{figure}[!htbp]
-  \caption{Rio de Janeiro Heatmap to the positive tweets}
-  \centering
-    \includegraphics[width=0.725\textwidth]{figures/rio_1}
-    \label{rio_heatmap}
+\begin{figure}[!htp]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/sp_1}
+	\caption{São Paulo heat map to the positive tweets}
+	\label{subfig:sp_heatmap}
 \end{figure}
 
-\begin{figure}[h]
-  \caption{São Paulo Heatmap to the positive tweets}
-  \centering
-    \includegraphics[width=0.725\textwidth]{figures/sp_1}
-    \label{sp_heatmap}
-\end{figure}
+Figure~\ref{fig:predicted} depicts the distribution of travel-related tweets over the days of the week. We can see that the first three business days (Monday, Tuesday and Wednesday) are the ones on which the Twitter activity is higher for both cities in our study.
 
-In order to understand the spatial distribution of travel-related tweets we generated a heatmap for both cities. From the heatmap of RJ, illustrated in Fig.~\ref{rio_heatmap}, it is possible to identify that some agglomerations of tweets are located at Central do Brasil, Cidade Nova and Triagem train stations, as well as at Uruguaiana, Maracanã and Carioca metro stations. The Rio-Niterói bridge, connecting Rio de Janeiro to Niterói, as well as the piers on both sides also presented considerable clouds of tweets classified as travel-related.
+In order to understand the spatial distribution of travel-related tweets we generated a heatmap for both cities. From the heatmap of Rio de Janeiro, illustrated in Figure~\ref{subfig:rio_heatmap}, it is possible to identify that some agglomerations of tweets are located at Central do Brasil, Cidade Nova and Triagem train stations, as well as at Uruguaiana, Maracanã and Carioca metro stations. The Rio-Niterói bridge, connecting Rio de Janeiro to Niterói, as well as the piers on both sides also presented considerable clouds of tweets classified as travel-related.
 
-The heatmap for the city of SP, illustrated in Fig.~\ref{sp_heatmap}, was also an interesting case to observe. Almost every agglomeration matched some metro or train station. Estação Brás, Tatuapé, Belém, Estação Paulista, Sé, Liberdade were some of the stations highlighted in the heatmap. We could also identify a little agglomeration of travel-related tweets at Congonhas airport, even though no tweets seemed to mention the word \textit{plane} explicitly in the training of our classification model.
+The heatmap for the city of SP, illustrated in Figure~\ref{subfig:sp_heatmap}, was also an interesting case to observe. Almost every agglomeration matched some metro or train station. Estação Brás, Tatuapé, Belém, Estação Paulista, Sé, Liberdade were some of the stations highlighted in the heatmap. We could also identify a little agglomeration of travel-related tweets at Congonhas airport, even though no tweets seemed to mention the word \textit{plane} explicitly in the training of our classification model.
 
-\subsection{Final Remarks}
-The experiment previous described explores an approach of supervised learning using as training examples a set of manually annotated tweets extracted from the whole datasets with the support of a term-based regular expression. The overall methodology is concerned with the problem of construct a fine-grained Twitter training set for the travel domain and also the automatic identification of travel-related tweets from a large scale corpus. We combined different word representations to verify whether our classification model could learn relations between words at both syntactic and semantic levels. After using standard techniques such as bag-of-words and bag-of-embeddings, we have used them combined yielding results that showed that these different groups of features can complement each other, with respect to Portuguese-speaking tweets.
+\subsubsection{Final Remarks}
+The previous described experiment explores an approach of supervised learning using as training examples a set of manually annotated tweets extracted from the whole datasets with the support of a term-based regular expression. The overall methodology is concerned with the problem of construct a fine-grained Twitter training set for the travel domain and also the automatic identification of travel-related tweets from a large scale corpus. We combined different word representations to verify whether our classification model could learn relations between words at both syntactic and semantic levels. After using standard techniques such as bag-of-words and bag-of-embeddings, we have used them combined yielding results that showed that these different groups of features can complement each other, with respect to Portuguese-speaking tweets. Modes of transport are always evolving and new services emerges making the identification of tweets related to it difficult. Overall, our experiment proved that word-embeddings features are actually an advantage regarding its applicability into instable real-world scenarios such as the transportation domain. 
 
-\subsection{Experiment in New York City}
+\subsection{New York City}
 \label{subsec:new_york_city_experiment}
 
-Similar to the experiment of Portuguese travel-related classification, we built a model to discriminate english-speaking travel-related tweets. However, by following the same approach, final results were not improved with the combination of two different groups of features, bag-of-words and bag-of-embeddings.
+Similar to the experiment of Portuguese travel-related classification, we built a model to discriminate english-speaking travel-related tweets. However, by following the  construction of the training and test sets in this experiment followed a different approach. While in the Rio de Janeiro and São Paulo experiment we explore an , final results were not improved with the combination of two different groups of features, bag-of-words and bag-of-embeddings.
 
 The overall experiment steps as well as the final results are showed in the following subsections.
 
