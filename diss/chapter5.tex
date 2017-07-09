@@ -3,7 +3,9 @@
 
 \minitoc \mtcskip \noindent
 
-The framework present in Chapter~\ref{chap:framework} obligate us to test each of the designed modules in order to assure consistency and robustness of results produced by such system. Having this considered, we stipulated several specific-domain experiments, each of them related to a specific text analysis task. According previous mentioned requirements, we 
+Providing to the final users of our framework actionable and trustful information about the smart cities and transportation domains is a laborious and time consuming process. First, in order to extract information it is necessary the conduction of some experiments to test the text analytics modules described in Section~\ref{sec:text_analytics}. Second, the results obtained from each experiment need to be evaluated in order to prove robustness and efficiency in our implemented modules. Last but not least, it is necessary to enhance the value and importance of such analysis and what indeed social media content can provide to improve services and the whole cities that use our framework.
+
+Hence, in this Chapter, we describe three different experiments that were perform during this dissertation period to implement the previous mentioned text analytics modules
 
 \section{Topic Modelling}\label{sec:topic_modeling}
 This section is related to the experiment of automatically characterize tweets in two different Brazilian cities, Rio de Janeiro and São Paulo. We used an unsupervised learning approach to tackle the task of topic modelling in order to compare both cities and see if there are differences between topics people talked about. Automatic characterization of text messages is a laborious and time consuming task since it is necessary to assure the right level of abstraction in the learning model; very much similarly to human minds, which essentially present a bounded rationality nature, our learning model needs to be trained in order to assimilate the necessary knowledge and perform the appropriate analogies so as to discover different topics within the tweets' contents.
@@ -207,7 +209,7 @@ It is worth mention that we try to hide some terms from the training set in orde
 
 \subsubsection{Results and Analysis}
 \label{subsubsec:results_rio_de_janeiro_sao_paulo}
-Table~\ref{classifiers} presents the results obtained using the different features combination for our test set composed by 1,000 tweets manually annotated.
+Table~\ref{classifiers} presents the results obtained using the different features combination for our test set composed by 1,000 tweets manually annotated. According to the evaluation metrics we conclude that the bag-of-word and bag-of-embeddings combined produced better classification models. The model produced by the Linear SVM performed slightly better than the LR and the RF. Interesting to note is that \gls{BoW} features have influence on the precision scores obtained from our results, producing more conservative classifiers. Regarding the recall results, we can see that the Logistic Regression using only bag-of-embeddings features was the model with best results; perhaps if the precision is taken into consideration, the same conclusions will not be possible. Analysing the scores provided in Table~\ref{classifiers}, the best model under the F1-score was the Linear SVM, with a score of 0.85. It is worth noting that combining Bag-of-words and Bag-of-embedding with size 100 was the group of features with best performance taking into consideration the evaluation metrics used in this experiment.
 
 \begin{table}[!bp]
 	\small
@@ -236,8 +238,6 @@ Table~\ref{classifiers} presents the results obtained using the different featur
 	\caption{ROC Curve of SVM, LR and RF experiences}
 	\label{fig:roc_curve}
 \end{figure}
-
-According to the evaluation metrics we conclude that the bag-of-word and bag-of-embeddings combined produced better classification models. The model produced by the Linear SVM performed slightly better than the LR and the RF. Interesting to note is that \gls{BoW} features have influence on the precision scores obtained from our results, producing more conservative classifiers. Regarding the recall results, we can see that the Logistic Regression using only bag-of-embeddings features was the model with best results; perhaps if the precision is taken into consideration, the same conclusions will not be possible. Analysing the scores provided in Table~\ref{classifiers}, the best model under the F1-score was the Linear SVM, with a score of 0.85. It is worth noting that combining Bag-of-words and Bag-of-embedding with size 100 was the group of features with best performance taking into consideration the evaluation metrics used in this experiment.
 
 \begin{figure}[!hbp]
 	\centering
