@@ -279,36 +279,64 @@ The previous described experiment explores an approach of supervised learning us
 \subsection{New York City}
 \label{subsec:new_york_city_experiment}
 
-Similar to the experiment of Portuguese travel-related classification, we built a model to discriminate english-speaking travel-related tweets. However, by following the  construction of the training and test sets in this experiment followed a different approach. While in the Rio de Janeiro and São Paulo experiment we explore an , final results were not improved with the combination of two different groups of features, bag-of-words and bag-of-embeddings.
+Similar to the experiment of Portuguese-speaking travel-related classification of tweets, we built a model to discriminate English-speaking travel-related tweets. However, the construction of the training and test sets in this experiment follows a different approach. While in the Rio de Janeiro and São Paulo experiment we explore an semi-automatic approach and tweets were almost instantaneous formed as a group, here we were obligate to follow a two-phase approach due to the polysemy level of English travel terms.
 
-The overall experiment steps as well as the final results are showed in the following subsections.
+Differently from the Brazilian cities experiment, tweets were collected from New York City during a period of two months, between days March 12 and May 12, 2017. Ignoring all non-English, as well as tweets located outside the bounding-box of New York City, the resulting dataset comprehends 4M tweets.
 
-\subsection{Data Collection and Preparation}
-Differently from the Portuguese experiment, tweets were collected from New York City during a period of two months, between days March 12 and May 12, 2017. Ignoring all non-English tweets the resulting dataset comprehends 4M tweets.
+Regarding the preparation of data, we used the same preprocessing operations in both experiments, Brazilian and North-American. The operations were lowercasing, transformation of repeated characters and cleaning of \emph{entities} (user mentions and URLs) from the message content.
 
-Regarding the preparation of data, we used the same preprocessing operations for each tweet present in our dataset:
+\subsubsection{Training and Test Datasets}
 
-\begin{itemize}
-	\item \textbf{Lowercasing:} The message was converted to lowercase;
-	\item \textbf{Transforming repeated characters:} Sequences of characters repeated more than three times were transformed, e.g. "sooooo" was converted to "sooo";
-	\item \textbf{Cleaning:} Removing URLs and user mentions.
-\end{itemize}
+In the Portuguese dictionary, travel-related terms do not have more than one meaning. For instance \emph{"caminhar"} or even \emph{"comboio"} possesses only one meaning. Regarding the English dictionary, travel-related tweets may have more than one meaning since some of them present high level of polysemy. Terms such as \emph{"walk"} may be used to describe the action of walk or, for example, the action of \emph{walk into}. On the other hand, the term \emph{"train"} can be used to describe the mode of transport train or a type of behaviour through practice and instruction.
 
-\subsection{Features Selection}
-The features groups used in this experiments were the same presented in Section~\ref{subsec:features_4_3_2}.
+The polysemy level of such terms was took into consideration while the construction process of our training set of tweets for the English-language travel-related classification model. In the first stage of the construction process, we used the same strategy of the Portuguese training set. By take support on a semi-automatic labeling technique using a regular expression, we find out almost 16,000 tweets. The next step in the construction process was a manually verification followed by a manually annotation. Overall, 1,686 tweets were selected for each of both binary classes, travel-related and non-related. The travel-related set was strictly balanced in order to have almost the same amount of examples for each of the travel-modes involved in this study. The non-related training set is composed of several subjects that are not related to travel, e.g. football, leisure, politician, personal tweets, among others.
 
-\subsection{Training and Test Datasets}
+Nonetheless, we include into the training set tweets which polysemy level may induce doubts regarding the context of the message in order to make possible higher levels of discrimination in our model. This inclusion may help the learning process of our model making it capable of correctly identify which are the tweets that are actually related to the travel and transportation domain.
+The final composition of the training datasets is presented in Table~\ref{tab:new_york_first_dataset}.
 
-The construction of the training and test sets were supported by the same term-based approach used in Section~\ref{subsec:training_test_datasets_portuguese} in order to filter tweets from the whole collection, i.e. we used the regular expression $space + term + space$ with each term presented in Table~\ref{tab:terms}. Firstly, 1,686 tweets were selected for each of both cases, travel-related and non-related. The travel-related set was strictly balanced in order to have almost the same amount of examples for each of the travel-modes involved in this study. The non-related training set is composed of several subjects that are not related to travel, e.g. football, leisure, politician, personal tweets, among others.
+\begin{table}[!tp]
+	\centering
+	\caption[English-speaking tweets datasets]{Composition of the training and test datasets for the English travel-related tweets classification}
+	\label{tab:new_york_first_dataset}
+	\begin{tabular}{c|c|c|}
+		\cline{2-3}
+		\textbf{}                                       & \multicolumn{2}{c|}{\textbf{Training Set}}                          \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Mode of Tranport}} & \textbf{Travel-related} & \multicolumn{1}{l|}{\textbf{Non-related}} \\ \hline
+		\multicolumn{1}{|c|}{Bike}                      & 300                     & \multirow{6}{*}{1686}                     \\
+		\multicolumn{1}{|c|}{Bus}                       & 311                     &                                           \\
+		\multicolumn{1}{|c|}{Car}                       & 317                     &                                           \\
+		\multicolumn{1}{|c|}{Taxi}                      & 314                     &                                           \\
+		\multicolumn{1}{|c|}{Train}                     & 317                     &                                           \\
+		\multicolumn{1}{|c|}{Walk}                      & 217                     &                                           \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Total}}            & \multicolumn{2}{c|}{3372}                                           \\ \hline
+	\end{tabular}
+\end{table}
 
-\subsection{Classification}
-We choose a supervised learning approach in order to provide a robust solution for the classification task. Three learning algorithms were selected to conduct our experiments, namely Support Vector Machines (SVM), Logistic Regression (LR) and Random Forests (RF). The SVM classifier was tested under the \textit{linear} kernel function. To the LR classifier, standard parameters were applied, whereas the RF classifier was defined with 100 trees in the forest. The \textit{gini criterion} and the maximum number of features were limited to those previous mentioned in Section~\ref{subsec:features_4_3_2}, in the case of the RF classifier.
-The performance of the resulting models will be compared in terms of \emph{precision}, \emph{recall} and the \emph{F1-score}.
+\subsubsection{Preliminary Results}\label{subsec:preliminar_results}
+Due to the laborious and time-consuming effort made in the construction of the training set, we opt to apply a different approach in the training phase of our model classification model. In order to enhance the differences between tweets whose terms present high levels of polysemy, the model was trained using a \gls{k-fold-cross-validation} technique with 10 iterations for all groups of features: bag-of-words and bag-of-embeddings and both combined. Results showed good performance for all models regarding the selected evaluation metrics. The best model in this experiment was the Logistic Regression classifier trained with bag-of-words and bag-of-embeddings features, presenting a F1-score of 0,98324.
 
-\subsection{Preliminary Results}\label{subsec:preliminar_results}
-In our first attempt, 10-fold cross-validation was applied for each model using, independently, bag-of-words and bag-of-embeddings as features. Results
-showed us that all the models obtained good performance regarding the selected evaluation metrics. The best model in this experiment was the Random Forests classifier trained with bag-of-words features, performing an F1-score of 0,977. Indeed, all the models that used bag-of-words features, in particular, revealed high scores as can be observed in Table~\ref{tab:first_experiment}. This may be explained by the similar vocabulary present in both training and test sets. One important note is that all travel-mode classes are known by the model before the classification of the test set. This may not be true in real-world scenarios. Although the results presented in Table~\ref{tab:first_experiment}, we tried to combine both features and conclude that, contrarily to the Portuguese travel-related experiment, the performance was decreased when comparing it with the one obtained from the usage BoW features in the experiment. To further investigate the robustness of the best features group we designed another experiment that is explained in Section~\ref{subsec:leave_one_group_out}.
+\begin{table}[!bp]
+	\centering
+	\caption[New York City First Experiment Results]{Preliminary results (it is only demonstrated the best result for the bag-of-embeddings group)}
+	\label{tab:first_experiment}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\textbf{Classifier} & \textbf{Features} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-score} \\ \hline
+		\multirow{3}{*}{\textbf{Linear SVM}} & BoE(200) & 0,90883 & 0,83634 & 0,87089 \\
+		& BoW & 0,96298 & 0,97652 & 0,96962 \\
+		& \textbf{BoE(200) + BoW} & \textbf{0,97251} & \textbf{0,99114} & \textbf{0,98170} \\ \hline
+		\multirow{3}{*}{\textbf{Logistic Regression}} & BoE(100) & 0,90172 & 0,84948 & 0,87447 \\
+		& BoW & 0,96431 & 0,98042 & 0,97222 \\
+		& \textbf{BoE(200) + BoW} & \textbf{0,97391} & \textbf{0,99285} & \textbf{0,98324} \\ \hline
+		\multirow{3}{*}{\textbf{Random Forests}} & BoE(100) & 0,81283 & 0,83600 & 0,82394 \\
+		& BoW & 0,96569 & 0,98997 & 0,97764 \\
+		& \textbf{BoE(50) + BoW} & \textbf{0,93688} & \textbf{0,99939} & \textbf{0,96701} \\ \hline
+	\end{tabular}
+\end{table}
 
+The fact that all models performed incredibly well, in particular models using the features group of \gls{BoW} and \gls{BoW}+\gls{BoE} raise to us some questions and doubts about the robustness of the features used in the training process. First, in the Brazilian cities experiment, by following the same approach over the training set construction process we did not obtain results of this kind. Second, the selected tweets are very specific and our model may be overfitted due to training data. In order to pursue and have answers to our questions, we designed another experiment using the same dataset.
+
+\iffalse
 \begin{table}[htbp]
 	\small
 	\centering
@@ -325,15 +353,16 @@ showed us that all the models obtained good performance regarding the selected e
 		& \textbf{BoW} & \textbf{0,96569}   & \textbf{0,98997} & \textbf{0,97764}  \\ \hline
 	\end{tabular}
 \end{table}
+\fi
 
-\subsection{\emph{Leave-one-group-out}}\label{subsec:leave_one_group_out}
-The second experiment follows a \emph{leave-one-group-out} strategy. Meaning that one travel-mode class if left out of the training set and moved into the test set. This way, the behaviour of the learned model when facing a completely unknown travel-mode class can be evaluated.
-A model for each hidden mode of transport class was built, and evaluation is carried as the previous experiment. The datasets composition of each experiment led in this strategy can be observed in Table~\ref{tab:leave}.
+\subsubsection{\emph{Leave-one-group-out}}\label{subsec:leave_one_group_out}
+
+It is worth noting that in our first experiment all travel-mode classes were known by the model before the classification of the test set (the remaining sub-dataset in the 10-fold cross-validation). Comparing with real-world scenarios, this may not be true since new modes of transport and companies, such as Uber, Lyft and Cabify, arise from unpredictable moments. This second experiment follows a \emph{leave-one-group-out} strategy, meaning that one travel-mode class if left out of the training set and moved into the test set. Hence, the behaviour of the learned model when facing a completely unknown travel-mode class can be evaluated. A model for each hidden transport-mode class was built and evaluated using the same training conditions and metrics. The datasets composition of each experiment led in this strategy can be observed in Table~\ref{tab:leave}.
 
 \begin{table}[htbp]
 	\small
 	\centering
-	\caption{Datasets Composition}
+	\caption[\emph{Leave-one-group-out expirement datasets}]{Datasets composition used in the \emph{leave-one-group-out} strategy}
 	\label{tab:leave}
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
@@ -347,11 +376,9 @@ A model for each hidden mode of transport class was built, and evaluation is car
 	\end{tabular}
 \end{table}
 
-Each learning model experiment was made varying the hidden travel-mode class, which is unknown for our classifier in the training process. This method was performed in order to evaluate the sensitivity and robustness of the models built in our first experiment, described in Section~\ref{subsec:preliminar_results}. Table~\ref{tab:results} presents the best results for each model, as so its features and tuning parameters. The results from the models using bag-of-embeddings features revealed a consistent performance, i.e. they do not change even with the variation of the size of the feature vectors.
+For each experiment of the learning models, we maintain a 10-fold cross-validation approach, however it was built a test set with a hidden travel-mode class and 300 non-related tweets (negative class). Here, only bag-of-words and bag-of-embeddings features were fed into our models classification routine since the main goal of this experiment is to check the features robustness. Table~\ref{tab:results} presents the best results for each model, as so the group of features feeding it. To achieve the final results of this experiment, we calculated the mean between all models' results to each of the hidden transport-mode classes.
 
-According to results, all classification models have performed reasonably well under the bag-of-embeddings features group, although the dimensionality used being different for the Linear SVM classifier.
-
-\begin{table}[htbp]
+\begin{table}[!bp]
 	\small
 	\centering
 	\caption{\emph{Leave one group out} experiments results for SVM, LR and RF classifiers}
@@ -368,6 +395,10 @@ According to results, all classification models have performed reasonably well u
 	\end{tabular}
 \end{table}
 
+According to results, all classification models have performed reasonably well under the bag-of-embeddings features group, although the dimensionality used being different for the Linear SVM classifier.
+
+After testing each model with a hidden travel-mode class, the models trained with bag-of-words features demonstrated poor performance when facing unknown travel-modes, revealing higher sensitivity and lower generalization capabilities in comparison to the bag-of-embeddings version. The generalization power is an important and crucial characteristic for our desired solution since in a real world scenario is very likely that we will face a higher variety of categories that were not taken into consideration in the training phase of our model. Having this considered, the bag-of-words features group presents lack of robustness as we doubt in our first experiment (Section~\ref{subsec:preliminar_results}).
+
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.7]{figures/svm_linear_leave_one_out_emb_200.png}
@@ -375,7 +406,9 @@ According to results, all classification models have performed reasonably well u
 	\label{fig:svm_leave}
 \end{figure}
 
-After testing each model with a hidden travel-mode class, the models trained with bag-of-words features demonstrated poor performance when facing unknown travel-modes, revealing higher sensitivity and lower generalization capabilities in comparison to the bag-of-embeddings version. The generalization power is an important and crucial characteristic for our desired solution. In a real world scenario is very likely that we will face a higher variety of categories that were not taken into consideration in the training phase of our model.
+The best result of the \emph{leave-one-group-out} was the Linear SVM model, with the dimensionality of 200 in the size of the feature vectors. Figure~\ref{fig:svm_leave} presents the results of each experiment led for the different hidden travel-mode classes. An interesting point to observe is the low performance obtained to the experiment with the travel-mode class "Walk" hidden. This is due to the different semantic and syntactic contexts that the word \emph{walk} is used. Although all other classes can be used in the same context, for example, \emph{car}, \emph{train}, or \emph{bus}, usually the word \emph{walk} is not applied in the same way.
+
+Having the experiments concluded, we used the best model, in this case, Linear SVM for the dimensionality of 200, to predict the 4M tweets that composed the NYC dataset. Almost 300,000 tweets were classified as travel-related. After the classification step, a sample of 10,000 tweets was taken from all the travel-related classified tweets and it was produced a heat-map distribution in order to verify which are the most concentrated zones. Such distribution enables the identification of associations with metro, train, bus stations. In Figure~\ref{fig:brooklyn}, that shows the south of the Manhattan island and also the Brooklyn bridge, it is possible no note some agglomerations over the bridge and also in the port and closed to the Wall Street(4.5) where there are some metro stations. The Central Park is one place that also took our attention since presented several agglomerations of tweets. In this particular place, tweets related to the walk class were correctly identified.
 
 \begin{table}[htbp]
 	\centering
@@ -383,21 +416,17 @@ After testing each model with a hidden travel-mode class, the models trained wit
 	\caption{Sample of tweet messages correctly classified}
 	\label{tab:tweets_examples}
 	\resizebox{\textwidth}{!}{\begin{tabular}{|c|}
-		\hline
-		when you get into your uber and he has a pipe in the back \\
-		a ground stop for \#ewr is no longer in effect \#flightdelay \\
-		snowy walk to work. \#blizzard2017 \#centralpark \#noreaster2017 \@ bethesda terrace fountain -  \textbf{Figure~\ref{fig:central_park}} \\
-		m.t.a. n.y.c subways: w train irregular subway service at whitehall street-south ferry \#traffic - \textbf{Figure~\ref{fig:brooklyn}} \\ \hline
-	\end{tabular}}
-\end{table}
-
-The best result of the \emph{leave-one-group-out} was the Linear SVM model, with the dimensionality of 200 in the size of the feature vectors. Figure~\ref{fig:svm_leave} presents the results of each experiment led for the different hidden travel-mode classes. An interesting point to observe is the low performance obtained to the experiment with the travel-mode class "Walk" hidden. This is due to the different semantic and syntactic contexts that the word \emph{walk} is used. Although all other classes can be used in the same context, for example, \emph{car}, \emph{train}, or \emph{bus}, usually the word \emph{walk} is not applied in the same way.
-
-Having the experiments concluded, we used the best model, in this case, Linear SVM for the dimensionality of 200, to predict the 4M tweets that composed the NYC dataset. Almost 300,000 tweets were classified as travel-related. After the classification step, a sample of 10,000 tweets was taken from all the travel-related classified tweets and it was produced a heat-map distribution in order to verify which are the most concentrated zones. Such distribution enables the identification of associations with metro, train, bus stations. In Figure~\ref{fig:brooklyn}, that shows the south of the Manhattan island and also the Brooklyn bridge, it is possible no note some agglomerations over the bridge and also in the port and closed to the Wall Street(4.5) where there are some metro stations. The Central Park is one place that also took our attention since presented several agglomerations of tweets. In this particular place, tweets related to the walk class were correctly identified.
+			\hline
+			when you get into your uber and he has a pipe in the back \\
+			a ground stop for \#ewr is no longer in effect \#flightdelay \\
+			snowy walk to work. \#blizzard2017 \#centralpark \#noreaster2017 \@ bethesda terrace fountain -  \textbf{Figure~\ref{fig:central_park}} \\
+			m.t.a. n.y.c subways: w train irregular subway service at whitehall street-south ferry \#traffic - \textbf{Figure~\ref{fig:brooklyn}} \\ \hline
+		\end{tabular}}
+	\end{table}
 
 \begin{figure}[htbp]
 	\centering
-	\begin{subfigure}[htbp]{0.8\textwidth}
+	\begin{subfigure}[htbp]{0.7\textwidth}
 		\centering
 		\includegraphics[width=0.9\columnwidth]{figures/nyc_map.png}
 		\caption{}
@@ -407,7 +436,7 @@ Having the experiments concluded, we used the best model, in this case, Linear S
 	\medskip
 	
 	\centering
-	\begin{subfigure}[htbp]{0.8\textwidth}
+	\begin{subfigure}[htbp]{0.7\textwidth}
 		\centering
 		\includegraphics[width=0.9\columnwidth]{figures/nyc_map2.png}
 		\caption{}
@@ -419,8 +448,7 @@ Having the experiments concluded, we used the best model, in this case, Linear S
 \end{figure}
 
 \subsection{Concluding Remarks}
-The main objective of this experiment was to devise a travel-related tweet classifier using word embeddings trained with geo-located English-speaking tweets. Similar to the Portuguese travel-related classification, we tried to build our model using a combined approach relying on bag-of-words and bag-of-embeddings features; however, results presented signs of dependency in the bag-of-words features and the performance have also decreased. By looking in the results of the best group, bag-of-words, we doubt about the existence of overfitting, and so, a \emph{leave-one-group-out} strategy was applied to attempt reproduce and validate the results obtained from classification models in preliminary experiment. Such an strategy shows that our training and test sets were very similar to each other. In this second experiment, we excluded one of the travel-modes classes, which resulted in the fact that models using bag-of-words features could not maintain the performance previously demonstrated. Comparatively to the approach based on bag-of-words, the models using bag-of-embeddings features revealed consistency, robustness, and effectiveness in the classification task. The Linear SVM model proved to be the best option with respect to the performance metrics considered in this work. We thus used that model trained with bag-of-embeddings to predict all the English tweets from our NYC dataset, whose results showed significant improvement over a standard bag-of-words baseline. Finally, we applied the resulting classifier to a stream of geo-located tweets in New York City, which was able to depict important spatio-temporal patterns.
-
+The main objective of this experiment was to devise a travel-related tweet classifier using word embeddings trained with geo-located English-speaking tweets. Similar to the Portuguese travel-related classification, we tried to build our model using a combined approach relying on bag-of-words and bag-of-embeddings features; however, results presented signs of dependency in the bag-of-words features which is not desired when facing real-world scenarios and lots of changes happen in short periods of time. On the other hand, by looking at the results, the almost perfect performance lead us to doubt about the existence of overfitting, and so, a \emph{leave-one-group-out} strategy was applied to validate the robustness of features. There, we excluded one of the travel-modes classes, which resulted in the fact that models using bag-of-words features could not maintain the performance previously demonstrated. Comparatively to the approach based on bag-of-words, the models using bag-of-embeddings features revealed consistency and robustness in the classification task. The Linear SVM model proved to be the best option with respect to the performance metrics considered in this work. We thus used that model trained with bag-of-embeddings to predict all the travel-related English tweets from our NYC dataset, whose results showed significant improvement over a standard bag-of-words baseline. Finally, we applied the resulting classifier to a stream of geo-located tweets in New York City, which was able to depict important spatio-temporal patterns.
 
 \section{Summary}
 This chapter has the purpose of report the experiments conduct over this dissertation period in order to help the implementation of the different modules designed in our framework architecture.
