@@ -19,9 +19,17 @@ The construction of this complex system requires careful planning since there ar
 
 The framework proposed in this dissertation is divided into four different modules: (1) collection and filtering; (2) text pre-processing and analysis; (3) aggregation and (4) data visualization.
 
-The current collection module is implemented to retrieve geo-location tweets from a specific bounding-box, however if the user demands, multiple locations can be explored at the same time. Other collection heuristics are also available, such as the keyword-search and users following. Depending on the target scenario and analytics to be explored, these two heuristics will need to be added in the module. This detail was considered during implementation period and flexibility was assured into the module composition.
+The current collection module is implemented to retrieve geo-location tweets from a specific \gls{bounding_box}, however if the user demands, multiple locations can be explored at the same time. Other collection heuristics are also available, such as the keyword-search and users following. Depending on the target scenario and analytics to be explored, these two heuristics will need to be added in the module. This detail was considered during implementation period and flexibility was assured into the module composition.
 
-Filtering tasks are directly related to \texttt{locations} heuristic of the collection module. Since this framework is designed to analyse cities or specific regions/zones of it, it is necessary guarantee if a tweet is actually inside of the searching bounding-box in order to do not induce information in the analysis from places far away of the target location. If other heuristics will be implemented, the filtering module can be configured to support other filtering-specific operations.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\textwidth]{figures/architecture_2.pdf}
+	\caption[Framework Architecture Overview]{Architecture overview of the implemented framework}
+	\label{fig:architecture}
+\end{figure}
+
+
+Filtering tasks are directly related to \texttt{locations} heuristic of the collection module. Since this framework is designed to analyse cities or specific regions/zones of it, it is necessary guarantee if a tweet is actually inside of the searching \gls{bounding_box} to do not induce information in the analysis from places far away of the target location. For instance, a bounding-box is a rectangle obtained by two coordinate pairs (latitude and longitude, for the South-West point and the North-East point). If other heuristics will be implemented, the filtering module can be configured to support other filtering-specific operations.
 
 The text pre-processing module has into consideration the future task in the framework. Having this considered, we implemented a segmented pipeline allowing the user a definition of the desired tasks he wants to analyse in the text messages since different text analysis may have different operation in the preprocessing routine. Methods implemented here are carefully described in Section~\ref{sec:text_preprocessing}.
 
@@ -29,13 +37,6 @@ Text analytics module is composed by two different sub-modules, both of them foc
 In terms of generalization, the main module, text analytics module, was construct following adaptability and flexibility approaches to, in the future, new analysis be integrated.
 
 By adding new functionalities, new aggregations are required in order to present the specific-task final results to the end-user. The aggregation module is structured into integrative methods facilitating future extensions or updates on it. Last but not least, aggregation results are communicated to the visualization module, where, similar to other modules, it is possible the inclusion of new data visualization charts, according to the new integrated functionalities.
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=\textwidth]{figures/architecture_2.pdf}
-	\caption[Framework Architecture Overview]{Architecture overview of the implemented framework}
-	\label{fig:architecture}
-\end{figure}
 
 \section{Data Collection}\label{sec:data_collection}
 
@@ -137,7 +138,7 @@ The cities' characterization provided by our framework centers in the topics bei
 Topic modelling requires, like in other learning model, a group of features to be trained. In this case, we used the \glossary{BoW} representation matrix - which is a representation where each document is converted to a frequency vector according to the number of occurrences of each word in the message. The set of features was limit to a dictionary containing 10,000 words and it only took into account uni-grams in the message content. The dictionary was also limited to words that occur in a maximum percentage of 40$\%$ in the whole dataset, avoiding common words that were not removed because they were not included in the Python's \gls{NLTK} stop words list for the specific language in analysis. The minimal occurrence value for a word being considered was set to 10.
 
 \subsubsection{LDA Model Resulting Topics}
-The final model used in the implementation of our framework is defined to characterize a tweet into 50 different topics. Although that, in the experiment made to comprove the added-value brought by the model,  we were obligated to cluster some of the topics due to the similarity presented in words constituting them. The final list of possible topics can be seen in Section~\ref{subsec:lda_results}, more specifically in Table~\ref{tab:final_classification}.
+The final model used in the implementation of our framework is defined to characterize a tweet into 50 different topics. Although that, in the experiment made to comprove the added-value brought by the model,  we were obligated to cluster some of the topics due to the similarity presented in words constituting them. The final list of possible topics can be seen in Section~\ref{subsec:lda_results}, more specifically in Table~\ref{tab:topic_labels}.
 
 \subsection{Travel-related Classification}
 \label{sec:travel_classification}
