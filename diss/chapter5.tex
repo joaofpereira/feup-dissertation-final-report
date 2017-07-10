@@ -11,7 +11,7 @@ Hence, in this Chapter, we describe three different experiments that were perfor
 In this section we describe the experiment of automatic characterization of tweets in two different Brazilian cities, Rio de Janeiro and São Paulo. Here, as previous mentioned in Section~\ref{sec:topic_modelling_framework}, we use \gls{LDA} model to find out which are the latent topics in both cities.
 We conduct this experiment using data collected from a period of two months, between March 12 and May 12, 2017. After the data filtering and text pre-processing steps, we obtain a total of 6.6M tweets for Rio de Janeiro and 2.7M tweets for São Paulo.
 
- We tried training LDA model with 5, 10, 20, 25 and 50 latent topics and manually inspected the top most probable words for each topic. Models with 5, 10, 20 and 25 presented a high number number of overlap terms between topics. Therefore, we opted to proceed with the experiment using 50 latent topics. The number of iterations to train the model was set to 20, in line with the work of Lansley et al.~\cite{lansley2016geography}.
+ We tried training LDA model with 5, 10, 20, 25 and 50 latent topics and manually inspected the top most probable words for each topic. Models with 5, 10, 20 and 25 presented a high number number of overlap terms between topics. Therefore, we opted to proceed with the experiment using 50 latent topics. The number of iterations to train the model was set to 20, in line with the work of Lansley et al.~\cite{lan}.
 	
 \subsection{Results and Analysis}
 \label{subsec:lda_results}
@@ -98,16 +98,13 @@ We observed that many different latent topics were about the same semantic subje
 %The final set of topics (50 topics) to be considered was selected accordantly to the most recurring subjects. 
 %The final characterization and details about each topic for both cities is presented in Table~\ref{tab:final_classification}. Almost every topic demonstrated a balanced distribution, with exception of \textit{Relationships and Friendship} and \textit{Personal Feelings} for Rio de Janeiro and São Paulo, respectively. The difference appearing among these topics is a consequence of the final grouping process, since there was a considerable number of words being shared between topics. This issue complicated our characterization task, compelling to an high amount of undesired aggregations.
 
-The resulting list of topics and their distribution (number of tweets) for both cities is depicted in Table~\ref{tab:topic_labels}. We first observe that the majority of topics is common in both cities, with exception of 4 topics:  Weather and Shopping are not discussed in Rio de Janeiro; Antecipation \& Socializing and Health are not discussed in São Paulo. There is a widely range of topics covered
+The resulting list of topics and their distribution (number of tweets) for both cities is depicted in Table~\ref{tab:topic_labels}. We first observe that the majority of topics is common in both cities, with exception of 4 topics:  Weather and Shopping are not discussed in Rio de Janeiro; Antecipation \& Socializing and Health are not discussed in São Paulo. We were not able to assign labels using the Lansley~\ref{lansley2016geography} taxonomy to 7 different topics. In such cases, we created our own labels, e.g., "BBB17" is about a highly popular reality TV show in Brazil named Big Brother Brazil. 
 
+There is a wide range of topics covered by both cities, from "Food and Drink", "Politics" and "Religion" to "Sports and Games" or "Transportation and Travel". The most talked topics in Rio de Janeiro are "Relationships and Friendship", "Actions and Intentions" and "Sports and Games", while in São Paulo, the most talked about topics are "Personal Feelings", "Relationships and Friendship" and "Negativism, Pessimism and Anger". Comparing both cities, the topics with higher relative difference are "Relationships and Friendships" (+16\% in Rio de Janeiro) and "Personal Feelings" (+13\% in São Paulo).
+%The most talked topics in Rio de Janeiro are about specific situations. For instance, people tend to talk about quotidian activities, where it is possible to be proved by the latent topic "Routine Activites". Moreover, nightlife activities as well as music or theatrical live shows are fields of interest to their inhabitants. "Actions and Intentions" demonstrate high number of tweets meaning that people is always moving, doing something or at least wishing for it.
+%On the other hand, São Paulo latent topics are not so lively, 
 
-
-
-
-
-Additionally to the manual verification of a sample of tweets for each topic, we also produced a temporal week day distribution,  with the objective to observe if some topics had more mentions in certain days than others.
-
-Such observations induced some assumptions regarding some \textit{hot} topics. More specifically, we think that is valid to assume that people will talk more about \textit{Religion} in the weekend, since they go to the church in those days. The same result is likely to happen for topics like \textit{Holidays and Weekends} or \textit{Sports and Games}, since events related to this thematics occur during specific time-frames.
+We also produced a day-of-the-week temporal distribution of topics in both cities as depicted in Figure~\ref{fig:topics_heat_maps}. We selected 12 topics for Rio de Janeiro and 13 for São Paulo that are more prone to temporal shift of popularity, such as "Religion" and "Sports and Games" which are presumably more popular on the weekends. For both cities the topic "Sports and Games" is more mentioned on Tuesdays and Saturdays. Indeed, this observation correlates with Tuesdays where \textit{UEFA Champions League} competition happens and Saturdays when occur \textit{Brazilian Football League} matches. Also in both cities, "Holidays and Weekends" presented Sundays as the day where more people talk about it, while "Religion" and "Tourism and Places" are less prone to be talked about in Fridays, which is similar to all the remaining topics. "Live Shows, Social Events and Nightlife" are more talked about on Saturdays in Rio de Janeiro, while on São Paulo we identify Tuesdays as the day more popular. Sundays and Tuesdays are the days when the well-famous reality show TV program is emitted, and due to that exists more popularity in these days for the "BBB17" topic. "Weather" topic presents more activity in Saturday probably due to people going out to take a walk.
 
 \begin{figure}[h]
 	\centering
@@ -127,9 +124,7 @@ Such observations induced some assumptions regarding some \textit{hot} topics. M
 	\label{fig:topics_heat_maps}
 \end{figure}
 
-Only 12 topics of the finals 29 were selected for this part of the study, predicting them and comparing the final results, such as, but not limited to, \textit{Sports and Games}, \textit{Religion}, \textit{Holidays and Weekends}, \textit{Movies and TV}, \textit{Live Shows, Social Events and Nightlife}. The temporal distribution is showed in Figure~\ref{fig:topics_heat_maps} as a heat map, where each row is independent from the others.
 
-The necessity of applying such restrictions is due to the need of seeing in which days each topic is more talked about. For both cities the topic \textit{Sports and Games} is more mentioned in Tuesdays and Saturdays. Indeed, this observation correlates with the days that topic-related events happens. Namely, Tuesdays and Wednesday correspond to the days when the \textit{UEFA Champions League} competition happens and Saturdays and Sundays to the days of \textit{Brazilian Football League} games. \textit{Holidays and Weekends} was a topic with interesting results regarding the temporal distribution, presenting Sundays as the day where more people talk about it. 
 
 Furthermore, it is worth mentioning that our model had successfully discover a topic related to Big Brother Brazil 2017 (BBB17), a well-known reality show. The amount of geo-located tweets concerning this topic was considerable (1.85\% and 2.49\%, in RJ and SP, respectively), rising the question about what led people to geo-located them in such topic.
 
