@@ -153,7 +153,7 @@ Support Vector Machines (SVM), Logistic Regression (LR) and Random Forests (RF) 
 
 The LR classifier was used with the standard parameters, whereas the RF classifier used 100 trees in the forest. The gini criterion and the maximum number of features were limited to those as aforementioned in Section~\ref{sec:travel_features}, in the case of the RF classifier.
 
-To evaluate the performance of classifiers in our experiences we used five different metrics. Firstly we compute a group of three per-class metrics, namely precision, recall and the F1-score. Bearing in mind this study considers a binary classification, metrics were associated with the travel-related class only, i.e. the positive class.
+To evaluate the performance of classifiers in our experiences we used five different metrics: precision, recall, F1-score, ROC and AUC.
 
 We established the use of different groups of features to train our classification model, namely bag-of-words, bag-of-embeddings - word embeddings dependent technique - and both combined (horizontally combination of bag-of-words and bag-of-embeddings matrices into a single one).
 
@@ -162,6 +162,7 @@ We established the use of different groups of features to train our classificati
 
 Messages were collected for a period of a whole month, between days March 12 and April 12, 2017, and the resulting datasets sum up a total of 6.1M and 2.9M tweets for Rio de Janeiro and São Paulo, respectively. Due to the problem detected in Section~\ref{sec:geographical_distribution}, we filtered the data in order to use only tweets that were actually inside the cities' areas. The final composition of the datasets is presented in Table~\ref{tab:brazilian_datasets_travel}, and the subset of data considered in this experiment sum up a total of 7.7M tweets -  5.3M and 2.4M tweets for Rio de Janeiro and São Paulo, respectively.
 
+\iffalse
 \begin{table}[ht]
 	\small
 	\centering
@@ -174,10 +175,13 @@ Messages were collected for a period of a whole month, between days March 12 and
 			São Paulo      & 2,934,000 & 2,444,000 & 490,000 & 2,016,000 & 918,000 & 1,672,000 \\ \hline
 		\end{tabular}}
 	\end{table}
+\fi
 
 \subsubsection{Training and Test Datasets}
 \label{subsec:training_test_datasets_portuguese}
-The construction of the training and test sets followed a semi-automatic labeling approach. We tried to built a balanced training set concerning the travel-related class and the non-related. The selection process of tweets have support on a strategy used in the study of Maghrebi et al.~\cite{maghrebi2016transportation}, which consists in searching tweets from a collection using specific travel terms in conjecture with white-spaces in the start and end of a regular expression (e.g. \emph{" carro "}, for the car mode of transport). Using the terms declared in Table~\ref{tab:terms} combined with the previous mentioned regular expression, we found about 30,000 tweets. From this subset, we randomly selected a small sample of 3,000 tweets to manually confirm if they were indeed related to travel topics. Although the randomly selection of tweets to produce such training set, we careful analyse the existence of all modes of transportation present in Table~\ref{tab:terms}. After this manual annotation we selected 2,000 tweets and used them as positive samples in the training dataset.
+The construction of the training and test sets followed a semi-automatic labeling approach. We tried to build a balanced training set, consisting of 2,000 travel-related tweets and 2,000 non-related. We start by searching tweets using specific travel-terms as described in study of Maghrebi et al.~\cite{maghrebi2016transportation}. Table~\ref{tab:terms} shows the terms used for querying each travel-mode. We found 30,000 tweets matching those terms. From this subset, we created a stratified random sample of 3,000 tweets and manually annotated them. We ended up with 2,000 tweets annotated as positive (travel-related). To select negative examples we randomly sampled 2,000 tweets and manually verified if they were negative (non-travel-related).
+
+To create a test set, we randomly selected 1,000 tweets different from the training set and then manually labelled them as travel-related or non-travel-related. We forced the positive test examples to contain travel-modes terms that were not used in the training set construction. For instance, the word "uber" is relted to the taxi travel-mode but is just available in the tests set and not in the training set. The same happens with the word "busão" which is an informal word meaning "bus". The idea of behind this approach is to try to access the robustness and generalization of the travel-related classifiers. In the end, 71 tweets were found to be travel-related and whereas 929 were not.
 
 \begin{table}[htbp]
 	\centering
@@ -196,11 +200,6 @@ The construction of the training and test sets followed a semi-automatic labelin
 		\textbf{Walk} & caminhar & walk \\ \hline
 	\end{tabular}
 \end{table}
-
-In order to select negative samples for the training dataset we randomly selected 2,000 tweets and also manually verified their content to assure that they were not travel-related. Finally, our training set was composed by 4,000 tweets, from which 2,000 were travel-related and 2,000 were not. 
-We selected 1,000 tweets randomly that were not present in the training set to build the test set, and then manually classified them as travel-related or non-travel-related. In the end, 71 tweets were found to be travel-related and whereas 929 were not.
-
-It is worth mention that we try to hide some terms from the training set in order to verify if the embeddings were able to discriminate tweets about \emph{"Uber"/"Busão"}, which are terms related to the \texttt{car/taxi} and \texttt{bus} modes of transport, respectively. To assure such test, we incorporate specific-related tweets about these modes of transport in the 71 travel-related tweets of the test set. By obtaining good result regarding the performance of the classification model, we can induce several advantages regarding the use of word-embeddings-based features in social media classification tasks for a large diversity of domains, such as the smart cities and transportation domains.
 
 \subsubsection{Results and Analysis}
 \label{subsubsec:results_rio_de_janeiro_sao_paulo}

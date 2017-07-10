@@ -2,7 +2,9 @@
 
 \minitoc \mtcskip \noindent
 
+\iffalse
 \section{Final Remarks}
+
 The literature review shows the main challenges across the evolution process of a city in order to be titled as \textit{smart}. Moreover, the biggest restrictions in the development of intelligent systems using social media data are enunciated as well as possible methodologies and techniques to solve it. By combining the challenges of a \textit{smart city} and the restrictions present in the analysis of text messages, in particular tweets, the problem in this dissertation was divided into three distinct ones. The solutions presented to each of the sub-problems took into consideration lacks observed in the literature review. Domain generalization in the conception of an automatic system based on both, supervised and unsupervised learning methods, and capable of collect, filter, process, aggregate and demonstrate valuable information to final entities/users is one of the identified lacks. The transportation domain also present lacks regarding discrimination of travel-related tweets using methods that take advantages from semantic and syntactic similarities in texts. The majority of works present conventional techniques such as bag-of-words, which although good performances represents high risks when facing the unstable and unexpected changes regarding the modes of transport in a real-world scenario.
 
 Assuming the challenges identified for this dissertation as well as the previous mentioned lacks in the literature review, we propose and develop a domain-agnostic framework and test it using five different cities over the world as use cases for three distinct analysis: exploratory data analysis, travel-related classification for English and Portuguese languages and Twitter topics identification over two Brazilian megacities, Rio de Janeiro and São Paulo.
@@ -14,6 +16,7 @@ Travel-related classification of tweets using a combined approach of bag-of-word
 It is worth nothing that every experiment was performed having only into consideration geo-located tweets. This choice, as previously mentioned, was due to the additional information contained in this type of tweets. By analysing the location of tweets and combining it with results of the classification tasks, we might be able to characterize and study specific areas in cities, as well as identifying existent and notable patterns regarding travel-related problems and mobility dynamics.
 
 Having all considered, it is necessary to enhance that our framework is still far of its full potential. Supporting on this, we consider it as a scalable, flexible and adaptive prototype that must improved over time since implementing supervised learning systems is a laborious and time consuming process.
+
 
 \section{Contributions}
 
@@ -46,7 +49,37 @@ Another important work to pursue in the future is to correlate the results of th
 A possible future direction to improve the topic modelling approach is the application of spatio-temporal aggregation methods under a sample of data to create more complex documents, retrain the model and verify if the results can be different taking into consideration some of the factors that distinguish both cities: demographics, culture and location. An attempt to pursue good performances using supervised LDA models also needs to be enhanced here.
 
 Lastly, there is a need of creation of other specific models to other fields of a \textit{smart city} in order to assure equally performances for any of its fields.
+\fi
 
+\section{Final Remarks}
+
+This work tackles the problem of extracting meaningful and actionable knowledge from user generated content in the scope of smart cities and intelligent transportation systems. We designed and developed a framework for collection, processing and mining of geo-located Tweets. More specifically, it provides functionalities for parallel collection of geo-located tweets from multiple pre-defined bounding boxes (cities or regions), including filtering of non complying tweets, text pre-processing for Portuguese and English language, topic modeling, and transportation-specific text classifiers, as well as, aggregation and data visualization.
+
+The Twitter Streaming API possesses three different heuristics to collect tweets: terms-based retrieval, following the activity of users and collect all tweets inside a specific location. The final stakeholders of our framework are cities and to provide content and geographical analysis, we opt for the locations heuristic. Collecting geo-located tweets brings undesired data. Messages written in different languages from the language of the city in analysis are retrieved by the Streaming API. Moreover, the conditions provide by the Streaming API are not correct since tweets located outside the searching bounding-box are also retrieved. Having these two problems considered we designed alongside with the collection module, a filtering module capable of treat and erase such limitations.
+
+To analyse the text message of tweets, we design a text analytics module which is composed by two sub-modules. These sub-modules are in charge of performing topic modelling and travel-related classification tasks. In the module responsible for characterize tweets over latent topics, we needed to submit each tweet to a pre-defined group of text pre-processing operations. Lower casing, transformation of repeated characters, removal of \textit{metadata}, punctuation. short tokens and Portuguese stop words are the pre-processing operations used to clean the text message and facilitate the identification of latent topics. With respect to the travel-related classification of tweets, we tried to combine different text representation to fed as features group in the training routine of our models. To clean and make easier the task of classification, we perform lower casing, transformation of repeated characters and removal of \textit{metadata} and Portuguese and English stop words. 
+
+To aggregate the final results provided by the text analytics module, we used the MongoDB aggregation framework since it present high performance and scalability, dealing well with large volumes of data. Finally, the visualization of results explores a library capable of saving locally the graphical representations of results. By using this saving method, the framework only needs to execute its text and statistical analysis in specific periods of time since when a user requests for a visualization, there is no need to consult the data warehouse. Lower response time is one of the most important factors in systems dealing with high volumes of data.
+
+To illustrate our approach we conduct an exploratory data analysis and performed experiments for each text analytics module in real-world scenarios. We performed empirical studies and implemented illustrative examples for 5 cities: Rio de Janeiro, São Paulo, New York City, London and Melbourne, comprising a total of more than 43 millions tweets in a period of 3 months. Through the exploratory data analysis we identify that more than 70\% tweets do not have a precisely location in its characteristics. This identification serves to fulfil the lack of several scientific contributions using geo-located tweets that do not report this factor and according to our results we might enhance to possibilities to future researches using geo-located tweets: (1) if the research has a large volume of tweets with precisely geo-location, the exploration of information may produce interesting geographical analysis; (2) if the first case do not happen, the only analysis possible to be made is the analysis of messages content using text mining techniques.
+
+In our case, we got a significant amount of non-precisely geo-located tweets. This turns on the need of performing text analyses over the tweets messages. We perform a topic modeling experiment for a large volume of tweets from the two most populous and active Brazilian cities, Rio de janeiro and São Paulo. The latent topics discovered might serve as actionable information to cities helping in the monitoring of what is being talked about in its urban regions. To discriminate tweets from two distinct speaking-languages, we built several datasets composed by travel-related and non-related tweets. We train our models using bag-of-embeddings and bag-of-words features to prove the complementarity of both text representations. Regarding the Portuguese text classifier, we verify high level of robustness and generalization, while the English text classifier shows that only bag-of-words are capable of providing such robustness and generalization.
+
+\section{Contributions}
+\label{seCc:contributions}
+At the end of this dissertation, we summarise the contributions achieve in three main dimensions:
+
+\begin{itemize}
+	\item \textbf{Technical Contributions}
+	To achieve the stipulated goals of this dissertation, we design a framework recurring to the Python programming language and its open-source libraries. The construction of such system was perform having into consideration future extensions or even possible improvements into the already developed models. All the framework is based in a concept of modularity enabling the previous mentioned improvements. Regarding its current functionalities, our framework is capable of collecting tweets from multiple bounding-boxes and perform specific text and statistical analysis over the collected tweets.
+
+\begin{itemize}
+	\item \textbf{Applicational Contributions}
+	To the best of our knowledge our work is the first of its scale performing travel-related classification models using word-embeddings features and characterization latent topics over Brazilian regions. We can also affirm that our English travel-related classification model is the first of its kind (using word-embeddings features) to try discriminate geo-located tweets.  
+
+\begin{itemize}
+	\item \textbf{Scientific Contributions}
+	The results of our experiments show the large range of applicability regarding the usage of word-embeddings into text classification models. The main finding of the analysis carried out were documented in papers submitted to conference as follows. 
 
 \section{Publications}
 \label{sec:publications}
@@ -62,3 +95,15 @@ During the period of this dissertation, we published three different scientific 
 	\item
 	João Pereira, Arian Pasquali, Pedro Saleiro, Rosaldo J. F. Rossetti and Nélio Cacho. {\color{blue}Characterizing Geo-located Tweets in Brazilian Megacities}. In \emph{The Third International Smart Cities Conference} (ISC2), 2017. Under review.
 \end{itemize}
+
+\section{Future Work}
+
+The dissertation purpose had as it main focus the conception of an automatic system capable of analyse real-time data streams from social media platforms in order to produce valuable information for users of services or even its responsible entities. For achieve the proposed goals, we tried to explore already consistent state-of-the-art methodologies as well as unexplored ones regarding specific domains. Since this framework can be seen as a prototype of a future complex system, several improvements can be invested here. Although already existent modules and text analysis devised, it worth noting the conjecture of a additional sentiment analysis module in order to infer the sentiment polarity value regarding specific zones where the travel-related tweets were located in, as so the overall sentiment in an identified topic.
+
+The extension of our training and test sets is other future work to take into consideration, as well as the application of deep learning models into our classification tasks.
+
+Another important work to pursue in the future is to correlate the results of this study with official sources of transportation agencies relatively to traffic congestions and other events on the transportation network, including all modes of transports and their integration interfaces and modules. This kind of association will be useful both to validate the proposed approach as well as to improve the inference process and knowledge extraction. The automatic classifier herein presented will then be integrated into data fusion routines to enhance transportation supply and demand prediction processes alongside other sensors and sources of information.
+
+A possible future direction to improve the topic modelling approach is the application of spatio-temporal aggregation methods under a sample of data to create more complex documents, retrain the model and verify if the results can be different taking into consideration some of the factors that distinguish both cities: demographics, culture and location. An attempt to pursue good performances using supervised LDA models also needs to be enhanced here.
+
+Lastly, there is a need of creation of other specific models to other fields of a \textit{smart city} in order to assure equally performances for any of its fields.
