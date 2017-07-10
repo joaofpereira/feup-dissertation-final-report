@@ -15,17 +15,7 @@ We conduct this experiment using data collected from a period of two months, bet
 	
 \subsection{Results and Analysis}
 \label{subsec:lda_results}
-The LDA model does not provide a semantic label for each topic, such as "topic x is about Sports". We inspected the most frequent words of each topic and manually assigned a semantic label. Table~\ref{tab:topics_classification} presents the most frequent words for 5 random topics and the corresponding labels manually assigned. For instance, the topic containing frequent words such as "gol", "jogo", "time" is labelled as "Sports and Games". We follow the semantic taxonomy proposed by Lansley~\ref{lansley2016geography} to manually labelling each topic.
-
-We observed that many different latent topics were about the same semantic subject but at different levels of granularity. For instance, "European Football \emph{vs} Brazilian Football". We decided to manually aggregate these overlapping topics to create a simpler and easier to analyse list of topics, resulting in a total of 29 aggregated topics. We performed this process to both cities independently.
-
-
-
-%We classify the 50 latent topics using the most frequent 50 outputted words for each topic. In Table~\ref{tab:topics_classification} we show the top 20 of the 50 words considered in the characterization of topics, such as Sports and Games, Wake-up Messages, Voting and Numbers, Big Brother Brazil 2017 and Tourism and Places. Although the word-based characterization, we perform a manual inspection over 200 tweets for each topic to confirm if such topic characterization was actually correct or not.
-
-%To evaluate the experimental results obtained for each model (where the difference underlies on the variation of the number of topics), a list with the most frequent 50 words for each topic was extracted. In Table~\ref{tab:topics_classification} we can observe a sample (20 top words) selected out of the 50 studied. Nonetheless, the final evaluation took into consideration all the  50 outputted words.
-
-\begin{table}[h]
+\begin{table}[!ht]
 	\centering
 	\caption{Example of the topics labels}
 	\label{tab:topics_classification}
@@ -41,12 +31,22 @@ We observed that many different latent topics were about the same semantic subje
 		\end{tabular}
 	}
 \end{table}
+
+%We classify the 50 latent topics using the most frequent 50 outputted words for each topic. In Table~\ref{tab:topics_classification} we show the top 20 of the 50 words considered in the characterization of topics, such as Sports and Games, Wake-up Messages, Voting and Numbers, Big Brother Brazil 2017 and Tourism and Places. Although the word-based characterization, we perform a manual inspection over 200 tweets for each topic to confirm if such topic characterization was actually correct or not.
+
+%To evaluate the experimental results obtained for each model (where the difference underlies on the variation of the number of topics), a list with the most frequent 50 words for each topic was extracted. In Table~\ref{tab:topics_classification} we can observe a sample (20 top words) selected out of the 50 studied. Nonetheless, the final evaluation took into consideration all the  50 outputted words.
+
+
 	
 %We also selected and manually analyse a random sample (with the size of 200) of tweets for each topic. This sampling was done in order to get better consistency and trustiness about the classification and characterization of the tweets.
 
-\begin{table}[!hb]
+The LDA model does not provide a semantic label for each topic, such as "topic x is about Sports". We inspected the most frequent words of each topic and manually assigned a semantic label. Table~\ref{tab:topics_classification} presents the most frequent words for 5 random topics and the corresponding labels manually assigned. For instance, the topic containing frequent words such as "gol", "jogo", "time" is labelled as "Sports and Games". We follow the semantic taxonomy proposed by Lansley~\cite{lansley2016geography} to manually labelling each topic.
+
+We observed that many different latent topics were about the same semantic subject but at different levels of granularity. For instance, "European Football \emph{vs} Brazilian Football". We decided to manually aggregate these overlapping topics to create a simpler and easier to analyse list of topics, resulting in a total of 29 aggregated topics. We performed this process to both cities independently.
+
+\begin{table}[!ht]
 	\centering
-	\caption{Final results of the LDA topics aggregation. (*) topic labels different from Lansley~\ref{lansley2016geography}}
+	\caption{Final results of the LDA topics aggregation. (*) topic labels different from Lansley~\cite{lansley2016geography}}
 	\label{tab:topic_labels}
 	\resizebox{\textwidth}{!}{
 		\begin{tabular}{l|S[table-format=7.0]S[table-format=2.2]|S[table-format=7.0]S[table-format=2.2]|rS[table-format=2.2]}
@@ -98,7 +98,8 @@ We observed that many different latent topics were about the same semantic subje
 %The final set of topics (50 topics) to be considered was selected accordantly to the most recurring subjects. 
 %The final characterization and details about each topic for both cities is presented in Table~\ref{tab:final_classification}. Almost every topic demonstrated a balanced distribution, with exception of \textit{Relationships and Friendship} and \textit{Personal Feelings} for Rio de Janeiro and São Paulo, respectively. The difference appearing among these topics is a consequence of the final grouping process, since there was a considerable number of words being shared between topics. This issue complicated our characterization task, compelling to an high amount of undesired aggregations.
 
-The resulting list of topics and their distribution (number of tweets) for both cities is depicted in Table~\ref{tab:topic_labels}. We first observe that the majority of topics is common in both cities, with exception of 4 topics:  Weather and Shopping are not discussed in Rio de Janeiro; Antecipation \& Socializing and Health are not discussed in São Paulo. We were not able to assign labels using the Lansley~\ref{lansley2016geography} taxonomy to 7 different topics. In such cases, we created our own labels, e.g., "BBB17" is about a highly popular reality TV show in Brazil named Big Brother Brazil. 
+
+The resulting list of topics and their distribution (number of tweets) for both cities is depicted in Table~\ref{tab:topic_labels}. We first observe that the majority of topics is common in both cities, with exception of 4 topics:  Weather and Shopping are not discussed in Rio de Janeiro; Antecipation \& Socializing and Health are not discussed in São Paulo. We were not able to assign labels using the Lansley~\cite{lansley2016geography} taxonomy to 7 different topics. In such cases, we created our own labels, e.g., "BBB17" is about a highly popular reality TV show in Brazil named Big Brother Brazil. 
 
 There is a wide range of topics covered by both cities, from "Food and Drink", "Politics" and "Religion" to "Sports and Games" or "Transportation and Travel". The most talked topics in Rio de Janeiro are "Relationships and Friendship", "Actions and Intentions" and "Sports and Games", while in São Paulo, the most talked about topics are "Personal Feelings", "Relationships and Friendship" and "Negativism, Pessimism and Anger". Comparing both cities, the topics with higher relative difference are "Relationships and Friendships" (+16\% in Rio de Janeiro) and "Personal Feelings" (+13\% in São Paulo).
 %The most talked topics in Rio de Janeiro are about specific situations. For instance, people tend to talk about quotidian activities, where it is possible to be proved by the latent topic "Routine Activites". Moreover, nightlife activities as well as music or theatrical live shows are fields of interest to their inhabitants. "Actions and Intentions" demonstrate high number of tweets meaning that people is always moving, doing something or at least wishing for it.
@@ -106,7 +107,7 @@ There is a wide range of topics covered by both cities, from "Food and Drink", "
 
 We also produced a day-of-the-week temporal distribution of topics in both cities as depicted in Figure~\ref{fig:topics_heat_maps}. We selected 12 topics for Rio de Janeiro and 13 for São Paulo that are more prone to temporal shift of popularity, such as "Religion" and "Sports and Games" which are presumably more popular on the weekends. For both cities the topic "Sports and Games" is more mentioned on Tuesdays and Saturdays. Indeed, this observation correlates with Tuesdays where \textit{UEFA Champions League} competition happens and Saturdays when occur \textit{Brazilian Football League} matches. Also in both cities, "Holidays and Weekends" presented Sundays as the day where more people talk about it, while "Religion" and "Tourism and Places" are less prone to be talked about in Fridays, which is similar to all the remaining topics. "Live Shows, Social Events and Nightlife" are more talked about on Saturdays in Rio de Janeiro, while on São Paulo we identify Tuesdays as the day more popular. Sundays and Tuesdays are the days when the well-famous reality show TV program is emitted, and due to that exists more popularity in these days for the "BBB17" topic. "Weather" topic presents more activity in Saturday probably due to people going out to take a walk.
 
-\begin{figure}[h]
+\begin{figure}[!t]
 	\centering
 	\begin{subfigure}{0.49\textwidth}
 		\centering
@@ -124,18 +125,18 @@ We also produced a day-of-the-week temporal distribution of topics in both citie
 	\label{fig:topics_heat_maps}
 \end{figure}
 
-
-
-Furthermore, it is worth mentioning that our model had successfully discover a topic related to Big Brother Brazil 2017 (BBB17), a well-known reality show. The amount of geo-located tweets concerning this topic was considerable (1.85\% and 2.49\%, in RJ and SP, respectively), rising the question about what led people to geo-located them in such topic.
+%Furthermore, it is worth mentioning that our model had successfully discover a topic related to Big Brother Brazil 2017 (BBB17), a well-known reality show. The amount of geo-located tweets concerning this topic was considerable (1.85\% and 2.49\%, in RJ and SP, respectively), rising the question about what led people to geo-located them in such topic.
 
 \subsection{Final Remarks}
+To the best of our knowledge, this is the first large scale analysis of topic modelling of geo-located tweets from Rio de Janeiro and São Paulo. Most of the topics are common to both cities. Is is interesting to notice that people in Brazil post geo-located tweets about general purpose topics, such as reality TV show, health issues and relationship and friendship. Transportation and travel are marginal topics with less 2\% of relative frequency in Rio de Janeiro and 2.3\% in São Paulo.
+
+%LDA models usually require documents of large size, or at least ones with higher complexity than a single tweet so as to yield appropriate performance. A traditional approach was followed considering each tweet as a document instead of trying to aggregate tweets in more complex documents taking into consideration some criteria, e.g. grouping messages by date and hour. All topics resulting from our approach are similar in both cities but two, which are unique for each of the selected scenarios. The percentage difference between similar topics was within the interval 0.16-4.43\% evidencing the fact that both cities are also similar besides different factors that characterize each other: population, culture, lifestyle and also the region where the city is located in.
+
+%In spite of the analysis carried out and reported in this experiment, we can not assure that inside a topic other encapsulated topics might exist. The resulting amount of tweets for each topic was extremely high, turning a one-by-one verification into a very laborious and time consuming process. Therefore, our classification approach was limited to the verification of the top-50 words and the manual identification of such words in samples of 200 tweets per topic. Such a limitation, nonetheless, did not prevent us to draw important conclusions relatively to the results we have obtained after the application of our proposed solutions, as discussed in the Section \ref{sec:results}.
+
 This experiment demonstrates the capability of our framework to handle different topic modelling analysis under unregulated and non-conventional data such as the content found in most social media. The application of topic modeling technique to tweets from two different cities enables interesting comparisons between them since the whole analytics process accounts for what inhabitants talk about in their social networks. Through these analysis, cities' services are capable of monitoring human behaviour, activity patterns as well as of identifying regions where there may be some levels of intolerance on certain topics, making it possible to trigger preventive measures to solve problems in those specific areas.
 
-LDA models usually require documents of large size, or at least ones with higher complexity than a single tweet so as to yield appropriate performance. A traditional approach was followed considering each tweet as a document instead of trying to aggregate tweets in more complex documents taking into consideration some criteria, e.g. grouping messages by date and hour. All topics resulting from our approach are similar in both cities but two, which are unique for each of the selected scenarios. The percentage difference between similar topics was within the interval 0.16-4.43\% evidencing the fact that both cities are also similar besides different factors that characterize each other: population, culture, lifestyle and also the region where the city is located in.
-
-In spite of the analysis carried out and reported in this paper, we can not assure that inside a topic other encapsulated topics might exist. The resulting amount of tweets for each topic was extremely high, turning a one-by-one verification into a very laborious and time consuming process. Therefore, our classification approach was limited to the verification of the top-50 words and the manual identification of such words in samples of 200 tweets per topic. Such a limitation, nonetheless, did not prevent us to draw important conclusions relatively to the results we have obtained after the application of our proposed solutions, as discussed in the Section \ref{sec:results}.
-
-Future direction for this research will include application of spatio-temporal aggregation methods over both datasets in order to create more complex documents and verify whether results can be different taking into consideration temporal and spatial factors. To pursue this, it is required that a large dataset for both cities is available, which is expectable only in mid- to long-term. A possible future evaluation approach to be considered is the mapping of topics over specific areas of the cities, such as the identification of topics related to beaches alongside the coastal area in Rio de Janeiro, or the identification of transportation and travel topics over the metropolitan area in São Paulo. Finally, it is also necessary to explore other classification/evaluation approaches to enhance robustness, consistency, and efficiency of the topic modelling routine; one possible solution is the method aforementioned in Section~\ref{related_work}, which considers the addition of an extra layer to endow the framework with supervised labeling capabilities.
+Future direction for this research will include application of spatio-temporal aggregation methods over both datasets in order to create meta-documents (tweets group by day/hour/location) and verify whether results can be different taking into consideration temporal and spatial factors. To pursue this, it is required that a large dataset for both cities is available, which is expectable only in mid- to long-term.
 
 \section{Travel-related Classification}
 \label{sec:travel_related_classification}
