@@ -8,38 +8,16 @@ Providing to the final users of our framework actionable and trustful informatio
 Hence, in this Chapter, we describe three different experiments that were perform during this dissertation period to implement the previous mentioned text analytics modules
 
 \section{Topic Modelling}\label{sec:topic_modeling}
-This section is related to the experiment of automatically characterize tweets in two different Brazilian cities, Rio de Janeiro and São Paulo. We used an unsupervised learning approach to tackle the task of topic modelling in order to compare both cities and see if there are differences between topics people talked about. Automatic characterization of text messages is a laborious and time consuming task since it is necessary to assure the right level of abstraction in the learning model; very much similarly to human minds, which essentially present a bounded rationality nature, our learning model needs to be trained in order to assimilate the necessary knowledge and perform the appropriate analogies so as to discover different topics within the tweets' contents.
+In this section we describe the experiment of automatic characterization of tweets in two different Brazilian cities, Rio de Janeiro and São Paulo. Here, as previous mentioned in Section~\ref{sec:topic_modelling_framework}, we use \gls{LDA} model to find out which are the latent topics in both cities.
+We conduct this experiment using data collected from a period of two months, between March 12 and May 12, 2017. After the data filtering and text pre-processing steps, we obtain a total of 6.6M  for Rio de Janeiro and 2.7M for São Paulo.
 
-Messages collected to conduct this experiment are correspondent to a period of two months, between days March 12 and May 12, 2017. The resulting datasets sum up a total of 12.5M and 6.3M tweets for Rio de Janeiro and for São Paulo, respectively. Due to the problem detected in Section~\ref{sec:data_collection}, we filtered the data in order to only use the tweets that were actually inside the cities' areas. The final composition of the non-filtered datasets is presented in Table~\ref{tab:datasets}, and by observing its content it is possible to verify that almost 6M tweets were not located inside the cities' bounding-boxes.
-
-\begin{table*}[ht]
-	\small
-	\centering
-	\caption{Datasets composition}
-	\label{tab:datasets}
-	\resizebox{\textwidth}{!}{\begin{tabular}{|c|c|c|c|c|c|c|}
-			\hline
-			\textbf{City}  & \textbf{All} & \textbf{PT} & \textbf{Non-PT} & \textbf{\begin{tabular}[c]{@{}c@{}}In \\ Bounding-Box\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Out\\ Bounding-Box\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}PT and \\ In Bounding-Box\end{tabular}} \\ \hline
-			Rio de Janeiro & 12,531,000 & 10,570,000 & 1,961,000 & 8,644,000 & 3,886,000 & 7,353,000 \\ \hline
-			São Paulo & 6,352,000 & 4,886,000 & 1,466,000 & 4,247,000 & 2,105,000 & 3,313,000 \\ \hline
-		\end{tabular}}
-	\end{table*}
-	
-After the filtering process, we select the subset of data composed by Portuguese tweets and located inside the cities' bounding-boxes, and used it to conduct the experiment described in this section. Such subset can be sum up to a total of 7.3M and 3.3M for Rio de Janeiro and São Paulo, respectively.
-
-%Features and pre-processing operations are the ones described in Section~\ref{sec:topic_modelling}.
-
-Usually, to tackle topic modelling tasks in text documents several pre-processing operations are needed in order to make its content as clean and correct as possible since, as previous mentioned in Section~\ref{sec:topic_modelling}, models responsible for this task handle with the most basic element in texts - words. The pre-processing of tweets increase the performance of the LDA model and removing unnecessary words, transforming words into their root form as so deleting all the punctuation are some of the common text mining pre-processing steps usually used in this type of analysis. Here, each tweet of both datasets was submitted to a specific and planned group of pre-processing operations, which are described in Section~\ref{sec:text_preprocessing}, and were used to train a LDA model and proceed with the experiment.
-	
-It is worth noting that, after the data preparation phase, 772,017 tweets have their message empty which means that its content is irrelevant for the final experiment phase.
-
-\subsection{LDA Model Parametrization}
-In order to understand and see the LDA model performance, we set five different numbers for the topics results parameter of the training process: 5, 10, 20, 25 and 50 topics, being this the one with better results. The number of iterations to train the model was set to 20, since our desire was to reproduce the experiment made by G. Lansley et al.~\cite{lansley2016geography}, which revealed interesting results regarding the characterization of land-uses in the city of London. Finally but not the least, each tweet in the datasets was treated as a single document comprehending that, in total, 6,580,983 different documents were used in the model training process.
+ We tried training LDA model with 5, 10, 20, 25 and 50 latent topics and manually inspected the top most probable words for each topic. Models with 5, 10, 20 and 25 presented a high number number of overlap terms between topics. Therefore, we opted to proceed with the experiment using 50 latent topics. The number of iterations to train the model was set to 20, in line with the work of Lansley et al.~\cite{lansley2016geography}.
 	
 \subsection{Results and Analysis}
-\label{subsec:topic_modelling_results}
 \label{subsec:lda_results}
-To evaluate the experimental results obtained for each model (where the difference underlies on the variation of the number of topics), a list with the most frequent 50 words for each topic was extracted. In Table~\ref{tab:topics_classification} we can observe a sample (20 top words) selected out of the 50 studied. Nonetheless, the final evaluation took into consideration all the  50 outputted words.
+We classify the 50 latent topics using the most frequent 50 outputted words for each topic. In Table~\ref{tab:topics_classification} we show the top 20 of the 50 words considered in the characterization of topics, such as Sports and Games, Wake-up Messages, Voting and Numbers, Big Brother Brazil 2017 and Tourism and Places. Although the word-based characterization, we perform a manual inspection over 200 tweets for each topic to confirm if such topic characterization was actually correct or not.
+
+%To evaluate the experimental results obtained for each model (where the difference underlies on the variation of the number of topics), a list with the most frequent 50 words for each topic was extracted. In Table~\ref{tab:topics_classification} we can observe a sample (20 top words) selected out of the 50 studied. Nonetheless, the final evaluation took into consideration all the  50 outputted words.
 
 \begin{table}[h]
 	\centering
@@ -58,7 +36,7 @@ To evaluate the experimental results obtained for each model (where the differen
 	}
 \end{table}
 	
-We also selected and manually analyse a random sample (with the size of 200) of tweets for each topic. This sampling was done in order to get better consistency and trustiness about the classification and characterization of the tweets.
+%We also selected and manually analyse a random sample (with the size of 200) of tweets for each topic. This sampling was done in order to get better consistency and trustiness about the classification and characterization of the tweets.
 
 \begin{table}[!hb]
 	\centering
@@ -98,19 +76,23 @@ We also selected and manually analyse a random sample (with the size of 200) of 
 			Weather & 91,302 & 1.39 & 42,588 & 1.55 & -0.16 \\
 			Shopping & 0 & 0.00 & 44,470 & 1.62 & \textbf{-1.62} \\
 			Voting & 0 & 0.00 & 37,687 & 1.37 & \textbf{-1.37} \\ \hline
+			\textbf{Total} & 6,580,983 & 100.00 & 2,746,283 & 100.00 &  \\			\hline
 		\end{tabular}
 	}
 \end{table}
 
-It was found a group of 50 topics which had the largest number of distinct topics between them. We choose to use this model trained to characterize tweets into 50 topics because the final goal of our framework is to be able of compare or monitor cities, regions or even countries having into consideration high levels of diversification and generalization. However, by studying the 50 different topics, we conclude the existence of topics which theme was the same (e.g. Love and Romance Problems or Brazilian Football \textit{versus} European Football). Within this, such groups were aggregate into the same topic, \textit{Relationships} and \textit{Sports and Games}, respectively. After this grouping process, a total of 29 different topics was achieved. 
+During the characterization of the 50 different topics, we conclude the existence of topics which theme was the same (e.g. Love and Romance Problems or Brazilian Football \textit{versus} European Football). Within this, such groups were aggregated into the same topic, \textit{Relationships} and \textit{Sports and Games}, respectively. After this grouping process, a total of 29 different topics was achieved.
 
-Some tweets that have added complexity to our classification objective, such as, for example, "\textit{queria namorar um mano parecido com o josh}" (Relationship) and "\textit{como eu queria meus amigos aqui agora cmg}" (Friendship), raised some doubts about which topic this tweets may belong: Relationship, Friendship or even Actions or Intentions. In a perspective of context, the first tweet belongs to the theme \texttt{flirt}, which is directly related to Relationship. The theme on the second tweet is missing the company of friends, i.e. conviviality, which is related to Friendship. The decision of join the two topics was due to the proximity between them which have as content both types of tweets, talking about love/relationship and friendship, and with this in consideration both topics should be aggregated in order to assure the desired consistency in the classification.
+%It was found a group of 50 topics which had the largest number of distinct topics between them. We choose to use this model trained to characterize tweets into 50 topics because the final goal of our framework is to be able of compare or monitor cities, regions or even countries having into consideration high levels of diversification and generalization. However, by studying the 50 different topics, we conclude the existence of topics which theme was the same (e.g. Love and Romance Problems or Brazilian Football \textit{versus} European Football). Within this, such groups were aggregate into the same topic, \textit{Relationships} and \textit{Sports and Games}, respectively. After this grouping process, a total of 29 different topics was achieved. 
 
-The final set of topics (50 topics) to be considered was selected accordantly to the most recurring subjects. The final classification and details associated with the whole dataset for each city is presented in Table~\ref{tab:final_classification}. Almost every topics demonstrated a balanced distribution, with exception of \textit{Relationships and Friendship} and \textit{Personal Feelings} for Rio de Janeiro and São Paulo, respectively. The difference that appear in this topics is a consequence of the final grouping process, since there was a considerable number of words been shared among this topics. This issue complicated our classification task, compelling to an high amount of undesired aggregations.
+Some tweets presented complexity to our characterization objective, such as "\textit{queria namorar um mano parecido com o josh}" (Relationship) and "\textit{como eu queria meus amigos aqui agora cmg}" (Friendship), which raised some doubts about which topic this tweets may belong: Relationship, Friendship or even Actions or Intentions. In a perspective of context, the first tweet belongs to the theme \texttt{flirt}, which is directly related to Relationship. The theme on the second tweet is missing the company of friends, i.e. conviviality, which is related to Friendship. The decision of join the two topics was due to the proximity between them which have as content both types of tweets, talking about love/relationship and friendship, and with this in consideration both topics should be aggregated in order to assure the desired consistency in the characterization.
+
+%The final set of topics (50 topics) to be considered was selected accordantly to the most recurring subjects. 
+The final characterization and details about each topic for both cities is presented in Table~\ref{tab:final_classification}. Almost every topics demonstrated a balanced distribution, with exception of \textit{Relationships and Friendship} and \textit{Personal Feelings} for Rio de Janeiro and São Paulo, respectively. The difference appearing among these topics is a consequence of the final grouping process, since there was a considerable number of words being shared between topics. This issue complicated our characterization task, compelling to an high amount of undesired aggregations.
 		
 Additionally to the manual verification of a sample of tweets for each topic, we also produced a temporal week day distribution,  with the objective to observe if some topics had more mentions in certain days than others.
 
-For making such observations some assumptions were made in relation with some \textit{hot} topics. More specifically, we think that is valid to assume that people will talk more about \textit{Religion} in the weekend, since they go to the church in those days. The same result is likely to happen for topics like \textit{Holidays and Weekends} or \textit{Sports and Games}, since events related to this thematics occur during specific time-frames.
+Such observations induced some assumptions regarding some \textit{hot} topics. More specifically, we think that is valid to assume that people will talk more about \textit{Religion} in the weekend, since they go to the church in those days. The same result is likely to happen for topics like \textit{Holidays and Weekends} or \textit{Sports and Games}, since events related to this thematics occur during specific time-frames.
 
 \begin{figure}[h]
 	\centering
