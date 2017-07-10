@@ -4,9 +4,13 @@
 
 \section{Scope and Motivation}\label{sec:scope_motivation}
 
-During the last decade, Web services suffered a conventional evolution into collaborative and social platforms - Web 2.0~\cite{chi2008social}. This evolution conducted to an excessive amount of \gls{UGC}~\cite{kaplan2010users} being placed \textit{online} by the population. The research community has seen this phenomenon as an opportunity to explore this overwhelming web-content in order to extract added-value information regarding a large diversity of domains. \gls{SMC} is, nowadays, targeted by studies about opinion mining, human behavior and respective activity patterns, political issues, social communication (e.g. news websites). Such studies focus their efforts in a way of understanding what people think and talk about and transform this knowledge into actionable and meaningful content. Although the application of \gls{SMC} in the previous mentioned domains, the \textit{smart cities}~\cite{batty2012smart} and, in particular, the transportation~\cite{gal2014potential} domains are under a smooth growth, meaning that a large path is still unexplored allowing new opportunities and challenges for the research community to reach its full potential~\cite{musto2015crowdpulse}.
+During the last decade, Web services suffered a conventional evolution into collaborative and social platforms - Web 2.0~\cite{chi2008social}. This evolution conducted to an excessive amount of \gls{UGC}~\cite{kaplan2010users} being placed \textit{online} by the population. The research community has seen this phenomenon as an opportunity to explore this overwhelming web-content in order to extract added-value information regarding a large diversity of domains.
 
-The exploration of \gls{SMC} although being produced by humans and bring some authenticity and credibility into the information extracted, has also availability as its main advantage. Social media companies provide tools to the developers community that do not require additional costs regarding its exploration, allowing the local storage of data and the possibility of performing off-line analysis~\cite{kuflik2017automating}. \glspl{MicroBlog}, such as Twitter, are considered branchs of the social network concept, and its content is similar to SMS-like messages, characteristics of a 140-characters length. Twitter is the 11th most visited website in the world~\footnote{http://www.alexa.com/siteinfo/twitter.com} and has already proved its value and potential in domains ranging from news detection~\cite{kn:Sankaranarayanan2009} to real-time traffic sensing~\cite{carvalho2010real}. For this reason, it is one of the most explored sources of data during the conduction of research studies.
+\gsl{SMC} is still in the process of maturation regarding its use in the \textit{smart cities}~\cite{batty2012smart} and transportation~\cite{gal2014potential} fields. Users tend to publicly share events in which they participate, as well as the ones related to the operation of the transportation network, such as accidents and other disruptions. Indeed, this type of content is also targeted by studies about opinion mining, human behavior and respective activity patterns, political issues, social communication (e.g. news websites). Such studies focus their efforts in a way of understanding what people think and talk about and transform this knowledge into actionable and meaningful content. 
+
+The exploration of \gls{SMC} brings particular advantages, under virtually no cost, such as real-time data and content authenticity due to its human generated nature~\cite{kuflik2017automating}. In the domain of transportation, social media data analysis can produce valuable insights to support traffic management and control, human mobility, shared services, and policy making studies. 
+
+The availability of this kind of data me be seen as its main advantage. Social media companies provide tools to the developers community that do not require additional costs regarding its exploration, allowing the local storage of data and the possibility of performing off-line analysis. \glspl{MicroBlog}, such as Twitter, are considered branchs of the social network concept, and its content is similar to SMS-like messages, characteristics of a 140-characters length. Twitter is the 11th most visited website in the world~\footnote{http://www.alexa.com/siteinfo/twitter.com} and has already proved its value and potential in domains ranging from news detection~\cite{kn:Sankaranarayanan2009} to real-time traffic sensing~\cite{carvalho2010real}. For this reason, it is one of the most explored sources of data during the conduction of research studies.
 
 Mining Twitter data is a laborious and time-consuming process due to the restrictions and difficulties present in its content. The informal language, the existence of slang, abbreviations, jargons and the short length of the message are some of the problems when analyzing this data. Harvesting tweets automatically and, at the same time, extracting valuable information for Smart Cities and Transportation domains makes the task even more complex. The lack of gold standards datasets is the most disturbing problem since we are not able to benchmark any analysis performed to these aforementioned domains.
 
@@ -38,19 +42,7 @@ To analyse such streams, multiple steps composed in an iterative process are nee
 \fi
 
 \section{Aim and Goals}\label{sec:aim_goals}
-Following the previous mentioned problem in Section \ref{sec:problem}, the main goal of this dissertation passes through the development of a prototype framework based on the concept of analysis. Such framework demands a solution for each of the aforementioned sub-problems, and for that reason modularity is needed in the design and implementation of the final tool. Its usability will be directed to companies or even ordinary users and should be able to provide relevant information about a specific real-world scenario under the \textit{smart cities} and transportation fields. The framework should be capable of automatically processing social media texts, more specifically, general topic detection and characterization of travel-related tweets. The following list summarizes the crucial goals behind this dissertation:
-
-\begin{itemize}
-	\item Extraction of valuable information from \gls{SMC} to the Transportation and \textit{Smart Cities} domains;
-	\item Designing and implementation of a framework capable of automatize the analysis process;
-	\item Application, when possible, of recent advances and technologies from the area of text analysis;
-\end{itemize}
-
-\medskip
-
-In terms of expected contributions, we hope that such generated information through the framework data analytics may be relevant both to ordinary users of a particular service and to the responsible entities in order to improve decision-making policies.
-
-The major goal of this thesis consists in the design and development of a research framework for text processing and semantic analysis of geo-located Tweets within a pre-defined geographical area (e.g. cities). More specifically, the framework shall accomplish the following objectives:
+In this dissertation, our aim passes through the finding of solutions for the aforementioned problems in order to extract actionable knowledge from geo-located tweets. Such knowledge may be useful to the smart cities and transportation entities since they might use it to improve their services or even fix existing problems through decision-making policies. In order to achieve that, we stipulate the following goals:
 
 \begin{itemize}
 	\item Continuous collection of geo-located tweets from multiple bounding boxes in parallel and in compliance with Twitter API usage limits;
@@ -71,6 +63,21 @@ The major goal of this thesis consists in the design and development of a resear
 	
 	\item Aggregation and visualization of results.
 \end{itemize}
+
+
+%Following the previous mentioned problem in Section \ref{sec:problem}, the main goal of this dissertation passes through the development of a prototype framework based on the concept of analysis. Such framework demands a solution for each of the aforementioned sub-problems, and for that reason modularity is needed in the design and implementation of the final tool. Its usability will be directed to companies or even ordinary users and should be able to provide relevant information about a specific real-world scenario under the \textit{smart cities} and transportation fields. The framework should be capable of automatically processing social media texts, more specifically, general topic detection and characterization of travel-related tweets. The following list summarizes the crucial goals behind this dissertation:
+
+%\begin{itemize}
+%	\item Extraction of valuable information from \gls{SMC} to the Transportation and \textit{Smart Cities} domains;
+%	\item Designing and implementation of a framework capable of automatize the analysis process;
+%	\item Application, when possible, of recent advances and technologies from the area of text analysis;
+%\end{itemize}
+
+%\medskip
+
+%In terms of expected contributions, we hope that such generated information through the framework data analytics may be relevant both to ordinary users of a particular service and to the responsible entities in order to improve decision-making policies.
+
+%The major goal of this thesis consists in the design and development of a research framework for text processing and semantic analysis of geo-located Tweets within a pre-defined geographical area (e.g. cities). More specifically, the framework shall accomplish the following objectives:
 
 \section{Document Structure}\label{sec:doc_structure}
 The effort applied to this dissertation generated a great diversity of points and due to that the remainder of this document is organized as follows.
