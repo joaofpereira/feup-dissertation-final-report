@@ -28,6 +28,8 @@
 %% headers & footers
 \pagestyle{empty}
 
+\graphicspath{{figures/}}
+
 %% figure & table caption
 \captionsetup{figurename=Fig.,tablename=Tab.,labelsep=endash,font=bf,skip=.5\baselineskip}
 
@@ -45,9 +47,8 @@
 \begin{document}
 
 \title{\vspace*{-8mm}\textbf{\textsc{Social Media Text Processing and\\ Semantic Analysis for Smart Cities}}}
-\author{\emph{João Pereira}\\[2mm]
-\small{Project/Dissertation performed under the supervision of \emph{Prof.\ Rosaldo Rossetti}}\\
-\small{in \emph{LIACC}}}
+\author{\emph{João Filipe Figueiredo Pereira}\\[2mm]
+\small{Master’s thesis project supervised by \emph{Prof.\ Rosaldo Rossetti} and \emph{Pedro Saleiro} at \emph{LIACC}}}
 \date{}
 \maketitle
 %no page number 
@@ -57,7 +58,7 @@
 
 \begin{multicols}{2}
 
-\section{Motivation}\label{sec:motiva}
+\section{Motivation}\label{sec:motivation}
 
 %Neste documento apresentam-se alguns conselhos e instruções para a preparação dos resumos de projecto/dissertação. 
 %Pede-se aos autores o favor de, dentro do possível, cumprirem com as instruções que são dadas, assim como com a estrutura apresentada, de forma a manter-se o mesmo aspecto em todos os resumos. 
@@ -66,6 +67,8 @@
 %Na secção ``Motivação'' deve ser apresentado o enquadramento do trabalho, dando ideia das necessidades que o mesmo cobre.
 
 With the rise of Social Media, people obtain and share information almost instantly on a 24/7 basis. Many research areas have tried to gain valuable insights into these large volumes of freely available user generated content. The research areas of intelligent transportation systems and smart cities are no exception. However, extracting meaningful and actionable knowledge from user generated content is a complex endeavor. First, each social media service has its own data collection specificities and constraints, second the volume of messages/posts produced can be overwhelming for automatic processing and mining, and last but not the least, social media texts are usually short, informal, with a lot of abbreviations, jargon, slang and idioms.
+
+\section{Problem Description}
 
 \section{Goals}\label{sec:goals}
 
@@ -77,26 +80,60 @@ With the rise of Social Media, people obtain and share information almost instan
 %\item Disponibilizar \emph{templates} a quem pretenda utilizar \LaTeX.
 %\end{itemize}
 
-In this dissertation, we try to tackle some of the aforementioned challenges with the goal of extracting knowledge from social media streams that might be useful in the context of intelligent transportation systems and smart cities. We designed and developed a framework for collection, processing and mining of geo-located Tweets. More specifically, it provides functionalities for parallel collection of geo-located tweets from multiple pre-defined bounding boxes (cities or regions), including filtering of non complying tweets, text pre-processing for Portuguese and English language, topic modeling, and transportation-specific text classifiers, as well as, aggregation and data visualization.
+In this dissertation, we try to tackle some of the aforementioned challenges with the goal of extracting knowledge from social media streams that might be useful in the context of intelligent transportation systems and smart cities. We designed and developed a framework for collection, processing and mining of geo-located Tweets. More specifically, it provides functionalities for parallel collection of geo-located tweets from multiple pre-defined bounding boxes (cities or regions), including filtering of non complying tweets, text pre-processing for Portuguese and English language, topic modeling, and transportation-specific text classifiers, as well as, aggregation and data visualization. We address nine different goals in this dissertation to achieve our aim:
 
-\section{Descrição do Trabalho}\label{sec:work}
+\begin{enumerate}
+	\item Continuous collection of geo-located tweets from multiple bounding boxes in parallel and in compliance with Twitter API usage limits
+	\item Tackling Twitter Geo API inconsistencies and filtering noisy tweets
+	\item Implement standard text pre-processing methods for social media texts
+	\item Content analysis using topic modeling and comparative characterization among different bounding boxes (e.g. cities)
+	\item Travel-related classification of tweets using supervised learning
+	\item Train word embeddings from geo-located tweets
+	\item Study the impact of word embeddings in travel-related classification
+	\item Creation of gold-standard data for travel-related supervised learning
+	\item Aggregation and visualization of results
+\end{enumerate}
+
+\section{Proposed Solution}\label{sec:work}
+
+In this section it is described the problem to be tackled in this dissertation as well as the designed and implemented framework that we proposed to solve it and the core modules composing it.
+
+\subsection{Architecture Overview}
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=.25]{architecture.png}}
+\caption{Framework Architecture Overview}  
+\label{fig:figura}
+\end{figure}
+
+\subsection{Data Collection and Filtering}
+The data collection module was built using Tweepy, an open-source Python library to access the Twitter APIs. We explore the Twitter Streaming API using the locations heuristic that allows the retrieving of geo-located tweets through a bounding-box matching. The filtering task is due to the large amount of tweets in different languages comparative to the one spoken in the target city and to tweets retrieved by the API that are actually outside of the searching bounding-box.
+
+\subsection{Text Preprocessing}
+We apply a considerable group of text pre-processing operations to the messages such as lowercasing, lemmatization, tokenization, transformation of repeated characters, punctuation removal, cleaning of \textit{metadata}, numerical symbols in the text as well as removal of stop and short words.
+
+\subsection{Topic Modelling}
+
+\subsection{Travel-related Classification}
+
+
 
 %Na secção ``Descrição do Trabalho'' (com este ou com outro nome que se julgue mais adequado) devem ser apresentadas as principais partes do trabalho, começando pela sua estruturação. Devem ser mencionadas as tecnologias utilizadas, com referências à sua interdependência e interligação dando especial ênfase aos componentes desenvolvidos pelo estudante no âmbito do trabalho em causa.
 
 %No presente documento, seguem-se 9 subsecções com instruções acerca da extensão da comunicação, margens, estilos e outras recomendações gerais acerca da elaboração da versão final dos resumos.
 
-\subsection{Línguas Obrigatórias}\label{sec:lingua}
+%\subsection{Línguas Obrigatórias}\label{sec:lingua}
 
 %Os resumos deverão ser apresentados, em ficheiros separados, em versões portuguesa e inglesa. 
 %No resumo em Português e em caso de necessidade de utilização de termos em língua Inglesa, estes deverão ser devidamente salientados pela adopção da fonte em itálico, como, por exemplo, \emph{Ray-Tracing}.
 
-\subsection{Cabeçalho de Identificação}
+%\subsection{Cabeçalho de Identificação}
 
 %O cabeçalho de identificação deve ser centrado e inicia-se com o título da comunicação, em letras maiúsculas de tamanho 12 e em negrito. 
 %Seguem-se, em linhas separadas e em tamanho 9, a identificação do estudante, da empresa e dos orientadores (estes dois numa única linha). 
 %Todos os quatro nomes devem ser em itálico.
 
-\subsection{Extensão do Artigo e Tipo de Letra}
+%\subsection{Extensão do Artigo e Tipo de Letra}
 
 %Cada resumo deve ser formatado com texto a duas colunas, não devendo exceder duas páginas de formato A4. 
 %\textbf{As duas colunas devem terminar sensivelmente à mesma altura}, em cada uma das páginas. 
@@ -104,7 +141,7 @@ In this dissertation, we try to tackle some of the aforementioned challenges wit
 %O tipo de letra para o texto genérico deverá ser \emph{Times New Roman} com tamanho 9 e espaçamento simples entre linhas. 
 %O espaçamento entre parágrafos deverá ser estendido a 1.5 linhas (0.5 linha de espaçamento extra).
 
-\subsection{Dimensões das Margens}
+%\subsection{Dimensões das Margens}
 
 %As margens a manter à volta do texto deverão ser as constantes na Tab.~\ref{tab:medidas}.
 
@@ -126,17 +163,17 @@ In this dissertation, we try to tackle some of the aforementioned challenges wit
 %  \label{tab:medidas}
 %\end{table}
 
-\subsection{Corpo do Texto}
+%\subsection{Corpo do Texto}
 
 %Todos os títulos de secções e subsecções devem ser escritos em negrito e com um espaçamento para cima ligeiramente superior ao de um parágrafo normal. 
 %Os títulos de níveis um e dois devem ter tamanhos, respectivamente, 11 e 9. 
 %As ``subsubsecções'' devem ser evitadas.
 
-\subsection{Numeração das Secções}
+%\subsection{Numeração das Secções}
 
 %As secções deverão ser numeradas com início em "1", de acordo com os níveis e subníveis respectivos, usando-se o ponto como separador.
 
-\subsection{Figuras, Equações e Quadros}
+%\subsection{Figuras, Equações e Quadros}
 
 %As figuras e as tabelas deverão ser centradas, sempre que possível, à largura da coluna de texto em que se
 %inserem (Tab.~\ref{tab:medidas} e Fig.~\ref{fig:figura}). 
@@ -165,17 +202,17 @@ In this dissertation, we try to tackle some of the aforementioned challenges wit
 %As figuras deverão ser numeradas a partir do número 1 e com uma única sequência, i.e., sem reinício em cada secção. 
 %O mesmo deve suceder com as equações e com as tabelas.
 
-\subsection{Numeração de Páginas}\label{sec:number}
+%\subsection{Numeração de Páginas}\label{sec:number}
 
 %As páginas \textbf{NÃO} devem ser numeradas.
 
-\subsection{Codificação dos Caracteres}\label{sec:encomding}
+%\subsection{Codificação dos Caracteres}\label{sec:encomding}
 
 %Este exemplo está escrito em UTF-8; para outras codificações deverá
 %ser alterado \texttt{\\usepackage[utf8]\{inputenc\}}.
 
 
-\section{Conclusões}\label{sec:conclui}
+\section{Conclusion}\label{sec:conclusion}
 
 %Espera-se que este documento possa contribuir para uma melhor qualidade dos resumos dos projectos/dissertações do MIEIC/FEUP.
 
