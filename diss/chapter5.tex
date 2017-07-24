@@ -147,7 +147,7 @@ The main goal of this section is to describe the experiments conducted to discri
 One big challenge always present in text analysis is the sparse nature of data, which is especially the case in Twitter messages. Conventional techniques such as bag-of-words tend to produce sparse representations, which become even worse when data is composed by informal and noisy content.
 
 Word embeddings, on the other hand, is a text representation technique that tries to capture syntactic and semantic relations from words. The result is a more cohesive representation where similar words are represented by similar vectors. For instance, \emph{"taxi"/"uber"}, \emph{"bus/busão/ônibus"}, \emph{"go to work"/"go to school"/"ir para a escola"} would yield similar vectors respectively.
-We are particularly interested in exploring the characteristics of word embeddings techniques to understand which extent it is possible to improve the performance of our classifier to capture such travel-related expressions. In the reminder subsections, we describe two different text classification experiments following distinct approaches across two speaking languages - Portuguese and English.
+We are particularly interested in exploring the characteristics of word embeddings techniques to understand which extent it is possible to improve the performance of our classifier to capture such travel-related expressions. In the reminder subsections, we describe two different text classification experiments following distinct approaches across two speaking languages - Portuguese and English. We trained the word embeddings using all tweets from the two different use cases with support of the Python's library, \texttt{Gensim}, and window size of 2.
 
 Support Vector Machines (SVM), Logistic Regression (LR) and Random Forests (RF) were the classifiers used in these experiments. The SVM classifier was tested under three different kernels, namely \textit{rbf}, \textit{sigmoid} and \textit{linear}; the latter proved to obtain the best results for both experiments. 
 
@@ -243,7 +243,7 @@ Table~\ref{classifiers} presents the results obtained using the different featur
 
 The performance of all three classifiers is illustrated using the ROC Curve in Figure~\ref{fig:roc_curve}.
 
-The area under the curve of the Receiver Operating Characteristic (AUROC) was very similar for both the Logistic Regression and the Linear SVM models. The results obtained from the Random Forest model were not so promising as expected.
+The area under the curve of the Receiver Operating Characteristic (AUROC) was very similar for both the Logistic Regression and the Linear SVM models. The results obtained from the Random Forest model were not so promising as expected since this classifier is pretty tough to beat due to its versatility.
 
 After the selection of our classification model, we decided to classify all the Portuguese dataset and draw some statistics from the results. The trained Linear SVM classifier was used to predict whether tweets were travel-related or not, since it was the model presenting the best score under the F1-score metric (as shown in Table~\ref{classifiers}). From a total of 7.8M tweets, our classifier was able identified 37,300 travel-related entries.
 
