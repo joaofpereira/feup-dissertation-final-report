@@ -48,7 +48,7 @@
 
 \title{\vspace*{-8mm}\textbf{\textsc{Social Media Text Processing and\\ Semantic Analysis for Smart Cities}}}
 \author{\emph{João Filipe Figueiredo Pereira}\\[2mm]
-\small{Master’s thesis project supervised by \emph{Prof.\ Rosaldo Rossetti} and \emph{Pedro Saleiro} at \emph{LIACC}}}
+\small{Projecto de Dissertação de Mestrado desenvolvido com a orientação do \emph{Prof.\ Rosaldo Rossetti} e \emph{Pedro Saleiro} no \emph{LIACC}}}
 \date{}
 \maketitle
 %no page number 
@@ -58,7 +58,7 @@
 
 \begin{multicols}{2}
 
-\section{Motivation}\label{sec:motivation}
+\section{Motivação}\label{sec:motivation}
 
 %Neste documento apresentam-se alguns conselhos e instruções para a preparação dos resumos de projecto/dissertação. 
 %Pede-se aos autores o favor de, dentro do possível, cumprirem com as instruções que são dadas, assim como com a estrutura apresentada, de forma a manter-se o mesmo aspecto em todos os resumos. 
@@ -66,11 +66,13 @@
 
 %Na secção ``Motivação'' deve ser apresentado o enquadramento do trabalho, dando ideia das necessidades que o mesmo cobre.
 
-With the rise of Social Media, people obtain and share information almost instantly on a 24/7 basis. Many research areas have tried to gain valuable insights into these large volumes of freely available user generated content. The research areas of intelligent transportation systems and smart cities are no exception. However, extracting meaningful and actionable knowledge from user generated content is a complex endeavor. First, each social media service has its own data collection specificities and constraints, second the volume of messages/posts produced can be overwhelming for automatic processing and mining, and last but not the least, social media texts are usually short, informal, with a lot of abbreviations, jargon, slang and idioms.
+Devido à ascensão das Redes Sociais, as pessoas obtêm e partilham informação quase que instantaneamente 24/7. Muitas áreas de investigação tentaram extrair informações importantes destes grandes volumes de conteúdo, gerado por utilizadores, e livremente disponíveis. As áreas de investigação de sistemas inteligentes de transportes e de cidades inteligentes (\textit{smart cities}) não são excepção. Contudo, extrair conhecimento acionável e significativo de conteúdo gerado por utilizadores exige um esforço complexo. Primeiro, cada serviço de social media possui as suas próprias especificidades e restrições para o método de recolha dos dados; em segundo lugar, o volume de mensagens produzidas pode ser esmagador para o processamento automático e prospeção; e por último, não menos importante, os textos das redes sociais são, geralmente, curtos, informais, com muitas abreviações, jargões, gírias e expressões idiomáticas.
 
-\section{Problem Description}
+\section{Descrição do Problema}
+Extrair conhecimento de dados do Twitter é um processo trabalhoso e demorado devido às restrições e dificuldades do conteúdo das mensagens. A informalidade, a existência de gírias, abreviaturas, jargões, e o curto comprimento das mensagens são alguns dos problemas emergidos durante  a análise deste tipo de dados. Recolher \emph{tweets} de forma automática e, ao mesmo tempo, extrair informação valiosa para cidades inteligentes e para a área de transportes torna a tarefa ainda mais complexa.  A absência de \emph{gold-standard datasets} é o problema mais perturbador, uma vez que não somos capazes de comparar as análises realizadas para as áreas de estudo acima mencionados.
+O problema em foco nesta dissertação é encontrar uma forma de demonstrar análises de texto das redes sociais sobre cidades/regiões/países que possam ser valiosas para entidades, governos ou até cidadãos comuns em processos de tomada de decisão, como, por exemplo, qual a cidade com nível de segurança mais elevado, ou qual o melhor meio de transporte que um indivíduo pode escolher para viajar em uma cidade.
 
-\section{Goals}\label{sec:goals}
+\section{Objectivos}\label{sec:goals}
 
 %A secção ``Objectivos'' deve enunciar claramente os objectivos a atingir com o trabalho de projecto/dissertação, enquadrando-os na respectiva área de actividade a que o trabalho se destina. 
 %Por exemplo, este documento tem como objectivos:
@@ -80,44 +82,52 @@ With the rise of Social Media, people obtain and share information almost instan
 %\item Disponibilizar \emph{templates} a quem pretenda utilizar \LaTeX.
 %\end{itemize}
 
-In this dissertation, we try to tackle some of the aforementioned challenges with the goal of extracting knowledge from social media streams that might be useful in the context of intelligent transportation systems and smart cities. We designed and developed a framework for collection, processing and mining of geo-located Tweets. More specifically, it provides functionalities for parallel collection of geo-located tweets from multiple pre-defined bounding boxes (cities or regions), including filtering of non complying tweets, text pre-processing for Portuguese and English language, topic modeling, and transportation-specific text classifiers, as well as, aggregation and data visualization. We address nine different goals in this dissertation to achieve our aim:
+Foram estabelecidos nove objectivos diferentes nesta dissertação para atingirmos o nosso alvo principal:
+\begin{itemize}
+	\item Recolha contínua de \emph{tweets} georreferenciados de múltiplas \emph{bounding boxes} em paralelo e de acordo com os limites de utilização da \emph{API} do \emph{Twitter}
+	\item Abordar as inconsistências e as filtragens de \emph{tweets} com ruído da \emph{API} \emph{Twitter Geo}
+	\item Implementar métodos padrão de pré-processamento de texto para mensagens das redes sociais.
+	\item Análise de conteúdo recorrendo a modelação de tópicos e caracterização comparativa entre diferentes \emph{bounding boxes} (por exemplo, cidades)
+	\item Utilização de aprendizagem supervisionada na classificação de \emph{tweets} relacionados com viagens e transportes
+	\item Treino de \emph{word embeddings} a partir de \emph{tweets} georreferenciados
+	\item Estudar o impacto de \emph{word embeddings} em tarefas de classificação de \emph{tweets} relacionados com viagens e transportes 
+	\item Criação de dados \emph{gold-standard} para aprendizagem supervisionada relacionada com viagens e transportes
+	\item Agregação e visualização de resultados
+\end{itemize}
 
-\begin{enumerate}
-	\item Continuous collection of geo-located tweets from multiple bounding boxes in parallel and in compliance with Twitter API usage limits
-	\item Tackling Twitter Geo API inconsistencies and filtering noisy tweets
-	\item Implement standard text pre-processing methods for social media texts
-	\item Content analysis using topic modeling and comparative characterization among different bounding boxes (e.g. cities)
-	\item Travel-related classification of tweets using supervised learning
-	\item Train word embeddings from geo-located tweets
-	\item Study the impact of word embeddings in travel-related classification
-	\item Creation of gold-standard data for travel-related supervised learning
-	\item Aggregation and visualization of results
-\end{enumerate}
+\section{Proposta de Solução}\label{sec:work}
 
-\section{Proposed Solution}\label{sec:work}
-
-In this section it is described the problem to be tackled in this dissertation as well as the designed and implemented framework that we proposed to solve it and the core modules composing it.
-
-\subsection{Architecture Overview}
+Nesta secção é descrito o problema a ser abordado nesta dissertação bem como a arquitectura e a implementação da framework por nós proposta para resolução do problema apresentado, assim como os seus principais módulos constituintes.
 
 \begin{figure}[H]
 \centerline{\includegraphics[scale=.25]{architecture.png}}
-\caption{Framework Architecture Overview}  
-\label{fig:figura}
+\caption{Visão geral da arquitectura da \emph{framework}}  
+\label{fig:architecture}
 \end{figure}
 
-\subsection{Data Collection and Filtering}
-The data collection module was built using Tweepy, an open-source Python library to access the Twitter APIs. We explore the Twitter Streaming API using the locations heuristic that allows the retrieving of geo-located tweets through a bounding-box matching. The filtering task is due to the large amount of tweets in different languages comparative to the one spoken in the target city and to tweets retrieved by the API that are actually outside of the searching bounding-box.
+\subsection{Recolha e Filtragem de Dados}
+O módulo de recolha de dados foi desenvolvido recorrendo a uma biblioteca \emph{open-source} de Python, conhecida como \emph{Tweepy}, que permite o acesso às \emph{APIs} do Twitter. Nós explorámos a \emph{Twitter Streaming API} usando heurísticas de localização, que permitem a recolha de \emph{tweets} georreferenciados através de uma sobreposição com \emph{bounding-boxes}.
 
-\subsection{Text Preprocessing}
-We apply a considerable group of text pre-processing operations to the messages such as lowercasing, lemmatization, tokenization, transformation of repeated characters, punctuation removal, cleaning of \textit{metadata}, numerical symbols in the text as well as removal of stop and short words.
+\subsection{Pre-processamento de Texto}
+Nós aplicamos um grupo considerável de operaões de pré-processamento de texto às mensagens tais como \emph{lowercasing}, \emph{lemmatization}, \emph{tokenization}, transformação de characters repetidos, filtragem de metadados, símbolos numéricos no texto e também remoção de palavras curtas e comuns.
 
-\subsection{Topic Modelling}
+\subsection{Modelação de Tópicos}
+Redes sociais, mais especificamente, micro-blogs são serviços onde as pessoas publicam e partilham as suas opiniões e por esta razão são vistos como uma rica fonte de dados a explorar. De forma a explorar informação deste tipo de dados, nós implementámos na nossa \emph{framework} um módulo generativo utilizando técnicas de modelação de tópicos. Nós escolhemos o modelo \emph{Latent Dirichlet Allocation}~\cite{blei2003latent} para a implementação do módulo e realizamos testes em duas cidades Brazileiras, Rio de Janeiro e São Paulo, utilizando um total de 9.5M de tweets georreferenciados. No final, foram descobertos 29 tópicos latentes (Figure~\ref{fig:topics}) diferentes que caracterizam as duas cidades, sendo que 2 deles são únicos para cada cidade.
 
-\subsection{Travel-related Classification}
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.16]{topics.png}}
+	\caption{Tópicos latentes para as cidades do Rio de Janeiro e São Paulo}  
+	\label{fig:topics}
+\end{figure}
 
+\subsection{Classificação de Tweets sobre Transportes}
+Tentamos extrair e caracterizar tweets relacionados com viagens e transportes de grandes conjuntos de dados, a fim de estudar as distribuições geográficas e temporais deste conteúdo específico. As entidades de transporte poderão tirar proveito desse tipo de informação, uma vez que podem estudar os padrões de  mobilidade humana, bem como as opiniões dos cidadãos sobre determinados serviços de transporte. Realizamos experiências no Rio de Janeiro, São Paulo e Nova Iorque para discriminar tweets relacionados a viagens e transportes. Devido ao volume de dados recolhidos para cada cenário, foi necessário identificar automaticamente os tweets cujo conteúdo de alguma maneira sugere estar relacionado ao domínio de transportes. As abordagens convencionais exigem que especifiquemos palavras-chave relacionadas a viagens e transportes para classificar \emph{tweets}. Por outro lado, \emph{word embeddings}~\cite{mikolov2013linguistic} é uma forma de representação de texto que tenta capturar relações sintáticas e semânticas das palavras. O resultado é uma representação mais coesa onde palavras semelhantes são representadas por vectores semelhantes. Por exemplo, \emph{"taxi"/"uber"},\emph{"busão/ônibus"}, \emph{"ir para o trabalho"/"ir para a escola"} são casos em que os vetores produzidos são semelhantes. Foram estabelicidos diferentes grupos de \emph{features} para treinar os nossos classificares de texto, nomeadamente \emph{bag-of-words}, \emph{bag-of-embeddings} e ambos, combinando horizontalmente as suas matrizes de representação de texto.
 
-
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.18]{rio_tweets_transportation.png}}
+	\caption{Aglomerações de \emph{tweets} classificados como relacionados com transportes na cidade do Rio de Janeiro}  
+	\label{fig:rio_tweets_transportation}
+\end{figure}
 %Na secção ``Descrição do Trabalho'' (com este ou com outro nome que se julgue mais adequado) devem ser apresentadas as principais partes do trabalho, começando pela sua estruturação. Devem ser mencionadas as tecnologias utilizadas, com referências à sua interdependência e interligação dando especial ênfase aos componentes desenvolvidos pelo estudante no âmbito do trabalho em causa.
 
 %No presente documento, seguem-se 9 subsecções com instruções acerca da extensão da comunicação, margens, estilos e outras recomendações gerais acerca da elaboração da versão final dos resumos.
@@ -212,8 +222,9 @@ We apply a considerable group of text pre-processing operations to the messages 
 %ser alterado \texttt{\\usepackage[utf8]\{inputenc\}}.
 
 
-\section{Conclusion}\label{sec:conclusion}
+\section{Conclusão}\label{sec:conclusion}
 
+Nesta dissertação tentamos enfrentar alguns dos desafios acima mencionados com o objetivo de extrair conhecimento de múltiplos fluxos de dados das redes sociais que possam ser úteis no contexto de sistemas inteligentes de transporte e cidades inteligentes. Criamos e desenvolvemos uma estrutura para recolha, processamento e exploração de Tweets geo-localizados. Mais especificamente, a ferramenta final fornece funcionalidades para a recolha paralela de tweets georreferenciados de várias \emph{bounding-boxes} pré-definidas (cidades ou regiões), incluindo filtragem de \emph{tweets} vazios, pré-processamento de texto para a língua portuguesa e inglesa, modelagem de tópicos e classificadores de texto relacionados com o domínio de transportes, bem como, agregação e visualização de dados.
 %Espera-se que este documento possa contribuir para uma melhor qualidade dos resumos dos projectos/dissertações do MIEIC/FEUP.
 
 %Documentos que não respeitem este aspecto gráfico serão liminarmente recusados, ficando os respectivos autores em falta em relação à sua entrega.

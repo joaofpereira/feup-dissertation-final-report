@@ -1,0 +1,245 @@
+%-----------------------------------------------
+% Template para criação de resumos de projectos/dissertação
+% jlopes AT fe.up.pt,   Fri Jul  3 11:08:59 2009
+%-----------------------------------------------
+
+\documentclass[9pt,a4paper]{extarticle}
+
+%% English version: comment first, uncomment second
+%\usepackage[portuguese]{babel}  % Portuguese
+\usepackage[english]{babel}     % English
+\usepackage{graphicx}           % images .png or .pdf w/ pdflatex OR .eps w/ latex
+\usepackage{times}              % use Times type-1 fonts
+\usepackage[utf8]{inputenc}     % 8 bits using UTF-8
+\usepackage{url}                % URLs
+\usepackage{multicol}           % twocolumn, etc
+\usepackage{float}              % improve figures & tables floating
+\usepackage[tableposition=top]{caption} % captions
+%% English version: comment first (maybe)
+\usepackage{indentfirst}        % portuguese standard for paragraphs
+%\usepackage{parskip}
+
+%% page layout
+\usepackage[a4paper,margin=30mm,noheadfoot]{geometry}
+
+%% space between columns
+\columnsep 12mm
+
+%% headers & footers
+\pagestyle{empty}
+
+\graphicspath{{figures/}}
+
+%% figure & table caption
+\captionsetup{figurename=Fig.,tablename=Tab.,labelsep=endash,font=bf,skip=.5\baselineskip}
+
+%% heading
+\makeatletter
+\renewcommand*{\@seccntformat}[1]{%
+  \csname the#1\endcsname.\quad
+}
+\makeatother
+
+%% avoid widows and orphans
+\clubpenalty=300
+\widowpenalty=300
+
+\begin{document}
+
+\title{\vspace*{-8mm}\textbf{\textsc{Social Media Text Processing and\\ Semantic Analysis for Smart Cities}}}
+\author{\emph{João Filipe Figueiredo Pereira}\\[2mm]
+\small{Master’s thesis project supervised by \emph{Prof.\ Rosaldo Rossetti} and \emph{Pedro Saleiro} at \emph{LIACC}}}
+\date{}
+\maketitle
+%no page number 
+\thispagestyle{empty}
+
+\vspace*{-4mm}\noindent\rule{\textwidth}{0.4pt}\vspace*{4mm}
+
+\begin{multicols}{2}
+
+\section{Motivation}\label{sec:motivation}
+
+%Neste documento apresentam-se alguns conselhos e instruções para a preparação dos resumos de projecto/dissertação. 
+%Pede-se aos autores o favor de, dentro do possível, cumprirem com as instruções que são dadas, assim como com a estrutura apresentada, de forma a manter-se o mesmo aspecto em todos os resumos. 
+%Nas sub-secções~\ref{sec:lingua} a ~\ref{sec:number} podem encontrar-se alguns detalhes sobre a formatação do documento. 
+
+%Na secção ``Motivação'' deve ser apresentado o enquadramento do trabalho, dando ideia das necessidades que o mesmo cobre.
+
+With the rise of Social Media, people obtain and share information almost instantly on a 24/7 basis. Many research areas have tried to gain valuable insights into these large volumes of freely available user generated content. The research areas of intelligent transportation systems and smart cities are no exception. However, extracting meaningful and actionable knowledge from user generated content is a complex endeavor. First, each social media service has its own data collection specificities and constraints, second the volume of messages/posts produced can be overwhelming for automatic processing and mining, and last but not the least, social media texts are usually short, informal, with a lot of abbreviations, jargon, slang and idioms.
+
+\section{Problem Description}
+Mining Twitter data is a laborious and time-consuming process due to the restrictions and difficulties present in its content. The informal language, the existence of slang, abbreviations, jargons and the short length of the message are some of the problems when analyzing this data. Harvesting tweets automatically and, at the same time, extracting valuable information for smart cities and transportation domains makes the task even more complex. The lack of gold standards datasets is the most disturbing problem since we are not able to benchmark any analysis performed to these aforementioned domains. The problem on focus in this dissertation is to find a way of demonstrating social media text analysis about cities/regions/countries that can be valuable for entities, governments or even ordinary citizens during decision-making policies, such as, for example, which city presents the most safety level or which mode of transport may an individual choose to travel across a city.
+
+\section{Goals}\label{sec:goals}
+
+%A secção ``Objectivos'' deve enunciar claramente os objectivos a atingir com o trabalho de projecto/dissertação, enquadrando-os na respectiva área de actividade a que o trabalho se destina. 
+%Por exemplo, este documento tem como objectivos:
+%\begin{itemize}
+%\item Servir de modelo/exemplo do ponto de vista da dos resumos;
+%\item Apresentar o aspecto gráfico que se pretende para os resumos;
+%\item Disponibilizar \emph{templates} a quem pretenda utilizar \LaTeX.
+%\end{itemize}
+
+We address nine different goals in this dissertation to achieve our aim:
+
+\begin{enumerate}
+	\item Continuous collection of geo-located tweets from multiple bounding boxes in parallel and in compliance with Twitter API usage limits
+	\item Tackling Twitter Geo API inconsistencies and filtering noisy tweets
+	\item Implement standard text pre-processing methods for social media texts
+	\item Content analysis using topic modeling and comparative characterization among different bounding boxes (e.g. cities)
+	\item Travel-related classification of tweets using supervised learning
+	\item Train word embeddings from geo-located tweets
+	\item Study the impact of word embeddings in travel-related classification
+	\item Creation of gold-standard data for travel-related supervised learning
+	\item Aggregation and visualization of results
+\end{enumerate}
+
+\section{Proposed Solution}\label{sec:work}
+
+In this section it is described the problem to be tackled in this dissertation as well as the designed and implemented framework that we proposed to solve it and the core modules composing it.
+
+\begin{figure}[H]
+\centerline{\includegraphics[scale=.25]{architecture.png}}
+\caption{Framework Architecture Overview}  
+\label{fig:architecture}
+\end{figure}
+
+\subsection{Data Collection and Filtering}
+The data collection module was built using Tweepy, an open-source Python library to access the Twitter APIs. We explore the Twitter Streaming API using the locations heuristic that allows the retrieving of geo-located tweets through a bounding-box matching. The filtering task is due to the large amount of tweets in different languages comparative to the one spoken in the target city and to tweets retrieved by the API that are actually outside of the searching bounding-box.
+
+\subsection{Text Preprocessing}
+We apply a considerable group of text pre-processing operations to the messages such as lowercasing, lemmatization, tokenization, transformation of repeated characters, punctuation removal, cleaning of \textit{metadata}, numerical symbols in the text as well as removal of stop and short words.
+
+\subsection{Topic Modelling}
+Social media, more specifically, microblog services are platforms where people publicly share their opinions and due to that they are seen as a rich source of content to explore. In order to mine such information, we implemented in our framework a generative module using topic modelling techniques. We chose to use Latent Dirichlet Allocation~\cite{blei2003latent} in our module and tested it in two Brazilian cities, Rio de Janeiro and São Paulo, using a total of 9.5M of geo-located tweets. In the end 29 different topics (Figure~\ref{fig:topics}) characterize both cities, being only 2 of them unique for each city.
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.2]{topics.png}}
+	\caption{Latent topics of Rio de Janeiro and São Paulo}  
+	\label{fig:topics}
+\end{figure}
+
+\subsection{Travel-related Classification}
+We tried to extract and characterize travel-related tweets from large datasets in order to study the geographical and temporal distributions of such specific content. The transportation entities may take advantages from this kind of information since human mobility can be study, as well as citizens’ opinions regarding the transportation services.
+
+We conducted experiments to discriminate travel-related tweets in Rio de Janeiro, São Paulo and New York City. Considering the volume of the collected data for each scenario, it is necessary to automatically identify tweets whose content somehow suggests to be related to the transportation domain. Conventional approaches would require us to specify travel-related keywords to classify such tweets. Word embeddings~\cite{mikolov2013linguistic}, on the other hand, is a text representation technique that tries to capture syntactic and semantic relations from words. The result is a more cohesive representation where similar words are represented by similar vectors. For instance, \emph{"taxi"/"uber"}, \emph{"bus/busão/ônibus"}, \emph{"go to work"/"go to school"/"ir para a escola"} would yield similar vectors respectively.
+
+We established the use of different groups of features to train our text classifiers, namely bag-of-words, bag-of-embeddings - word embeddings dependent technique - and both combined (horizontally combination of bag-of-words and bag-of-embeddings matrices into a single one).
+
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.2]{rio_tweets_transportation.png}}
+	\caption{Agglomeration of tweets classified as travel-related by our module for Rio de Janeiro}  
+	\label{fig:rio_tweets_transportation}
+\end{figure}
+%Na secção ``Descrição do Trabalho'' (com este ou com outro nome que se julgue mais adequado) devem ser apresentadas as principais partes do trabalho, começando pela sua estruturação. Devem ser mencionadas as tecnologias utilizadas, com referências à sua interdependência e interligação dando especial ênfase aos componentes desenvolvidos pelo estudante no âmbito do trabalho em causa.
+
+%No presente documento, seguem-se 9 subsecções com instruções acerca da extensão da comunicação, margens, estilos e outras recomendações gerais acerca da elaboração da versão final dos resumos.
+
+%\subsection{Línguas Obrigatórias}\label{sec:lingua}
+
+%Os resumos deverão ser apresentados, em ficheiros separados, em versões portuguesa e inglesa. 
+%No resumo em Português e em caso de necessidade de utilização de termos em língua Inglesa, estes deverão ser devidamente salientados pela adopção da fonte em itálico, como, por exemplo, \emph{Ray-Tracing}.
+
+%\subsection{Cabeçalho de Identificação}
+
+%O cabeçalho de identificação deve ser centrado e inicia-se com o título da comunicação, em letras maiúsculas de tamanho 12 e em negrito. 
+%Seguem-se, em linhas separadas e em tamanho 9, a identificação do estudante, da empresa e dos orientadores (estes dois numa única linha). 
+%Todos os quatro nomes devem ser em itálico.
+
+%\subsection{Extensão do Artigo e Tipo de Letra}
+
+%Cada resumo deve ser formatado com texto a duas colunas, não devendo exceder duas páginas de formato A4. 
+%\textbf{As duas colunas devem terminar sensivelmente à mesma altura}, em cada uma das páginas. 
+
+%O tipo de letra para o texto genérico deverá ser \emph{Times New Roman} com tamanho 9 e espaçamento simples entre linhas. 
+%O espaçamento entre parágrafos deverá ser estendido a 1.5 linhas (0.5 linha de espaçamento extra).
+
+%\subsection{Dimensões das Margens}
+
+%As margens a manter à volta do texto deverão ser as constantes na Tab.~\ref{tab:medidas}.
+
+%\begin{table}[H]
+%  \centering
+%  \caption{Margens expressas em centímetros}
+%\begin{tabular}{c | c}
+%	\hline
+%\textbf{Espaçamento} & \textbf{Medida}\\
+%	\hline
+%	\hline
+%       Margem Superior & 3 cm\\
+%       Margem Inferior & 3 cm\\
+%        Margem Esquerda & 3 cm\\
+%        Margem Direita  & 3 cm\\
+%        Entre Colunas   & 1.2 cm\\
+%	\hline
+%\end{tabular}
+%  \label{tab:medidas}
+%\end{table}
+
+%\subsection{Corpo do Texto}
+
+%Todos os títulos de secções e subsecções devem ser escritos em negrito e com um espaçamento para cima ligeiramente superior ao de um parágrafo normal. 
+%Os títulos de níveis um e dois devem ter tamanhos, respectivamente, 11 e 9. 
+%As ``subsubsecções'' devem ser evitadas.
+
+%\subsection{Numeração das Secções}
+
+%As secções deverão ser numeradas com início em "1", de acordo com os níveis e subníveis respectivos, usando-se o ponto como separador.
+
+%\subsection{Figuras, Equações e Quadros}
+
+%As figuras e as tabelas deverão ser centradas, sempre que possível, à largura da coluna de texto em que se
+%inserem (Tab.~\ref{tab:medidas} e Fig.~\ref{fig:figura}). 
+%As figuras e tabelas cujas dimensões não o permitam, podem ser centradas à largura da página.
+
+%\begin{figure}[H]
+%\centerline{\includegraphics[scale=.6]{figura.png}}
+%\caption{Esta é a legenda da figura}  
+%\label{fig:figura}
+%\end{figure}
+
+%As legendas das figuras, a negrito, devem ser colocadas na sua parte inferior, contendo a respectiva numeração antecedida do termo \textbf{Fig.} 
+%O mesmo é aplicável às tabelas, excepto que a legenda deve ser iniciada pelo termo \textbf{Tab.}\ e deve ser colocada acima da tabela respectiva. 
+%Devem ser evitadas figuras ou outros elementos com cores.
+
+%\begin{equation}
+%  S_{L,i} = S_{L,i-1} . (1-S_{P,i-1}) = \prod_{k=0}^{i-1} (1-S_{p,k}) \label{eq:cif}
+%\end{equation}
+%\begin{eqnarray}
+% S_{L,i} &=& S_{L,i-1} . (1-S_{P,i-1}) \nonumber\\
+%        &=& \prod_{k=0}^{i-1} (1-S_{p,k}) \label{eq:cif}
+% \end{eqnarray}
+
+%As equações deverão conter a respectiva numeração na mesma linha de texto e à sua direita, entre parêntesis, como se mostra no exemplo da Equação~\ref{eq:cif}.
+
+%As figuras deverão ser numeradas a partir do número 1 e com uma única sequência, i.e., sem reinício em cada secção. 
+%O mesmo deve suceder com as equações e com as tabelas.
+
+%\subsection{Numeração de Páginas}\label{sec:number}
+
+%As páginas \textbf{NÃO} devem ser numeradas.
+
+%\subsection{Codificação dos Caracteres}\label{sec:encomding}
+
+%Este exemplo está escrito em UTF-8; para outras codificações deverá
+%ser alterado \texttt{\\usepackage[utf8]\{inputenc\}}.
+
+
+\section{Conclusion}\label{sec:conclusion}
+
+In this dissertation, we try to tackle some of the aforementioned challenges with the goal of extracting knowledge from social media streams that might be useful in the context of Intelligent Transportation Systems and Smart Cities. We designed and developed a framework for collection, processing and mining of geo-located Tweets. More specifically, it provides functionalities for parallel collection of geo-located tweets from multiple pre-defined bounding boxes (cities or regions), including filtering of non complying tweets, text pre-processing for Portuguese and English language, topic modeling, and transportation-specific text classifiers, as well as, aggregation and data visualization. 
+%Espera-se que este documento possa contribuir para uma melhor qualidade dos resumos dos projectos/dissertações do MIEIC/FEUP.
+
+%Documentos que não respeitem este aspecto gráfico serão liminarmente recusados, ficando os respectivos autores em falta em relação à sua entrega.
+
+%Para as dissertações existem regras definidas noutro lado~\cite{kn:Mat93}.
+
+%%English version: comment first, uncomment second
+\bibliographystyle{unsrt-en}  % numeric, unsorted refs
+%\bibliographystyle{unsrt}  % numeric, unsorted refs
+\bibliography{refs}
+
+\end{multicols}
+
+\end{document}
