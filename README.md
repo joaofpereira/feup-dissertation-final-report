@@ -7,6 +7,6 @@ This repository aims to hold all the reports I wrote during my Dissertation cour
 ### Additional Content:
 This are articles wrote by me during the dissertation period.
 
-1. Transportation in Social Media: An Automatic Classifier for Travel-Related Tweets
+1. **Transportation in Social Media: An Automatic Classifier for Travel-Related Tweets**
    * João Pereira, [Arian Pasquali](https://github.com/arianpasquali), [Pedro Saleiro](https://github.com/saleiro) and [Rosaldo J. F. Rossetti](https://github.com/RJFRossetti)
-   * In 18th EPIA Conference on Artificial Intelligence (EPIA 2017), 2017
+   * In *18th EPIA Conference on Artificial Intelligence (EPIA 2017)*, 2017
