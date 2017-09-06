@@ -8,7 +8,7 @@ My dissertation is also on ResearchGate:
 ---
 
 ### Additional Content:
-This are articles wrote by me during the dissertation period.
+This are articles written by me during the dissertation period.
 
 1. **Transportation in Social Media: An Automatic Classifier for Travel-Related Tweets**
    * João Pereira, [Arian Pasquali](https://github.com/arianpasquali), [Pedro Saleiro](https://github.com/saleiro) and [Rosaldo J. F. Rossetti](https://github.com/RJFRossetti)
