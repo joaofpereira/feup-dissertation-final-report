@@ -4,7 +4,7 @@ This repository aims to hold all the reports I wrote during my Dissertation cour
 
 ---
 
-### Addictional Content:
+### Additional Content:
 This are articles wrote by me during the dissertation period.
 
 1. Transportation in Social Media: An Automatic Classifier for Travel-Related Tweets
