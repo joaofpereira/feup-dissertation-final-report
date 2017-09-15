@@ -14,3 +14,8 @@ This are articles written by me during the dissertation period.
    * João Pereira, [Arian Pasquali](https://github.com/arianpasquali), [Pedro Saleiro](https://github.com/saleiro) and [Rosaldo J. F. Rossetti](https://github.com/RJFRossetti)
    * In *18th EPIA Conference on Artificial Intelligence (EPIA 2017)*, 2017
    * [See full article](https://www.researchgate.net/publication/317659892_Transportation_in_Social_Media_An_Automatic_Classifier_for_Travel-Related_Tweets)
+
+2. **Characterizing Geo-located Tweets in Brazilian Megacities**
+   * João Pereira, [Arian Pasquali](https://github.com/arianpasquali), [Pedro Saleiro](https://github.com/saleiro) and [Rosaldo J. F. Rossetti](https://github.com/RJFRossetti)
+   * In *The Third IEEE Annual International Smart Cities Conference (ISC2 2017)*, 2017
+   * [See full article](https://www.researchgate.net/publication/319534543_Characterizing_Geo-located_Tweets_in_Brazilian_Megacities)
