@@ -1,3 +1,7 @@
+%&biglatex
+
+\pdfoutput=1
+
 \documentclass[11pt,a4paper,twoside,openright]{report}
 
 %% MIEIC options
@@ -17,6 +21,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage[utf8]{inputenc}
+\DeclareUnicodeCharacter{2212}{-}% support older LaTeX versions
 \usepackage{amssymb}
 \usepackage{multirow}
 \usepackage{multicol}
@@ -134,8 +139,8 @@
 %%
 
 \begin{Prolog}
-  \include{abstract_en} % the abstract
-  \include{acknows_en}  % the acknowledgments
+  \include{abstract} % the abstract
+  \include{acknows}  % the acknowledgments
   \include{quote}       % initial quotation if desired
   \cleardoublepage
   \pdfbookmark[0]{Table of Contents}{contents}
